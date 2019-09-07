@@ -26,7 +26,7 @@ dc:title a owl:AnnotationProperty .
         "Silvio Peroni"^^xsd:string ;
     dc:date "2015-07-03" ;
     dc:description <http://purl.org/spar/doco/doco%20architecture.png>,
-        "DoCO, the Document Components Ontology, provides a structured vocabulary written in OWL 2 DL of document components, both structural (e.g. block, inline, paragraph, section, chapter) and rhetorical (e.g. introduction, discussion, acknowledgements, reference list, figure, appendix), enabling these components, and documents composed of them, to be described in RDF. It imports the Discourse Elements Ontology (http://purl.org/spar/deo) and the Document Structural Patterns Ontology (http://www.essepuntato.it/2008/12/pattern), and uses seven rhetorical block elements abstracted from the SALT Rhetorical Ontology and the Ontology of Rhetorical Blocks (ORB)."@en ;
+        "DoCO, the Document Components Ontology, provides a structured vocabulary written in OWL 2 DL of document components, both structural (e.g. block, inline, paragraph, section, chapter) and rhetorical (e.g. introduction, discussion, acknowledgements, reference list, figure, appendix), enabling these components, and documents composed of them, to be described in RDF. It imports the Discourse Elements Ontology (http://purl.org/spar/deo) and the Document Structural Patterns Ontology (http://purl.org/spar/po), and uses seven rhetorical block elements abstracted from the SALT Rhetorical Ontology and the Ontology of Rhetorical Blocks (ORB)."@en ;
     dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."@en ;
     dc:title "DoCO, the Document Components Ontology"@en ;
     rdfs:comment """The Document Components Ontology (DoCO) in an ontology that provides a structured vocabulary written of document components, both structural (e.g., block, inline, paragraph, section, chapter) and rhetorical (e.g., introduction, discussion, acknowledgements, reference list, figure, appendix).
@@ -42,7 +42,7 @@ dc:title a owl:AnnotationProperty .
 **Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://dx.doi.org/10.3233/SW-150177"""@en,
         "This ontology is available at http://purl.org/spar/doco, and uses the namespace prefix doco."@en ;
     owl:imports <http://purl.org/spar/deo>,
-        <http://www.essepuntato.it/2008/12/pattern> ;
+        <http://purl.org/spar/po> ;
     owl:priorVersion <https://svn.code.sf.net/p/sempublishing/code/DoCO/2014-05-14_doco-1_2.owl> ;
     owl:versionIRI <http://purl.org/spar/doco/2015-07-03> ;
     owl:versionInfo "1.3"^^xsd:string .

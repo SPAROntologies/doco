@@ -99,7 +99,7 @@
     "http://purl.org/dc/elements/1.1/description": [
       {
         "@language": "en",
-        "@value": "DoCO, the Document Components Ontology, provides a structured vocabulary written in OWL 2 DL of document components, both structural (e.g. block, inline, paragraph, section, chapter) and rhetorical (e.g. introduction, discussion, acknowledgements, reference list, figure, appendix), enabling these components, and documents composed of them, to be described in RDF. It imports the Discourse Elements Ontology (http://purl.org/spar/deo) and the Document Structural Patterns Ontology (http://www.essepuntato.it/2008/12/pattern), and uses seven rhetorical block elements abstracted from the SALT Rhetorical Ontology and the Ontology of Rhetorical Blocks (ORB)."
+        "@value": "DoCO, the Document Components Ontology, provides a structured vocabulary written in OWL 2 DL of document components, both structural (e.g. block, inline, paragraph, section, chapter) and rhetorical (e.g. introduction, discussion, acknowledgements, reference list, figure, appendix), enabling these components, and documents composed of them, to be described in RDF. It imports the Discourse Elements Ontology (http://purl.org/spar/deo) and the Document Structural Patterns Ontology (http://purl.org/spar/po), and uses seven rhetorical block elements abstracted from the SALT Rhetorical Ontology and the Ontology of Rhetorical Blocks (ORB)."
       },
       {
         "@id": "http://purl.org/spar/doco/doco%20architecture.png"
@@ -132,7 +132,7 @@
         "@id": "http://purl.org/spar/deo"
       },
       {
-        "@id": "http://www.essepuntato.it/2008/12/pattern"
+        "@id": "http://purl.org/spar/po"
       }
     ],
     "http://www.w3.org/2002/07/owl#priorVersion": [

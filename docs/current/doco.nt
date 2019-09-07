@@ -31,7 +31,7 @@ _:N122158a0259648a4948625cb9a0a3f8b <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 <http://purl.org/spar/doco/Abstract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:N7c25283cb7ac42c1a3886d1baeb8ba33 .
 <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 _:N701a4abaa25749fdae1ad500d34f9336 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:N29b6772af3f24f9d8149001f13df4c89 .
-<http://purl.org/spar/doco> <http://www.w3.org/2002/07/owl#imports> <http://www.essepuntato.it/2008/12/pattern> .
+<http://purl.org/spar/doco> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/spar/po> .
 _:Nf6f8840acc904593bd5d541dbb5ef808 <http://www.w3.org/2002/07/owl#unionOf> _:N396e302e4d064918a8b89769ba345c0a .
 _:Nc279bc7382f74c11b28d297cb90615e8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/CaptionedBox> .
 _:N940f7a2a604f46d9930dd7c684fe6c6d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -40,7 +40,7 @@ _:Naedbf58bc4654998b63b64fd27094f88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#
 _:Ndc4e8f4928ec4e6f88126b37049e4f36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:Nc493b6bb4862429d8c6db998b8db3100 .
 _:N8f28a32e2ebe45a29a10636b5093e154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2008/12/pattern#Container> .
 _:N2541341ae4a047af879ea731bf5cbb50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:Nf08f39f5778e42a5b74074cd7ac54faa .
-<http://purl.org/spar/doco> <http://purl.org/dc/elements/1.1/description> "DoCO, the Document Components Ontology, provides a structured vocabulary written in OWL 2 DL of document components, both structural (e.g. block, inline, paragraph, section, chapter) and rhetorical (e.g. introduction, discussion, acknowledgements, reference list, figure, appendix), enabling these components, and documents composed of them, to be described in RDF. It imports the Discourse Elements Ontology (http://purl.org/spar/deo) and the Document Structural Patterns Ontology (http://www.essepuntato.it/2008/12/pattern), and uses seven rhetorical block elements abstracted from the SALT Rhetorical Ontology and the Ontology of Rhetorical Blocks (ORB)."@en .
+<http://purl.org/spar/doco> <http://purl.org/dc/elements/1.1/description> "DoCO, the Document Components Ontology, provides a structured vocabulary written in OWL 2 DL of document components, both structural (e.g. block, inline, paragraph, section, chapter) and rhetorical (e.g. introduction, discussion, acknowledgements, reference list, figure, appendix), enabling these components, and documents composed of them, to be described in RDF. It imports the Discourse Elements Ontology (http://purl.org/spar/deo) and the Document Structural Patterns Ontology (http://purl.org/spar/po), and uses seven rhetorical block elements abstracted from the SALT Rhetorical Ontology and the Ontology of Rhetorical Blocks (ORB)."@en .
 _:N103488dc58504cb29bbb9f97733e75bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/BackMatter> .
 <http://purl.org/spar/doco/ListOfOrganizations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:N7140d89f91c94cd5b0f993673ffeef45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

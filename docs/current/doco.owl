@@ -48,11 +48,11 @@
 **Website:** http://www.sparontologies.net/ontologies/doco
 
 **Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://dx.doi.org/10.3233/SW-150177</rdfs:comment>
-        <dc:description xml:lang="en">DoCO, the Document Components Ontology, provides a structured vocabulary written in OWL 2 DL of document components, both structural (e.g. block, inline, paragraph, section, chapter) and rhetorical (e.g. introduction, discussion, acknowledgements, reference list, figure, appendix), enabling these components, and documents composed of them, to be described in RDF. It imports the Discourse Elements Ontology (http://purl.org/spar/deo) and the Document Structural Patterns Ontology (http://www.essepuntato.it/2008/12/pattern), and uses seven rhetorical block elements abstracted from the SALT Rhetorical Ontology and the Ontology of Rhetorical Blocks (ORB).</dc:description>
+        <dc:description xml:lang="en">DoCO, the Document Components Ontology, provides a structured vocabulary written in OWL 2 DL of document components, both structural (e.g. block, inline, paragraph, section, chapter) and rhetorical (e.g. introduction, discussion, acknowledgements, reference list, figure, appendix), enabling these components, and documents composed of them, to be described in RDF. It imports the Discourse Elements Ontology (http://purl.org/spar/deo) and the Document Structural Patterns Ontology (http://purl.org/spar/po), and uses seven rhetorical block elements abstracted from the SALT Rhetorical Ontology and the Ontology of Rhetorical Blocks (ORB).</dc:description>
         <rdfs:comment xml:lang="en">This ontology is available at http://purl.org/spar/doco, and uses the namespace prefix doco.</rdfs:comment>
         <dc:rights xml:lang="en">This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/).</dc:rights>
         <owl:imports rdf:resource="http://purl.org/spar/deo"/>
-        <owl:imports rdf:resource="http://www.essepuntato.it/2008/12/pattern"/>
+        <owl:imports rdf:resource="http://purl.org/spar/po"/>
         <dc:description rdf:resource="doco%20architecture.png"/>
     </owl:Ontology>
     
