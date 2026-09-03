@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/ChapterTitle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdfs:label xml:lang="en">chapter title</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/doco/Title"/>
+    <rdfs:subClassOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b72"/>
+    <rdfs:comment xml:lang="en">The title of a chapter.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <owl:disjointWith rdf:resource="http://purl.org/spar/doco/SectionTitle"/>
+    <vann:example>
+    :my-title a doco:ChapterTitle ;
+        c4o:hasContent 'The First Chapter'@en ;
+        pattern:isContainedByAsHeader :my-chapter .
+    </vann:example>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b72">
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/Chapter"/>
+  </rdf:Description>
+</rdf:RDF>

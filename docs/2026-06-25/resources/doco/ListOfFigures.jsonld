@@ -1,0 +1,224 @@
+[
+  {
+    "@id": "http://purl.org/spar/doco/ListOfFigures",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-list-of-figures a doco:ListOfFigures ; \n        dcterms:isPartOf :my-front-matter ;\n        pattern:contains :my-list-of-references .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A section of the document listing all the figures, identified by their titles and referenced to their locations in the document. May also be referred to as 'List of illustrations'."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "list of figures"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b154"
+      },
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b164"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b154",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b155"
+          },
+          {
+            "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b158"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b155",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Section"
+          },
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#HeadedContainer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b158",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/isPartOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b159"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b159",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/BackMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FrontMatter"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b164",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/hasPart"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b165"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b165",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/ListOfReferences"
+          },
+          {
+            "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b166"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b166",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b167"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b167",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/relation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/doco/FigureBox"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b249",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Abstract"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Afterword"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Appendix"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Colophon"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Foreword"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Glossary"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Index"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ListOfFigures"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ListOfTables"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Preface"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/TableOfContents"
+          }
+        ]
+      }
+    ]
+  }
+]

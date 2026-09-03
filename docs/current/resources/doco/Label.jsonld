@@ -1,0 +1,101 @@
+[
+  {
+    "@id": "http://purl.org/spar/doco/Label",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-label a doco:Label ;\n        c4o:hasContent 'Chapter One'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A block containing text, that may include a number (e.g., \"Chapter Three\", \"3.2\", \"Figure 1\", \"Table\"), used to identify an item within the document, for example a chapter, a figure, a section or a table."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "label"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b134"
+      },
+      {
+        "@id": "http://purl.org/spar/deo/DiscourseElement"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b134",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#isContainedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b135"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b135",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Block"
+          },
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Container"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b275",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Label"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Paragraph"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Subtitle"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Title"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2008/12/pattern#Meta">
+    <skos:note xml:lang="en">
+This class describes elements that contain neither other elements nor textual content. 
+Contrarily to the pattern Milestone, which was meant to describe markup elements that impact the document because of their location, the main feature of its disjoint sibling is the mere existence, independently from the position it has within the document. 
+
+Meta elements convey metadata information about the document or part of it, independently of where they are. 
+Thus, meta elements can be contained only within container elements.
+  </skos:note>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">meta element</rdfs:label>
+    <rdfs:comment xml:lang="en">A document content nestable element.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,11 @@
+<http://purl.org/spar/doco/SectionLabel> <http://www.w3.org/2000/01/rdf-schema#label> "section label"@en .
+<http://purl.org/spar/doco/SectionLabel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b213 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b213 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/Section> .
+<http://purl.org/spar/doco/SectionLabel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/doco/Label> .
+<http://purl.org/spar/doco/SectionLabel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/SectionLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "A block containing a label for the section, that may include the section number."@en .
+<http://purl.org/spar/doco/SectionLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/SectionLabel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+<http://purl.org/spar/doco/SectionLabel> <http://purl.org/vocab/vann/example> "\n    :my-section-label a doco:SectionLabel ; \n        c4o:hasContent 'Section 1'@en ;\n        dcterms:isPartOf :my-section .\n    " .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b213 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/isPartOf> .

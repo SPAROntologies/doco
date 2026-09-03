@@ -1,0 +1,92 @@
+[
+  {
+    "@id": "http://purl.org/spar/doco/Stanza",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-stanza a doco:Stanza ; \n        pattern:contains :my-line-01, :my-line-02 .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A unit within a larger poem. A stanza consists of a grouping of lines, set off by a vertical space from other stanzas, that usually has a set pattern of meter and rhyme."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "stanza"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b216"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b216",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b217"
+          },
+          {
+            "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b220"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b217",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/deo/DiscourseElement"
+          },
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Container"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b220",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/doco/Line"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
+      }
+    ]
+  }
+]

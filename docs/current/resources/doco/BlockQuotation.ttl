@@ -1,0 +1,26 @@
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:BlockQuotation a owl:Class ;
+    rdfs:label "block quotation"@en ;
+    vann:example """
+    :my-block-quotation a doco:BlockQuotation ; 
+        c4o:hasContent '''
+            Now, in reality, the world have paid too great a compliment to critics, and 
+            have imagined them men of much greater profundity than they really are. 
+            From this complaisance the critics have been emboldened to assume a dictatorial 
+            power, and have so far succeeded that they are now become the masters, and have 
+            the assurance to give laws to those authors from whose predecessors they 
+            originally received them.
+        '''@en .
+    """ ;
+    rdfs:comment "A block quotation (also known as a long quotation or extract) is a quotation in a written document which is set off from the main text as a container for distinct paragraphs, which is typically distinguished visually using indentation, a different font, or smaller size. Block quotations are used for longer passages than run-in quotations (which are set off with quotation marks)."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf po:Container ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b82">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2008/12/pattern#Milestone"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/Figure">
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <rdfs:subClassOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b80"/>
+    <rdfs:comment xml:lang="en">A communication object comprising one or more graphics, drawings, images, or other visual representations..</rdfs:comment>
+    <rdfs:label xml:lang="en">figure</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <vann:example>
+    :my-figure a doco:Figure .
+    </vann:example>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b80">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b81"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b81">
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b82"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2008/12/pattern#Meta"/>
+  </rdf:Description>
+</rdf:RDF>

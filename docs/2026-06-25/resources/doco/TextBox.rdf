@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/TextBox">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A space within a document that contains textual content relating to, quoting from or expanding upon the main text. Usually a textbox is delimited by a border or use of a background colour distinct from that of the main text.</rdfs:comment>
+    <rdfs:label xml:lang="en">text box</rdfs:label>
+    <vann:example>
+    :my-text-box a doco:TextBox ;
+        c4o:hasContent 'Using a text box, you can create a block of text that appears above, below, or around pictures, charts, or other objects.'@en .
+    </vann:example>
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#Container"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+  </rdf:Description>
+</rdf:RDF>

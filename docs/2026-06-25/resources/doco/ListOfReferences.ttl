@@ -1,0 +1,24 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:ListOfReferences a owl:Class ;
+    rdfs:label "list of references"@en ;
+    vann:example """
+    :my-list-of-references a doco:ListOfReferences ;
+        pattern:contains :my-reference-01 , :my-reference-02 .
+    """ ;
+    rdfs:comment "A list of items each representing a reference to a specific part of the same document, or to another publication."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:List [ a owl:Restriction ;
+                        owl:allValuesFrom deo:Reference ;
+                        owl:onProperty po:contains ] ) ] ;
+    vs:term_status reg:statusStable .
+

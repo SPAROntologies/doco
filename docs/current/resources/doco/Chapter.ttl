@@ -1,0 +1,33 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Chapter a owl:Class ;
+    rdfs:label "chapter"@en ;
+    vann:example """
+    :my-chapter a doco:Chapter ; 
+        pattern:contains :my-section .
+    """ ;
+    rdfs:comment "A principle division of the body matter of a large document, such as a book, a report or a legislative document."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( deo:DiscourseElement po:HeadedContainer ) ],
+        [ a owl:Restriction ;
+            owl:onProperty po:contains ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( doco:Paragraph doco:Section ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty po:contains ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:complementOf doco:Chapter ] ] ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:BackMatter doco:BodyMatter doco:CaptionedBox doco:Chapter doco:ComplexRunInQuotation doco:Footnote doco:Formula doco:FormulaBox doco:FrontMatter doco:List doco:Part doco:Section doco:Table ) .
+

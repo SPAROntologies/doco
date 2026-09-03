@@ -1,0 +1,22 @@
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/2000/01/rdf-schema#label> "stanza"@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit within a larger poem. A stanza consists of a grouping of lines, set off by a vertical space from other stanzas, that usually has a set pattern of meter and rhyme."@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2008/12/pattern#Container> .
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b216 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b222 .
+<http://purl.org/spar/doco/Stanza> <http://purl.org/vocab/vann/example> "\n    :my-stanza a doco:Stanza ; \n        pattern:contains :my-line-01, :my-line-02 .\n    " .
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3b1bab1f2e67482f9ea2fcacd8712072b217 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b220 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/doco/Line> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b219 .
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/deo/DiscourseElement> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b216 <http://www.w3.org/2002/07/owl#intersectionOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b221 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3b1bab1f2e67482f9ea2fcacd8712072b220 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b217 <http://www.w3.org/2002/07/owl#intersectionOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b218 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b220 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2008/12/pattern#contains> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

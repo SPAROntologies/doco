@@ -1,0 +1,16 @@
+_:n3b1bab1f2e67482f9ea2fcacd8712072b224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b225 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/Table> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b224 <http://www.w3.org/2002/07/owl#intersectionOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b226 .
+<http://purl.org/spar/doco/TableBox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/TableBox> <http://purl.org/vocab/vann/example> "\n    :my-table-box a doco:TableBox ; \n        dcterms:hasPart :my-table .\n    " .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b225 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/hasPart> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3b1bab1f2e67482f9ea2fcacd8712072b225 .
+<http://purl.org/spar/doco/TableBox> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b227 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/CaptionedBox> .
+<http://purl.org/spar/doco/TableBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b224 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/doco/TableBox> <http://www.w3.org/2000/01/rdf-schema#comment> "A space within a document that contains a table and its caption."@en .
+<http://purl.org/spar/doco/TableBox> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/TableBox> <http://www.w3.org/2000/01/rdf-schema#label> "table box"@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

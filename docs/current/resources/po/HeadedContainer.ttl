@@ -1,0 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+po:HeadedContainer a owl:Class ;
+    rdfs:label "headed-container element"@en ;
+    rdfs:comment "A document content nestable element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+This class describes container elements whose content model need to begin with one or more block elements (the heading), specified through the property `po:containsAsHeader`.
+  """@en .
+

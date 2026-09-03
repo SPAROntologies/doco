@@ -1,0 +1,160 @@
+[
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b261",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/BackMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/BodyMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/CaptionedBox"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Chapter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ComplexRunInQuotation"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Footnote"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Formula"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FormulaBox"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FrontMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/List"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Part"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Section"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Table"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/doco/FrontMatter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-front-matter a doco:FrontMatter ; \n        pattern:contains :my-table-of-contents .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "The initial principle part of a document, usually containing self-referential metadata. In a book, this typically includes its title, authors, publisher, publication date, ISBN and copyright declaration, together with the preface, foreword, table of content, etc. In a journal article, the front matter is normally restricted to the title, authors and the authors' affiliation details, although the latter may alternatively be included in a footnote or the back matter. In books, the front matter pages may be numbered in lowercase Roman numerals."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "front matter"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b105"
+      },
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b108"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b105",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/deo/DiscourseElement"
+          },
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Container"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b108",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b109"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#isContainedBy"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b109",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#complementOf": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b110"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b110",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/BackMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/BodyMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FrontMatter"
+          }
+        ]
+      }
+    ]
+  }
+]

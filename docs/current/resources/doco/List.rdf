@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b266">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/ComplexRunInQuotation"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b267"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b273">
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b274"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Section"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/List">
+    <rdfs:subClassOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b142"/>
+    <rdfs:subClassOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b138"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">An enumeration of items.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vann:example>
+    :my-list a doco:List ; 
+        pattern:contains :my-item .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdfs:label xml:lang="en">list</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b274">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Table"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b264">
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b265"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/CaptionedBox"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b271">
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b272"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b148">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2008/12/pattern#Table"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b143">
+    <owl:unionOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b151"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b153">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b144"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b145">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:complementOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b146"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b141">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b139"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b272">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Part"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b273"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b261">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b262"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b151">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2008/12/pattern#Block"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b152"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b263">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/BodyMatter"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b264"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b152">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2008/12/pattern#Field"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b153"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b140">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2008/12/pattern#Table"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b141"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b267">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Footnote"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b268"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b146">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b147"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b138">
+    <owl:intersectionOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b140"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b262">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/BackMatter"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b263"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b268">
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b269"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Formula"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b139">
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2008/12/pattern#contains"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://www.essepuntato.it/2008/12/pattern#Pattern"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b149">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2008/12/pattern#Container"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b150"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b142">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b143"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2008/12/pattern#contains"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b150">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b145"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b265">
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b266"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Chapter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b147">
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b148"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2008/12/pattern#HeadedContainer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b269">
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b270"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/FormulaBox"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b144">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b149"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b270">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/FrontMatter"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b271"/>
+  </rdf:Description>
+</rdf:RDF>

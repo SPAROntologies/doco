@@ -1,0 +1,5 @@
+<http://www.essepuntato.it/2008/12/pattern#Meta> <http://www.w3.org/2004/02/skos/core#note> "\nThis class describes elements that contain neither other elements nor textual content. \nContrarily to the pattern Milestone, which was meant to describe markup elements that impact the document because of their location, the main feature of its disjoint sibling is the mere existence, independently from the position it has within the document. \n\nMeta elements convey metadata information about the document or part of it, independently of where they are. \nThus, meta elements can be contained only within container elements.\n  "@en .
+<http://www.essepuntato.it/2008/12/pattern#Meta> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/po/> .
+<http://www.essepuntato.it/2008/12/pattern#Meta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Meta> <http://www.w3.org/2000/01/rdf-schema#label> "meta element"@en .
+<http://www.essepuntato.it/2008/12/pattern#Meta> <http://www.w3.org/2000/01/rdf-schema#comment> "A document content nestable element."@en .

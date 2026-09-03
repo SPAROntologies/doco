@@ -1,0 +1,5 @@
+<http://www.essepuntato.it/2008/12/pattern#Popup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Popup> <http://www.w3.org/2000/01/rdf-schema#comment> "A bucket element that is only present within block and inline elements."@en .
+<http://www.essepuntato.it/2008/12/pattern#Popup> <http://www.w3.org/2004/02/skos/core#note> "\nPopup elements are used whenever complex structures need to be placed within content elements such as paragraphs.\n"@en .
+<http://www.essepuntato.it/2008/12/pattern#Popup> <http://www.w3.org/2000/01/rdf-schema#label> "popup element"@en .
+<http://www.essepuntato.it/2008/12/pattern#Popup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/po/> .

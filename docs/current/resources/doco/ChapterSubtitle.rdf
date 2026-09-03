@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/ChapterSubtitle">
+    <rdfs:subClassOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b71"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/doco/Subtitle"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://purl.org/spar/doco/SectionSubtitle"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdfs:comment xml:lang="en">The subtitle of a chapter.</rdfs:comment>
+    <rdfs:label xml:lang="en">chapter subtitle</rdfs:label>
+    <vann:example>
+    :my-chapter-subtitle a doco:ChapterSubtitle ;
+        c4o:hasContent 'Or: The beginning of this book'@en ;
+        dcterms:isPartOf :my-chapter .
+    </vann:example>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b71">
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/Chapter"/>
+  </rdf:Description>
+</rdf:RDF>

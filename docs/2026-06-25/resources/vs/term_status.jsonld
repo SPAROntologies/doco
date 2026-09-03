@@ -1,0 +1,8 @@
+[
+  {
+    "@id": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  }
+]

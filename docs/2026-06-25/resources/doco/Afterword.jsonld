@@ -1,0 +1,119 @@
+[
+  {
+    "@id": "http://purl.org/spar/doco/Afterword",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-afterword a doco:Afterword ; \n        dcterms:isPartOf :my-back-matter .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A literary device that is often found at the end of a piece of literature. It generally covers the story of how the book came into being, or how the idea for the book was developed. Alternatively, it may be written by someone other than the author of the book, and may discuss the work's historical or cultural context, if the work is being reissued many years after its original publication."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "afterword"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b11"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b11",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Section"
+          },
+          {
+            "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b12",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/isPartOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/doco/BackMatter"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b249",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Abstract"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Afterword"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Appendix"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Colophon"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Foreword"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Glossary"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Index"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ListOfFigures"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ListOfTables"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Preface"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/TableOfContents"
+          }
+        ]
+      }
+    ]
+  }
+]

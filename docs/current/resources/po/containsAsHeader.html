@@ -1,0 +1,441 @@
+<!doctype html><html lang=en><meta charset=UTF-8><meta content="width=device-width,initial-scale=1.0" name=viewport><title>LODE 2.0 - Semantic Artefact Viewer</title><link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css rel=stylesheet><link href=../../static/style.css rel=stylesheet><link href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css rel=stylesheet><body><div class="container-fluid px-4 py-4"><details class=metadata-accordion><summary class=metadata-accordion-summary><div class=resource-frontmatter><h1 class=resource-title>contains as header</h1><div class=resource-meta-line><span class="resource-meta-uri font-monospace text-truncate">http://www.essepuntato.it/2008/12/pattern#containsAsHeader</span><a title="Go to Resource" class=resource-meta-link href=http://www.essepuntato.it/2008/12/pattern#containsAsHeader target=_blank> <i class="bi bi-box-arrow-up-right"></i> </a></div><p class=resource-subtitle>as defined in <span class=resource-subtitle-ontology> The Document Components Ontology (DoCO) </span> <button title="Show/hide ontology metadata" class=metadata-accordion-toggle onclick=toggleMetadataAccordion(event) type=button><i class="bi bi-chevron-down"></i></button></div></summary> <div class=p-3><section class=metadata-block><dl class="row mb-0 lead fs-6"><dt class="text-capitalize fs-7 fw-bold">bibliographic citation<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://doi.org/10.3233/SW-150177</div></div></div><dt class="text-capitalize fs-7 fw-bold">code repository<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/doco target=_blank>https://github.com/SPAROntologies/doco</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">contributor<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)</div></div></div><dt class="text-capitalize fs-7 fw-bold">created<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2015-07-03</div></div></div><dt class="text-capitalize fs-7 fw-bold">creator<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">Silvio Peroni (https://orcid.org/0000-0003-0530-4305)</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">David Shotton (https://orcid.org/0000-0001-5506-523X)</div></div></div><dt class="text-capitalize fs-7 fw-bold">date<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2026-06-25</div></div></div><dt class="text-capitalize fs-7 fw-bold">description<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">
+The **_Document Components Ontology (DoCO)_** is an OWL 2 DL ontology that provides a general-purpose structured vocabulary of document elements. 
+DoCO has been designed as a general unifying ontological framework for describing different aspects related to the content of scientific and other scholarly texts. 
+Its primary goal has been to improve the interoperability and shareability of academic documents (and related services) when multiple formats are actually used for their storage.
+
+The creation of DoCO was undertaken by studying different corpora of documents (mainly scientific literature and web documents on different topics) and publishers&#39; guidelines, from two perspectives – the structural and the rhetorical. 
+In addition, some informal interviews have been done with researchers in different fields and with academic publishers, in order to gather as much information as possible about document components and their use.
+
+DoCO imports the [Pattern Ontology](http://www.essepuntato.it/2008/12/pattern) that describes structural patterns (introduced in the paper entitled [_Dealing with structural patterns of XML documents_](http://doi.org/10.1002/asi.23088)), and the [_Discourse Element Ontology_](https://www.sparontologies.net/ontologies/deo) (DEO), which was developed with DoCO and describes rhetorical components. 
+Additionally, it also defines hybrid classes describing elements that are both structural and rhetorical in nature, such as _paragraph_ (`doco:Paragraph`), _section_ (`doco:Section`) or _list_ (`doco:List`). DoCO is also aligned with the [SALT Rhetorical Ontology](http://lov.okfn.org/dataset/lov/vocabs/sro) and the [Ontology of Rhetorical Blocks](http://www.w3.org/2001/sw/hcls/notes/orb/) (ORB).
+A concise summary of the main DoCO classes and its imported ontologies is shown in the following figure.
+
+![DoCO&#39;s architecture, with its mail classes distributed accoridng to the ontologies they have been imported from.](doco.png)
+
+## Examples of use
+
+In the following subsections, we introduce some examples to showcase how to use DoCO. 
+
+The prefixes that are used in all the examples provided below are defined as follows:
+
+    @prefix : &lt;http://www.sparontologies.net/example/&gt; .
+    @prefix doco: &lt;http://purl.org/spar/doco/&gt; .
+    @prefix deo: &lt;http://purl.org/spar/deo/&gt; .
+    @prefix po: &lt;http://www.essepuntato.it/2008/12/pattern#&gt; .
+    @prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+    @prefix fabio: &lt;http://purl.org/spar/fabio/&gt; .
+    @prefix co: &lt;http://purl.org/co/&gt; .
+    @prefix c4o: &lt;http://purl.org/spar/c4o&gt; .
+
+### Describing the structure of an article 
+
+DoCO can be used for describing several parts of a document such as a journal article (defined through the [FaBiO](https://www.sparontologies.net/ontologies/fabio) class `fabio:JournalArticle`) connecting then by means of the object property `po:contains`. 
+It can be also used in combination with [C4O](https://www.sparontologies.net/ontologies/c4o) and the [Collections Ontology](http://purl.org/co) (CO) for describing its textual content and the particular order in which the various components appear. 
+In particular, the actual textual content of each component can be specified through the property `c4o:hasContent`, while the order can be described by using the entities related with the class `co:List`.
+
+    :paper a fabio:JournalArticle ;
+        po:contains
+            :front-matter ,
+            :body-matter ,
+            :back-matter ;
+        co:firstItem [
+            co:itemContent :front-matter ;
+            co:nextItem [
+                co:itemContent :body-matter ;
+                co:nextItem [
+                    co:itemContent :back-matter ] ] ] .
+
+    :body-matter a doco:BodyMatter ;
+        po:contains
+            :section-introduction ,
+            :section-related-work ,
+            :section-document-components ,
+            :section-adoption ,
+            :section-conclusions ;
+        co:firstItem [
+            co:itemContent :section-introduction ;
+            co:nextItem [
+                co:itemContent :section-related-work ;
+                co:nextItem [
+                    co:itemContent :section-document-components ;
+                    co:nextItem [
+                        co:itemContent :section-adoption ;
+                        co:nextItem [
+                            co:itemContent :section-conclusions ] ] ] ] ] .
+
+    :section-introduction a doco:Section , deo:Introduction ;
+        po:containsAsHeader :section-introduction-title ;
+        po:contains
+            :paragraph-1 ,
+            :paragraph-2 ,
+            :paragraph-3 ,
+            :paragraph-4 ;
+        co:firstItem [
+            co:itemContent :section-introduction-title ;
+            co:nextItem [
+                co:itemContent :paragraph-1 ;
+                co:nextItem [
+                    co:itemContent :paragraph-2 ;
+                    co:nextItem [
+                        co:itemContent :paragraph-3 ;
+                        co:nextItem [
+                            co:itemContent :paragraph-4 ] ] ] ] ] .
+
+    :section-introduction-title a doco:SectionTitle ;
+        c4o:hasContent &#39;Introduction&#39; .
+
+    :paragraph-1 a doco:Paragraph ;
+        po:contains
+            :sentence-1 ,
+            :sentence-2 ,
+            :sentence-3 ,
+            :sentence-4 ,
+            :sentence-5 ,
+            :sentence-6 ,
+            :sentence-7 ;
+        co:firstItem [
+            co:itemContent :sentence-1 ;
+            co:nextItem [
+                co:itemContent :sentence-2 ;
+                co:nextItem [
+                    co:itemContent :sentence-3 ;
+                    co:nextItem [
+                        co:itemContent :sentence-4 ;
+                        co:nextItem [
+                            co:itemContent :sentence-5 ;
+                            co:nextItem [
+                                co:itemContent :sentence-6 ] ] ] ] ] ] .
+
+    :sentence-1 a doco:Sentence ;
+        c4o:hasContent &#39;One of the most important criteria for the
+            evaluation of a scientific contribution is the coherent
+            organisation of the textual narrative that describes it,
+            most often published as a scientific article or book.&#39; .
+
+### Sentences containing references to bibliographic items
+
+Among the various parts of a paper, describing references to other objects of the paper, such as bibliographic references, can be of some interest for keeping track, for instance, the number of times a particular publication is actually cited within a paper. 
+DoCO allows one to describe all these parts and to link them together.
+
+    :sentence a doco:Sentence ;
+        c4o:hasContent &#39;For instance, a recent report by Beck [3]
+            explains the requirements for an XML vocabulary of
+            scientific journals to be acceptable for inclusion
+            in PubMed Central.&#39; ;
+        po:contains :reference-to-3 .
+
+    :reference-to-3 a deo:Reference ;
+        c4o:hasContent &#39;[3]&#39; ;
+        dcterms:references :bibliographic-reference-3 .
+
+    :bibliographic-reference-3 a deo:BibliographicReference ;
+        c4o:hasContent &#39;[3]	Beck, J. (2010). Report from the Field:
+            PubMed Central, an XML-based Archive of Life Sciences
+            Journal Articles. In Proceedings of the International
+            Symposium on XML for the Long Haul: Issues in the Long-term
+            Preservation of XML.
+            OA at http://dx.doi.org/10.4242/BalisageVol6.Beck01.&#39; .
+
+## Competency Questions
+
+DoCO can be used for answering several questions related to documents and their structural and rethorical elements.
+
+In the following subsections, some of them are introduced together with their respective SPARQL queries. 
+
+The prefixes that are used in all the SPARQL queries provided below are defined as follows:
+
+    PREFIX : &lt;http://www.sparontologies.net/example/&gt; 
+    PREFIX doco: &lt;http://purl.org/spar/doco/&gt;
+    PREFIX deo: &lt;http://purl.org/spar/deo/&gt;
+    PREFIX po: &lt;http://www.essepuntato.it/2008/12/pattern#&gt;
+    PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+    PREFIX fabio: &lt;http://purl.org/spar/fabio/&gt;
+    PREFIX co: &lt;http://purl.org/co/&gt;
+    PREFIX c4o: &lt;http://purl.org/spar/c4o&gt;
+
+### CQ1
+
+What are all the sections contained within the article&#39;s body matter, and in which sequential order do they appear?
+
+    SELECT ?section ?sectionType
+    WHERE {
+        ?bodyMatter a doco:BodyMatter ;
+                    co:firstItem ?item .
+        
+        ?item co:itemContent ?section .
+        ?item co:nextItem* ?next .
+        ?next co:itemContent ?section .
+        
+        OPTIONAL { ?section a ?sectionType . }
+    }
+
+### CQ2
+
+What is the literal textual content of the first sentence belonging to the first paragraph of the introduction section?
+
+    SELECT ?sentenceText
+    WHERE {
+        ?introSection a deo:Introduction .
+        
+        ?introSection co:firstItem ?headerItem .
+        ?headerItem co:nextItem ?firstParagraphItem .
+        ?firstParagraphItem co:itemContent ?firstParagraph .
+        ?firstParagraph a doco:Paragraph .
+        
+        ?firstParagraph co:firstItem ?firstSentenceItem .
+        ?firstSentenceItem co:itemContent ?firstSentence .
+        
+        ?firstSentence c4o:hasContent ?sentenceText .
+    }
+
+### CQ3
+
+Which in-text references are contained within a specific sentence, and what are their literal textual markers?
+
+    SELECT ?reference ?textMarker
+    WHERE {
+        ?sentence a doco:Sentence ;
+                po:contains ?reference .
+        
+        ?reference c4o:hasContent ?textMarker .
+    }
+
+### CQ4
+
+What is the full bibliographic text of the reference cited by a specific inline citation marker?
+
+    SELECT ?inlineMarker ?fullBibliographicText
+    WHERE {
+        ?reference a deo:Reference ;
+                c4o:hasContent ?inlineMarker ;
+                dcterms:references ?bibReference .
+        
+        ?bibReference a deo:BibliographicReference ;
+                    c4o:hasContent ?fullBibliographicText .
+    }
+    </div></div></div><dt class="text-capitalize fs-7 fw-bold">doi<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">https://doi.org/10.25504/FAIRsharing.162003</div></div></div><dt class="text-capitalize fs-7 fw-bold">image<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/doco/blob/master/docs/current/doco.png target=_blank>https://github.com/SPAROntologies/doco/blob/master/docs/current/doco.png</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">imports<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/deo target=_blank>http://purl.org/spar/deo</a></div></div><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/po target=_blank>http://purl.org/spar/po</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">included in data catalog<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://fairsharing.org/ target=_blank>https://fairsharing.org/</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">is backward compatible with<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/doco/2015-07-03 target=_blank>http://purl.org/spar/doco/2015-07-03</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">issued<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2015-07-03</div></div></div><dt class="text-capitalize fs-7 fw-bold">keywords<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">scholarly publishing</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">semantic publishing</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">document components</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">scientometrics</div></div><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">bibliometrics</div></div></div><dt class="text-capitalize fs-7 fw-bold">license<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://creativecommons.org/licenses/by/4.0/legalcode target=_blank>https://creativecommons.org/licenses/by/4.0/legalcode</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">logo<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/doco/blob/master/spar.png target=_blank>https://github.com/SPAROntologies/doco/blob/master/spar.png</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">modified<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">2026-06-25</div></div></div><dt class="text-capitalize fs-7 fw-bold">preferred namespace prefix<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">doco</div></div></div><dt class="text-capitalize fs-7 fw-bold">preferred namespace uri<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">http://purl.org/spar/doco/</div></div></div><dt class="text-capitalize fs-7 fw-bold">prior version<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/doco/2015-07-03 target=_blank>http://purl.org/spar/doco/2015-07-03</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">publisher<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://ror.org/00wb4mk85 target=_blank>https://ror.org/00wb4mk85</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">see also<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://www.sparontologies.net/ontologies/doco target=_blank>http://www.sparontologies.net/ontologies/doco</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">source<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=https://github.com/SPAROntologies/doco/tree/master/docs target=_blank>https://github.com/SPAROntologies/doco/tree/master/docs</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">status<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/ontology/bibo/status/published target=_blank>http://purl.org/ontology/bibo/status/published</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">title<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">The Document Components Ontology (DoCO)</div></div></div><dt class="text-capitalize fs-7 fw-bold">version<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div><a title="Go to Resource" href=http://purl.org/spar/doco/2026-06-25 target=_blank>http://purl.org/spar/doco/2026-06-25</a></div></div></div><dt class="text-capitalize fs-7 fw-bold">version info<dd class="m-0 p-0"><div class="d-flex flex-column"><div class=ms-5><div class="markdown-with-badge metadata_p text-dark render-markdown inline-markdown">1.4.0</div></div></div><dt class="text-capitalize fs-7 fw-bold">Other visualisation<dd class=ms-5><a class="btn btn-sm btn-outline-dark me-2" href="https://service.tib.eu/webvowl/#iri=http://purl.org/spar/doco" target=_blank><i class="bi bi-share"></i> WebVOWL</a> <a class="btn btn-sm btn-outline-dark" href=http://purl.org/spar/doco target=_blank><i class="bi bi-file-code"></i> Source</a></dl></section></div></details><section class="metadata-block export-block"><dl class="mb-0 pb-3"><dt class="fs-7 fw-bold mb-1">Export<dd class=ms-5><a class="btn btn-sm btn-outline-dark me-2" href=containsAsHeader.ttl> <i class="bi bi-filetype-raw"></i> Turtle </a> <a class="btn btn-sm btn-outline-dark me-2" href=containsAsHeader.rdf> <i class="bi bi-file-code"></i> RDF/XML </a> <a class="btn btn-sm btn-outline-dark me-2" href=containsAsHeader.jsonld> <i class="bi bi-filetype-json"></i> JSON-LD </a> <a class="btn btn-sm btn-outline-dark me-2" href=containsAsHeader.nt> <i class="bi bi-file-text"></i> N-Triples </a></dl></section><div class="anchor-offset mb-5"><div class="card mb-2 anchor-offset" id=id_0c5bd7fb802b92105288cb374af22c7d_Relation><div class="card-header bg-white pt-2 px-1 d-flex justify-content-between align-items-center"><h4 class="fw-bold mb-0"><div class=d-inline-block>contains as header</div> <sup class="badge bg-light text-secondary op" title="Object Property">op</sup></h4></div><div class="card-body p-0"><div class="description p-3"><p class=mb-1><span class="text-dark fw-bold">IRI:</span> http://www.essepuntato.it/2008/12/pattern#containsAsHeader <a title="Go to resource documentation" class=ms-2 href=../po/containsAsHeader.html><i class="bi bi-box-arrow-up-right"></i></a><div><h6 class="text-dark fw-bold pb-0 mb-0">comment</h6><div class=ms-2><div><div class="markdown-with-badge text-dark render-markdown inline-markdown me-1"
+                                            data-md="A structured element contains another generic element as part of its header.">A structured element contains another generic element as part of its header.
+                                        </div> <sup class="badge text-secondary lan" title=English>en</sup></div></div></div></div><div class="attribute p-3 border-top border-bottom bg-light-subtle"><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">domain</h6><div class=ms-2><div class=d-inline-block><a href=http://www.w3.org/2002/07/owl#Thing title=http://www.w3.org/2002/07/owl#Thing>thing</a><sup class="badge text-secondary c" title=Class>c</sup></div></div></div><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">range</h6><div class=ms-2><div class=d-inline-block><a href=http://www.w3.org/2002/07/owl#Thing title=http://www.w3.org/2002/07/owl#Thing>thing</a><sup class="badge text-secondary c" title=Class>c</sup></div></div></div><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">is defined by</h6><div class=ms-2><div class=d-inline-block><span class=external-ref title=http://purl.org/spar/po/>http://purl.org/spar/po/</span></div></div></div><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">is inverse of</h6><div class=ms-2><div class=d-inline-block><a href=../po/isContainedByAsHeader.html title=http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader>is contained by as header</a><sup class="badge text-secondary op" title="Object Property">op</sup></div></div></div><div class=mb-1><h6 class="fw-bold text-dark pb-0 mb-0">label</h6><div class=ms-2><div class="markdown-with-badge text-dark mb-0 render-markdown inline-markdown "
+                                            data-md="contains as header">contains as header</div> <sup class="badge text-secondary lan" title=English>en</sup></div></div></div><div class="p-3 statement"><div><h6 class="fw-bold text-dark pb-0 mb-0">sub propery of</h6><div class=ms-2><div class="d-flex flex-column gap-1"><div><a href=../po/contains.html title=http://www.essepuntato.it/2008/12/pattern#contains>contains</a><sup class="badge text-secondary op" title="Object Property">op</sup></div></div></div></div></div><div class="card-footer bg-white py-0"><div class="accordion accordion-flush prov-accordion" id=id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_acc><div class=accordion-item><h2 class="accordion-header d-flex justify-content-end" id=id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_head><button class="accordion-button collapsed py-1 px-2 small fw-bold text-uppercase text-primary w-auto" title="RDF provenance" aria-controls=id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov aria-expanded=false data-bs-target=#id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov data-bs-toggle=collapse type=button><span>RDF provenance</span> <i class="bi bi-code"></i></button></h2><div class="accordion-collapse collapse" aria-labelledby=id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_head data-bs-parent=#id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_acc id=id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov><div class="accordion-body p-2"><ul class="nav nav-tabs nav-tabs-sm justify-content-end small mb-0" role=tablist><li class=nav-item role=presentation><button class="nav-link active py-1 px-2" data-bs-target=#id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_1 data-bs-toggle=tab role=tab type=button>Turtle</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_2 data-bs-toggle=tab role=tab type=button>RDF/XML</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_3 data-bs-toggle=tab role=tab type=button>JSON-LD</button><li class=nav-item role=presentation><button class="nav-link py-1 px-2" data-bs-target=#id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_4 data-bs-toggle=tab role=tab type=button>N-Triples</button></ul><div class=tab-content><div class="tab-pane fade show active" id=id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_1 role=tabpanel><pre class="mb-0 small"><code>@prefix owl: &lt;http://www.w3.org/2002/07/owl#> .
+@prefix po: &lt;http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#> .
+
+po:containsAsHeader a owl:ObjectProperty ;
+    rdfs:label "contains as header"@en ;
+    rdfs:comment "A structured element contains another generic element as part of its header."@en ;
+    rdfs:isDefinedBy &lt;http://purl.org/spar/po/> ;
+    rdfs:subProperyOf po:contains .
+
+</code></pre></div><div class="tab-pane fade" id=id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_2 role=tabpanel><pre class="mb-0 small"><code>&lt;?xml version="1.0" encoding="utf-8"?>
+&lt;rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  &lt;rdf:Description rdf:about="http://www.essepuntato.it/2008/12/pattern#containsAsHeader">
+    &lt;rdfs:comment xml:lang="en">A structured element contains another generic element as part of its header.&lt;/rdfs:comment>
+    &lt;rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
+    &lt;rdfs:label xml:lang="en">contains as header&lt;/rdfs:label>
+    &lt;rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    &lt;rdfs:subProperyOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#contains"/>
+  &lt;/rdf:Description>
+&lt;/rdf:RDF>
+</code></pre></div><div class="tab-pane fade" id=id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_3 role=tabpanel><pre class="mb-0 small"><code>[
+  {
+    "@id": "http://www.essepuntato.it/2008/12/pattern#containsAsHeader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A structured element contains another generic element as part of its header."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/po/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "contains as header"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subProperyOf": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
+      }
+    ]
+  }
+]</code></pre></div><div class="tab-pane fade" id=id_0c5bd7fb802b92105288cb374af22c7d_Relation_prov_4 role=tabpanel><pre class="mb-0 small"><code>&lt;http://www.essepuntato.it/2008/12/pattern#containsAsHeader> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A structured element contains another generic element as part of its header."@en .
+&lt;http://www.essepuntato.it/2008/12/pattern#containsAsHeader> &lt;http://www.w3.org/2000/01/rdf-schema#subProperyOf> &lt;http://www.essepuntato.it/2008/12/pattern#contains> .
+&lt;http://www.essepuntato.it/2008/12/pattern#containsAsHeader> &lt;http://www.w3.org/2000/01/rdf-schema#label> "contains as header"@en .
+&lt;http://www.essepuntato.it/2008/12/pattern#containsAsHeader> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#ObjectProperty> .
+&lt;http://www.essepuntato.it/2008/12/pattern#containsAsHeader> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/po/> .
+</code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../index.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
+
+                // Security hooks
+                DOMPurify.addHook('afterSanitizeAttributes', function(node) {
+                    if (node.tagName === 'A') {
+                        node.setAttribute('target', '_blank');
+                        node.setAttribute('rel', 'noopener noreferrer');
+                    }
+                    if (node.tagName === 'IMG') {
+                        node.setAttribute('class', 'img-fluid border rounded mt-2 mb-2');
+                    }
+                });
+
+                marked.use({
+                    gfm: true,
+                    breaks: false // So line breaks not be added
+                });
+
+                const mdElements = document.querySelectorAll('.render-markdown');
+
+                mdElements.forEach(function(el) {
+                    try {
+                        let rawText = el.dataset.md ?? el.textContent;
+
+                        // Rimuove solo righe vuote iniziali/finali, preserva l'indentazione delle righe
+                        rawText = rawText.replace(/^([ \t]*\n)+/, '').replace(/(\n[ \t]*)+$/, '');
+                        // 2. Strip ANY XML namespace prefix (Turns <html:div> into <div>, </xhtml:p> into </p>)
+                        let cleanText = rawText.replace(/<(\/?)[a-zA-Z0-9_-]+:([a-zA-Z0-9]+)/gi, '<$1$2');
+
+                        // 3. Strip xmlns attributes
+                        cleanText = cleanText.replace(/ xmlns(:[a-zA-Z0-9_-]+)?="[^"]*"/gi, '');
+
+                        let rawHTML = "";
+
+                        // 4. Smart Routing
+                        if (el.tagName === 'SPAN' || el.tagName === 'A') {
+                            rawHTML = marked.parseInline(cleanText);
+                        } else {
+                            rawHTML = marked.parse(cleanText);
+                        }
+
+                        // 5. Sanitize
+                        const cleanHTML = DOMPurify.sanitize(rawHTML, {
+                            ADD_TAGS: ['img'],
+                            ADD_ATTR: ['target', 'src', 'alt', 'title', 'class']
+                        });
+
+                        el.innerHTML = cleanHTML;
+                    } catch (e) {
+                        console.error("Error rendering markdown/html:", e);
+                    }
+                });
+            });
+
+            function exportGraph(mime, ext, navQs, resource) {
+                let qs = navQs;
+                if (resource) qs += "&resource=" + encodeURIComponent(resource);
+                fetch(`/extract?${qs}`, { headers: { "Accept": mime } })
+                    .then(r => { if (!r.ok) throw new Error(r.status); return r.blob(); })
+                    .then(blob => {
+                        const a = document.createElement("a");
+                        const slug = resource ? resource.split(/[#/]/).pop() : "ontology";
+                        a.href = URL.createObjectURL(blob);
+                        a.download = `${slug}.${ext}`;
+                        a.click();
+                        URL.revokeObjectURL(a.href);
+                    })
+                    .catch(e => alert("Export failed: " + e.message));
+            }
+
+            function toggleMetadataAccordion(event) {
+                event.preventDefault();   // blocca il comportamento nativo/bubbling incoerente
+                event.stopPropagation();  // evita il doppio-toggle se il summary lo cattura comunque
+                const details = event.currentTarget.closest('details.metadata-accordion');
+                if (details) details.open = !details.open;
+            }
+            
+            /* SEARCHBAR */
+            (function () {
+                const wrap = document.getElementById('toc-float-search');
+                const toggle = document.getElementById('toc-float-search-toggle');
+                const input = document.getElementById('toc-float-search-input');
+                const countEl = document.getElementById('toc-float-search-count');
+                const prevBtn = document.getElementById('toc-float-search-prev');
+                const nextBtn = document.getElementById('toc-float-search-next');
+                if (!wrap || !toggle || !input) return;
+
+                const cards = Array.from(document.querySelectorAll('.container-fluid .card[id]'));
+                let matches = [];
+                let current = -1;
+
+                function updateCount() {
+                    countEl.textContent = matches.length ? `${current + 1}/${matches.length}` : (input.value ? '0/0' : '');
+                }
+
+                function clearHighlight() {
+                    cards.forEach(c => c.classList.remove('toc-search-current'));
+                }
+
+                function goTo(index) {
+                    if (!matches.length) return;
+                    current = (index + matches.length) % matches.length;
+                    clearHighlight();
+                    const card = matches[current];
+                    card.classList.add('toc-search-current');
+                    card.scrollIntoView({ block: 'start' });
+                    updateCount();
+                }
+
+                function runSearch() {
+                    const q = input.value.trim().toLowerCase();
+                    clearHighlight();
+
+                    // Sidebar: dim + disable non-matching
+                    const sidebar = document.getElementById('toc-sidebar');
+                    if (sidebar) {
+                        sidebar.querySelectorAll('.toc-sidebar-section').forEach(section => {
+                            let anyMatch = false;
+                            section.querySelectorAll('.toc-sidebar-list li').forEach(li => {
+                                const match = !q || li.textContent.toLowerCase().includes(q);
+                                li.classList.toggle('toc-search-dim', !match);
+                                if (match) anyMatch = true;
+                            });
+                            section.classList.toggle('toc-search-dim', q.length > 0 && !anyMatch);
+                            if (q && anyMatch) section.open = true;
+                        });
+                    }
+
+                    if (!q) {
+                        matches = [];
+                        current = -1;
+                        updateCount();
+                        return;
+                    }
+                    matches = cards.filter(card => {
+                        const label = card.querySelector('.card-header h4')?.textContent.toLowerCase() || '';
+                        return label.includes(q);
+                    });
+                    current = -1;
+                    updateCount();
+                    if (matches.length) goTo(0);
+                }
+
+                toggle.addEventListener('click', function () {
+                    const open = wrap.classList.toggle('open');
+                    if (open) {
+                        input.focus();
+                    } else {
+                        input.value = '';
+                        runSearch();
+                    }
+                });
+
+                input.addEventListener('input', runSearch);
+
+                input.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        if (e.shiftKey) goTo(current - 1);
+                        else goTo(current + 1);
+                    }
+                });
+
+                prevBtn.addEventListener('click', () => goTo(current - 1));
+                nextBtn.addEventListener('click', () => goTo(current + 1));
+            })();</script></div>

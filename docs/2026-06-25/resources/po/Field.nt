@@ -1,0 +1,5 @@
+<http://www.essepuntato.it/2008/12/pattern#Field> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Field> <http://www.w3.org/2004/02/skos/core#note> "\nThis class is defined to describe literal metadata or text that is not really part of the document body, contrarily to its disjointed sibling Atom. \nIts main difference with Meta is that Field can contain textual content.\n  "@en .
+<http://www.essepuntato.it/2008/12/pattern#Field> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/po/> .
+<http://www.essepuntato.it/2008/12/pattern#Field> <http://www.w3.org/2000/01/rdf-schema#label> "field element"@en .
+<http://www.essepuntato.it/2008/12/pattern#Field> <http://www.w3.org/2000/01/rdf-schema#comment> "A document content nestable element."@en .

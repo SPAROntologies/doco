@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b286">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/SimpleRunInQuotation"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b287"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/Sentence">
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">sentence</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#Inline"/>
+    <vann:example>
+    :my-sentence a doco:Sentence ;
+        c4o:hasContent 'The most straightforward and widely adopted approach reduces the concept of an identifier to a simple literal string or an URI, attaching it directly to the described resource.'@en .
+    </vann:example>
+    <rdfs:comment xml:lang="en">An expression in natural language forming a single grammatical unit. A sentence minimally consists of a subject and an intransitive verb, or a subject, a transitive verb and an object, and may include additional dependent clauses. In written text, a sentence is always terminated by a full stop. A sentence can include words grouped meaningfully to express a statement, a question, an exclamation, a request or a command.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b285">
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b286"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Sentence"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b284">
+    <owl:members rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b285"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b287">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/TextChunk"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+</rdf:RDF>

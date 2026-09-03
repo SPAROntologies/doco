@@ -1,0 +1,27 @@
+_:n3b1bab1f2e67482f9ea2fcacd8712072b279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b134 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2008/12/pattern#isContainedBy> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b278 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b279 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b137 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2008/12/pattern#Container> .
+<http://purl.org/spar/doco/Label> <http://www.w3.org/2000/01/rdf-schema#comment> "A block containing text, that may include a number (e.g., \"Chapter Three\", \"3.2\", \"Figure 1\", \"Table\"), used to identify an item within the document, for example a chapter, a figure, a section or a table."@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Label> .
+<http://purl.org/spar/doco/Label> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/Label> <http://purl.org/vocab/vann/example> "\n    :my-label a doco:Label ;\n        c4o:hasContent 'Chapter One'@en .\n    " .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b134 <http://www.w3.org/2002/07/owl#someValuesFrom> _:n3b1bab1f2e67482f9ea2fcacd8712072b135 .
+<http://purl.org/spar/doco/Label> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b134 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b277 .
+<http://purl.org/spar/doco/Label> <http://www.w3.org/2000/01/rdf-schema#label> "label"@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Title> .
+<http://purl.org/spar/doco/Label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Label> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/DiscourseElement> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2008/12/pattern#Block> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Paragraph> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b135 <http://www.w3.org/2002/07/owl#unionOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b136 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Subtitle> .
+<http://purl.org/spar/doco/Label> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b275 <http://www.w3.org/2002/07/owl#members> _:n3b1bab1f2e67482f9ea2fcacd8712072b276 .

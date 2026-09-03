@@ -1,0 +1,5 @@
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "A related resource that is included either physically or logically in the described resource."@en .
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "has part"@en .
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/relation> .

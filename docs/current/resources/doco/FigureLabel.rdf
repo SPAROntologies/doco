@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b89">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Label"/>
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b90"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/FigureLabel">
+    <vann:example>
+    :my-figure-label a doco:FigureLabel ;
+        c4o:hasContent 'Figure 1'@en ;
+        dcterms:isPartOf :my-figure-box .
+    </vann:example>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A block containing a label for the figure box, that may include the figure number.</rdfs:comment>
+    <rdfs:label xml:lang="en">figure label</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdfs:subClassOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b87"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b90">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b88"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b87">
+    <owl:intersectionOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b89"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b88">
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/FigureBox"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,17 @@
+<http://purl.org/spar/doco/FigureBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b83 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b83 <http://www.w3.org/2002/07/owl#intersectionOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b85 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/doco/FigureBox> <http://www.w3.org/2000/01/rdf-schema#comment> "A space within a document that contains a figure and its caption."@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b86 .
+<http://purl.org/spar/doco/FigureBox> <http://purl.org/vocab/vann/example> "\n    :my-figure-box a doco:FigureBox ; \n        dcterms:hasPart :my-figure, :my-caption .\n    " .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/CaptionedBox> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3b1bab1f2e67482f9ea2fcacd8712072b84 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b84 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/hasPart> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/FigureBox> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/FigureBox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/FigureBox> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+<http://purl.org/spar/doco/FigureBox> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/doco/TableBox> .
+<http://purl.org/spar/doco/FigureBox> <http://www.w3.org/2000/01/rdf-schema#label> "figure box"@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b84 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/Figure> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .

@@ -1,0 +1,4 @@
+<http://purl.org/dc/terms/relation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/relation> <http://www.w3.org/2000/01/rdf-schema#comment> "A related resource."@en .
+<http://purl.org/dc/terms/relation> <http://www.w3.org/2000/01/rdf-schema#label> "relation"@en .
+<http://purl.org/dc/terms/relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

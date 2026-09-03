@@ -1,0 +1,15 @@
+_:n3b1bab1f2e67482f9ea2fcacd8712072b282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b283 .
+<http://purl.org/spar/doco/ListOfAuthors> <http://purl.org/vocab/vann/example> "\n    :my-list-of-authors a doco:ListOfAuthors .\n    " .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b280 <http://www.w3.org/2002/07/owl#members> _:n3b1bab1f2e67482f9ea2fcacd8712072b281 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b282 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfAuthors> .
+<http://purl.org/spar/doco/ListOfAuthors> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+<http://purl.org/spar/doco/ListOfAuthors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/doco/ListOfAgents> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfContributors> .
+<http://purl.org/spar/doco/ListOfAuthors> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/ListOfAuthors> <http://www.w3.org/2000/01/rdf-schema#label> "list of authors"@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfOrganizations> .
+<http://purl.org/spar/doco/ListOfAuthors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/ListOfAuthors> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of items each denoting an author of a particular publication."@en .

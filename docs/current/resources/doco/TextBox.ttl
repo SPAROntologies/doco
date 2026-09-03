@@ -1,0 +1,21 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:TextBox a owl:Class ;
+    rdfs:label "text box"@en ;
+    vann:example """
+    :my-text-box a doco:TextBox ;
+        c4o:hasContent 'Using a text box, you can create a block of text that appears above, below, or around pictures, charts, or other objects.'@en .
+    """ ;
+    rdfs:comment "A space within a document that contains textual content relating to, quoting from or expanding upon the main text. Usually a textbox is delimited by a border or use of a background colour distinct from that of the main text."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf deo:DiscourseElement,
+        po:Container ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,23 @@
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:SimpleRunInQuotation a owl:Class ;
+    rdfs:label "simple run-in quotation"@en ;
+    vann:example """
+    :my-simple-run-in-quotation a doco:SimpleRunInQuotation ;
+        c4o:hasContent 'The Minister said, “Prospects for growth are not good.”'@en .
+    """ ;
+    rdfs:comment "A textual quotation that is included inline and is usually enclosed within quotation marks."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf po:Inline ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:Sentence doco:SimpleRunInQuotation doco:TextChunk ) .
+

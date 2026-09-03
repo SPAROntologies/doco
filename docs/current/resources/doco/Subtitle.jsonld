@@ -1,0 +1,73 @@
+[
+  {
+    "@id": "http://purl.org/spar/doco/Subtitle",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-subtitle a doco:Subtitle ;\n        c4o:hasContent 'The Modern Prometheus'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An explanatory or alternative title of a publication."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "subtitle"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#Block"
+      },
+      {
+        "@id": "http://purl.org/spar/deo/DiscourseElement"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "For example, Mary Shelley uses the alternative title 'The Modern Prometheus' to hint at the theme of her most famous novel 'Frankenstein'; Nick Efford uses the subtitle 'a practical introduction using Java' to qualify the title of his book 'Digital Image Processing'"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b275",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Label"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Paragraph"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Subtitle"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Title"
+          }
+        ]
+      }
+    ]
+  }
+]

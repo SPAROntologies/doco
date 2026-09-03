@@ -1,0 +1,109 @@
+[
+  {
+    "@id": "http://purl.org/spar/doco/Part",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-part a doco:Part ; \n        pattern:contains :my-chapter-01 , :my-chapter-02 .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A container of a semantic subdivision of a document. For example, chapters of a novel may be grouped into distinct parts that may be named 'Part 1', 'Part 2', etc., 'Book 1', 'Book 2', etc., or 'Genesis', 'Exodus', etc."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "part"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b197"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b197",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/deo/DiscourseElement"
+          },
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Container"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b261",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/BackMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/BodyMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/CaptionedBox"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Chapter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ComplexRunInQuotation"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Footnote"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Formula"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FormulaBox"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FrontMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/List"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Part"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Section"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Table"
+          }
+        ]
+      }
+    ]
+  }
+]
