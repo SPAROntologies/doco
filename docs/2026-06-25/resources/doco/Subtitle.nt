@@ -1,0 +1,19 @@
+_:n3b1bab1f2e67482f9ea2fcacd8712072b279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b275 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<http://purl.org/spar/doco/Subtitle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b278 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b279 .
+<http://purl.org/spar/doco/Subtitle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/Subtitle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#Block> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Label> .
+<http://purl.org/spar/doco/Subtitle> <http://purl.org/vocab/vann/example> "\n    :my-subtitle a doco:Subtitle ;\n        c4o:hasContent 'The Modern Prometheus'@en .\n    " .
+<http://purl.org/spar/doco/Subtitle> <http://www.w3.org/2000/01/rdf-schema#label> "subtitle"@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b276 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b277 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b279 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Title> .
+<http://purl.org/spar/doco/Subtitle> <http://www.w3.org/2004/02/skos/core#note> "For example, Mary Shelley uses the alternative title 'The Modern Prometheus' to hint at the theme of her most famous novel 'Frankenstein'; Nick Efford uses the subtitle 'a practical introduction using Java' to qualify the title of his book 'Digital Image Processing'"@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b277 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Paragraph> .
+<http://purl.org/spar/doco/Subtitle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/DiscourseElement> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b278 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Subtitle> .
+<http://purl.org/spar/doco/Subtitle> <http://www.w3.org/2000/01/rdf-schema#comment> "An explanatory or alternative title of a publication."@en .
+<http://purl.org/spar/doco/Subtitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b275 <http://www.w3.org/2002/07/owl#members> _:n3b1bab1f2e67482f9ea2fcacd8712072b276 .

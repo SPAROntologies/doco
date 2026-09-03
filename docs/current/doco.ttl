@@ -1,28 +1,63 @@
-@prefix : <http://purl.org/spar/doco#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.org/spar/doco#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://purl.org/spar/doco> rdf:type owl:Ontology ;
-                             owl:versionIRI <http://purl.org/spar/doco/2026-06-25> ;
-                             owl:imports <http://purl.org/spar/deo> ,
-                                         <http://purl.org/spar/po> ;
-                             <http://purl.org/dc/elements/1.1/contributor> "Sebastian Barzaghi" ;
-                             <http://purl.org/dc/elements/1.1/creator> "David Shotton" ,
-                                                                       "Silvio Peroni" ;
-                             <http://purl.org/dc/elements/1.1/date> "2026-06-25" ;
-                             <http://purl.org/dc/elements/1.1/title> "DoCO, the Document Components Ontology"@en ;
-                             <http://purl.org/dc/terms/abstract> "The Document Components Ontology (DoCO) is an ontology that provides a structured vocabulary written of document components, both structural (e.g., block, inline, paragraph, section, chapter) and rhetorical (e.g., introduction, discussion, acknowledgements, reference list, figure, appendix)."@en ;
-                             <http://purl.org/dc/terms/bibliographicCitation> "Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://doi.org/10.3233/SW-150177" ;
-                             <http://purl.org/dc/terms/created> "2015-07-03" ;
-                             <http://purl.org/dc/terms/description> <http://purl.org/spar/doco/doco.png> ,
-                                                                    """
-## Description
+dc:contributor a owl:AnnotationProperty .
 
-The _Document Components Ontology_ (**DoCO**) is an OWL 2 DL ontology that provides a general-purpose structured vocabulary of document elements. 
+dc:creator a owl:AnnotationProperty .
+
+dc:date a owl:AnnotationProperty .
+
+dc:description a owl:AnnotationProperty .
+
+dc:rights a owl:AnnotationProperty .
+
+dc:title a owl:AnnotationProperty .
+
+dcterms:abstract a owl:AnnotationProperty .
+
+dcterms:bibliographicCitation a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:issued a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+bibo:doi a owl:AnnotationProperty .
+
+<http://purl.org/spar/doco> a owl:Ontology ;
+    rdfs:label "Document Components Ontology (DoCO)"@en ;
+    dc:contributor "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)" ;
+    dc:creator "David Shotton (https://orcid.org/0000-0001-5506-523X)",
+        "Silvio Peroni (https://orcid.org/0000-0003-0530-4305)" ;
+    dc:date "2026-06-25" ;
+    dc:title "The Document Components Ontology (DoCO)"@en ;
+    dcterms:bibliographicCitation "Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://doi.org/10.3233/SW-150177" ;
+    dcterms:created "2015-07-03" ;
+    dcterms:description """
+The **_Document Components Ontology (DoCO)_** is an OWL 2 DL ontology that provides a general-purpose structured vocabulary of document elements. 
 DoCO has been designed as a general unifying ontological framework for describing different aspects related to the content of scientific and other scholarly texts. 
 Its primary goal has been to improve the interoperability and shareability of academic documents (and related services) when multiple formats are actually used for their storage.
 
@@ -33,7 +68,7 @@ DoCO imports the [Pattern Ontology](http://www.essepuntato.it/2008/12/pattern) t
 Additionally, it also defines hybrid classes describing elements that are both structural and rhetorical in nature, such as _paragraph_ (`doco:Paragraph`), _section_ (`doco:Section`) or _list_ (`doco:List`). DoCO is also aligned with the [SALT Rhetorical Ontology](http://lov.okfn.org/dataset/lov/vocabs/sro) and the [Ontology of Rhetorical Blocks](http://www.w3.org/2001/sw/hcls/notes/orb/) (ORB).
 A concise summary of the main DoCO classes and its imported ontologies is shown in the following figure.
 
-![A diagram illustrating DoCO's architecture, with its mail classes distributed accoridng to the ontologies they have been imported from.](doco.png)
+![DoCO's architecture, with its mail classes distributed accoridng to the ontologies they have been imported from.](doco.png)
 
 ## Examples of use
 
@@ -237,307 +272,64 @@ What is the full bibliographic text of the reference cited by a specific inline 
                     c4o:hasContent ?fullBibliographicText .
     }
     """@en ;
-                             <http://purl.org/dc/terms/issued> "2015-07-03" ;
-                             <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/legalcode> ;
-                             <http://purl.org/dc/terms/modified> "2026-06-25" ;
-                             <http://purl.org/dc/terms/publisher> <https://ror.org/00wb4mk85> ;
-                             <http://purl.org/dc/terms/source> <http://doi.org/10.3233/SW-150177> ;
-                             <http://purl.org/ontology/bibo/doi> "10.3233/SW-150177" ;
-                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "doco" ;
-                             <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/spar/doco/"^^xsd:anyURI ;
-                             rdfs:comment """The Document Components Ontology (DoCO) is an ontology that provides a structured vocabulary written of document components, both structural (e.g., block, inline, paragraph, section, chapter) and rhetorical (e.g., introduction, discussion, acknowledgements, reference list, figure, appendix).
-
-**URL:** http://purl.org/spar/doco
-
-**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X), [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)
-
-**Contributors**: [Sebastian Barzaghi](https://orcid.org/0000-0002-0799-1527)
-
-**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)
-
-**Website:** http://www.sparontologies.net/ontologies/doco
-
-**Cite as:** Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://dx.doi.org/10.3233/SW-150177"""@en ,
-                                          "This ontology is available at http://purl.org/spar/doco, and uses the namespace prefix doco."@en ;
-                             rdfs:seeAlso <http://www.sparontologies.net/ontologies/doco> ;
-                             owl:backwardCompatibleWith <http://purl.org/spar/doco/2015-07-03> ;
-                             owl:priorVersion <http://purl.org/spar/doco/2015-07-03> ;
-                             owl:versionInfo "1.4.0" ;
-                             <http://xmlns.com/foaf/0.1/logo> <http://purl.org/spar/doco/spar.png> ;
-                             <https://schema.org/codeRepository> <https://github.com/SPAROntologies/doco> ;
-                             <https://schema.org/includedInDataCatalog> <https://fairsharing.org/> ;
-                             <https://w3id.org/mod#status> "Published version" ;
-                             <https://w3id.org/widoco/vocab#introduction> """
-The Document Components Ontology (DoCO) is an OWL 2 DL ontology that provides a general-purpose structured vocabulary of document elements. DoCO has been designed as a general unifying ontological framework for describing different aspects related to the content of scientific and other scholarly texts. Its primary goal has been to improve the interoperability and shareability of academic documents (and related services) when multiple formats are actually used for their storage.
-    """@en .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/elements/1.1/contributor
-<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/date
-<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/description
-<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/rights
-<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/title
-<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/abstract
-<http://purl.org/dc/terms/abstract> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/bibliographicCitation
-<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/created
-<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/description
-<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/issued
-<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/license
-<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/modified
-<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/publisher
-<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/source
-<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/ontology/bibo/doi
-<http://purl.org/ontology/bibo/doi> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/example
-<http://purl.org/vocab/vann/example> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespacePrefix
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
-<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#scopeNote
-<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
-
-
-###  http://xmlns.com/foaf/0.1/logo
-<http://xmlns.com/foaf/0.1/logo> rdf:type owl:AnnotationProperty .
-
-
-###  https://schema.org/codeRepository
-<https://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
-
-
-###  https://schema.org/includedInDataCatalog
-<https://schema.org/includedInDataCatalog> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/mod#status
-<https://w3id.org/mod#status> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/widoco/vocab#introduction
-<https://w3id.org/widoco/vocab#introduction> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://purl.org/orb/1.0/Header
-<http://purl.org/orb/1.0/Header> rdf:type owl:Class ;
-                                 owl:equivalentClass <http://purl.org/spar/doco/FrontMatter> .
-
-
-###  http://purl.org/spar/doco/Abstract
-<http://purl.org/spar/doco/Abstract> rdf:type owl:Class ;
-                                     owl:equivalentClass <http://salt.semanticauthoring.org/ontologies/sro#Abstract> ;
-                                     rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Class ;
-                                                                              owl:unionOf ( <http://purl.org/spar/doco/Chapter>
-                                                                                            <http://purl.org/spar/doco/Section>
-                                                                                          )
-                                                                            ]
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                              owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                                   owl:unionOf ( <http://purl.org/spar/doco/BodyMatter>
-                                                                                                                 <http://purl.org/spar/doco/FrontMatter>
-                                                                                                               )
-                                                                                                 ]
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ] ;
-                                     <http://purl.org/vocab/vann/example> """
-    :my-abstract a doco:Abstract ;
-        c4o:hasContent 'The history of abstracting dates back to the point when it was felt necessary to summarise the content of documents in order to make the information contained in them more accessible.'@en ;
-        dcterms:isPartOf :my-front-matter .
-    """ ;
-                                     rdfs:comment "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose." ;
-                                     rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                     rdfs:label "abstract" ;
-                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Afterword
-<http://purl.org/spar/doco/Afterword> rdf:type owl:Class ;
-                                      rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/Section>
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                               owl:someValuesFrom <http://purl.org/spar/doco/BackMatter>
-                                                                             ]
-                                                                           ) ;
-                                                        rdf:type owl:Class
-                                                      ] ;
-                                      <http://purl.org/vocab/vann/example> """
-    :my-afterword a doco:Afterword ; 
-        dcterms:isPartOf :my-back-matter .
-    """ ;
-                                      rdfs:comment "A literary device that is often found at the end of a piece of literature. It generally covers the story of how the book came into being, or how the idea for the book was developed. Alternatively, it may be written by someone other than the author of the book, and may discuss the work's historical or cultural context, if the work is being reissued many years after its original publication."@en ;
-                                      rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                      rdfs:label "afterword"@en ;
-                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Appendix
-<http://purl.org/spar/doco/Appendix> rdf:type owl:Class ;
-                                     rdfs:subClassOf [ owl:intersectionOf ( [ owl:intersectionOf ( <http://purl.org/spar/doco/Section>
-                                                                                                   <http://www.essepuntato.it/2008/12/pattern#HeadedContainer>
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                              owl:someValuesFrom <http://purl.org/spar/doco/BackMatter>
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ] ;
-                                     <http://purl.org/vocab/vann/example> """
-    :my-appendix a doco:Appendix ; 
-        dcterms:isPartOf :my-back-matter .
-    """ ;
-                                     rdfs:comment "A supplemental addition to the main work. It may contain data, more detailed information about methods and materials, or provide additional detail concerning the information found in the main work."@en ;
-                                     rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                     rdfs:label "appendix"@en ;
-                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/BackMatter
-<http://purl.org/spar/doco/BackMatter> rdf:type owl:Class ;
-                                       rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/deo/DiscourseElement>
-                                                                              <http://www.essepuntato.it/2008/12/pattern#Container>
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://www.essepuntato.it/2008/12/pattern#isContainedBy> ;
-                                                         owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                             owl:complementOf [ rdf:type owl:Class ;
-                                                                                                owl:unionOf ( <http://purl.org/spar/doco/BackMatter>
-                                                                                                              <http://purl.org/spar/doco/BodyMatter>
-                                                                                                              <http://purl.org/spar/doco/FrontMatter>
-                                                                                                            )
-                                                                                              ]
-                                                                           ]
-                                                       ] ;
-                                       <http://purl.org/vocab/vann/example> """
-    :my-back-matter a doco:BackMatter ; 
-        pattern:contains :my-bibliography .
-    """ ;
-                                       rdfs:comment "The final principle part of a document, in which is usually found the bibliography, index, appendixes, etc."@en ;
-                                       rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                       rdfs:label "back matter"@en ;
-                                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/BibliographicReferenceList
-<http://purl.org/spar/doco/BibliographicReferenceList> rdf:type owl:Class ;
-                                                       rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/ListOfReferences>
-                                                                                              [ rdf:type owl:Restriction ;
-                                                                                                owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                                                                owl:someValuesFrom <http://purl.org/spar/deo/BibliographicReference>
-                                                                                              ]
-                                                                                            ) ;
-                                                                         rdf:type owl:Class
-                                                                       ] ;
-                                                       <http://purl.org/vocab/vann/example> """
+    dcterms:issued "2015-07-03" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+    dcterms:modified "2026-06-25" ;
+    dcterms:publisher <https://ror.org/00wb4mk85> ;
+    dcterms:source <https://github.com/SPAROntologies/doco/tree/master/docs> ;
+    bibo:doi "https://doi.org/10.25504/FAIRsharing.162003" ;
+    bibo:status <http://purl.org/ontology/bibo/status/published> ;
+    vann:preferredNamespacePrefix "doco" ;
+    vann:preferredNamespaceUri "http://purl.org/spar/doco/"^^xsd:anyURI ;
+    rdfs:seeAlso <http://www.sparontologies.net/ontologies/doco> ;
+    owl:backwardCompatibleWith doco:2015-07-03 ;
+    owl:imports <http://purl.org/spar/deo>,
+        <http://purl.org/spar/po> ;
+    owl:priorVersion doco:2015-07-03 ;
+    owl:versionIRI doco:2026-06-25 ;
+    owl:versionInfo "1.4.0" ;
+    foaf:logo <https://github.com/SPAROntologies/doco/blob/master/spar.png> ;
+    schema:codeRepository <https://github.com/SPAROntologies/doco> ;
+    schema:image <https://github.com/SPAROntologies/doco/blob/master/docs/current/doco.png> ;
+    schema:includedInDataCatalog <https://fairsharing.org/> ;
+    schema:keywords "bibliometrics"@en,
+        "document components"@en,
+        "scholarly publishing"@en,
+        "scientometrics"@en,
+        "semantic publishing"@en .
+
+doco:BibliographicReferenceList a owl:Class ;
+    rdfs:label "bibliographic reference list"@en ;
+    vann:example """
     :my-bibliographic-reference-list a doco:BibliographicReferenceList ; 
         pattern:contains :my-bibliographic-reference-01, :my-bibliographic-reference-02 .
     """ ;
-                                                       rdfs:comment "A list, usually within a bibliography, of all the references within the citing document that refer to  journal articles, books, book chapters, Web sites or similar publications."@en ;
-                                                       rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                                       rdfs:label "bibliographic reference list"@en ;
-                                                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "A list, usually within a bibliography, of all the references within the citing document that refer to  journal articles, books, book chapters, Web sites or similar publications."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:ListOfReferences [ a owl:Restriction ;
+                        owl:onProperty po:contains ;
+                        owl:someValuesFrom deo:BibliographicReference ] ) ] ;
+    vs:term_status reg:statusStable .
 
-
-###  http://purl.org/spar/doco/Bibliography
-<http://purl.org/spar/doco/Bibliography> rdf:type owl:Class ;
-                                         rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Class ;
-                                                                                  owl:unionOf ( <http://purl.org/spar/doco/Chapter>
-                                                                                                <http://purl.org/spar/doco/Section>
-                                                                                              )
-                                                                                ]
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://purl.org/dc/terms/hasPart> ;
-                                                                                  owl:someValuesFrom <http://purl.org/spar/deo/BibliographicReference>
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ] ;
-                                         <http://purl.org/vocab/vann/example> """
+doco:Bibliography a owl:Class ;
+    rdfs:label "bibliography"@en ;
+    vann:example """
     :my-bibliography a doco:Bibliography ; 
         dcterms:hasPart :my-bibliographic-reference-01 .
     """ ;
-                                         rdfs:comment "A document section containing a list of bibliographic references."@en ;
-                                         rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                         rdfs:label "bibliography"@en ;
-                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "A document section containing a list of bibliographic references."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:unionOf ( doco:Chapter doco:Section ) ] [ a owl:Restriction ;
+                        owl:onProperty dcterms:hasPart ;
+                        owl:someValuesFrom deo:BibliographicReference ] ) ] ;
+    vs:term_status reg:statusStable .
 
-
-###  http://purl.org/spar/doco/BlockQuotation
-<http://purl.org/spar/doco/BlockQuotation> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://www.essepuntato.it/2008/12/pattern#Container> ;
-                                           <http://purl.org/vocab/vann/example> """
+doco:BlockQuotation a owl:Class ;
+    rdfs:label "block quotation"@en ;
+    vann:example """
     :my-block-quotation a doco:BlockQuotation ; 
         c4o:hasContent '''
             Now, in reality, the world have paid too great a compliment to critics, and 
@@ -548,1076 +340,954 @@ The Document Components Ontology (DoCO) is an OWL 2 DL ontology that provides a 
             originally received them.
         '''@en .
     """ ;
-                                           rdfs:comment "A block quotation (also known as a long quotation or extract) is a quotation in a written document which is set off from the main text as a container for distinct paragraphs, which is typically distinguished visually using indentation, a different font, or smaller size. Block quotations are used for longer passages than run-in quotations (which are set off with quotation marks)."@en ;
-                                           rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                           rdfs:label "block quotation"@en ;
-                                           <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "A block quotation (also known as a long quotation or extract) is a quotation in a written document which is set off from the main text as a container for distinct paragraphs, which is typically distinguished visually using indentation, a different font, or smaller size. Block quotations are used for longer passages than run-in quotations (which are set off with quotation marks)."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf po:Container ;
+    vs:term_status reg:statusStable .
 
-
-###  http://purl.org/spar/doco/BodyMatter
-<http://purl.org/spar/doco/BodyMatter> rdf:type owl:Class ;
-                                       rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/deo/DiscourseElement>
-                                                                              <http://www.essepuntato.it/2008/12/pattern#Container>
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ] ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://www.essepuntato.it/2008/12/pattern#isContainedBy> ;
-                                                         owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                             owl:complementOf [ rdf:type owl:Class ;
-                                                                                                owl:unionOf ( <http://purl.org/spar/doco/BackMatter>
-                                                                                                              <http://purl.org/spar/doco/BodyMatter>
-                                                                                                              <http://purl.org/spar/doco/FrontMatter>
-                                                                                                            )
-                                                                                              ]
-                                                                           ]
-                                                       ] ;
-                                       <http://purl.org/vocab/vann/example> """
-    :my-body-matter a doco:BodyMatter ; 
-        pattern:contains :my-chapter .
-    """ ;
-                                       rdfs:comment "The central principle part of a document, that contains the real content. It may be subdivided hierarchically by the use of chapters and sections."@en ;
-                                       rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                       rdfs:label "body matter"@en ;
-                                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/CaptionedBox
-<http://purl.org/spar/doco/CaptionedBox> rdf:type owl:Class ;
-                                         rdfs:subClassOf [ owl:intersectionOf ( [ owl:intersectionOf ( <http://purl.org/spar/deo/DiscourseElement>
-                                                                                                       <http://www.essepuntato.it/2008/12/pattern#Container>
-                                                                                                     ) ;
-                                                                                  rdf:type owl:Class
-                                                                                ]
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://purl.org/dc/terms/hasPart> ;
-                                                                                  owl:someValuesFrom <http://purl.org/spar/deo/Caption>
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ] ;
-                                         <http://purl.org/vocab/vann/example> """
-    :my-captioned-box a doco:CaptionedBox ; 
-        dcterms:hasPart :my-caption .
-    """ ;
-                                         rdfs:comment "A rectangle space within a page that contains an object and its related caption."@en ;
-                                         rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                         rdfs:label "captioned box"@en ;
-                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Chapter
-<http://purl.org/spar/doco/Chapter> rdf:type owl:Class ;
-                                    rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/deo/DiscourseElement>
-                                                                           <http://www.essepuntato.it/2008/12/pattern#HeadedContainer>
-                                                                         ) ;
-                                                      rdf:type owl:Class
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                      owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                           owl:unionOf ( <http://purl.org/spar/doco/Paragraph>
-                                                                                         <http://purl.org/spar/doco/Section>
-                                                                                       )
-                                                                         ]
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                      owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                           owl:complementOf <http://purl.org/spar/doco/Chapter>
-                                                                         ]
-                                                    ] ;
-                                    <http://purl.org/vocab/vann/example> """
-    :my-chapter a doco:Chapter ; 
-        pattern:contains :my-section .
-    """ ;
-                                    rdfs:comment "A principle division of the body matter of a large document, such as a book, a report or a legislative document."@en ;
-                                    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                    rdfs:label "chapter"@en ;
-                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/ChapterLabel
-<http://purl.org/spar/doco/ChapterLabel> rdf:type owl:Class ;
-                                         rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/Label>
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                                  owl:someValuesFrom <http://purl.org/spar/doco/Chapter>
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ] ;
-                                         owl:disjointWith <http://purl.org/spar/doco/SectionLabel> ;
-                                         <http://purl.org/vocab/vann/example> """
+doco:ChapterLabel a owl:Class ;
+    rdfs:label "chapter label"@en ;
+    vann:example """
     :my-chapter-label a doco:ChapterLabel ; 
         c4o:hasContent 'Chapter 1'@en ;
         dcterms:isPartOf :my-chapter .
     """ ;
-                                         rdfs:comment "A block containing a label for the chapter, that may include the chapter number."@en ;
-                                         rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                         rdfs:label "chapter label"@en ;
-                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "A block containing a label for the chapter, that may include the chapter number."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Label [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom doco:Chapter ] ) ] ;
+    owl:disjointWith doco:SectionLabel ;
+    vs:term_status reg:statusStable .
 
-
-###  http://purl.org/spar/doco/ChapterSubtitle
-<http://purl.org/spar/doco/ChapterSubtitle> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://purl.org/spar/doco/Subtitle> ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                              owl:someValuesFrom <http://purl.org/spar/doco/Chapter>
-                                                            ] ;
-                                            owl:disjointWith <http://purl.org/spar/doco/SectionSubtitle> ;
-                                            <http://purl.org/vocab/vann/example> """
+doco:ChapterSubtitle a owl:Class ;
+    rdfs:label "chapter subtitle"@en ;
+    vann:example """
     :my-chapter-subtitle a doco:ChapterSubtitle ;
         c4o:hasContent 'Or: The beginning of this book'@en ;
         dcterms:isPartOf :my-chapter .
     """ ;
-                                            rdfs:comment "The subtitle of a chapter."@en ;
-                                            rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                            rdfs:label "chapter subtitle"@en ;
-                                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "The subtitle of a chapter."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty dcterms:isPartOf ;
+            owl:someValuesFrom doco:Chapter ],
+        doco:Subtitle ;
+    owl:disjointWith doco:SectionSubtitle ;
+    vs:term_status reg:statusStable .
 
-
-###  http://purl.org/spar/doco/ChapterTitle
-<http://purl.org/spar/doco/ChapterTitle> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/spar/doco/Title> ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader> ;
-                                                           owl:someValuesFrom <http://purl.org/spar/doco/Chapter>
-                                                         ] ;
-                                         owl:disjointWith <http://purl.org/spar/doco/SectionTitle> ;
-                                         <http://purl.org/vocab/vann/example> """
+doco:ChapterTitle a owl:Class ;
+    rdfs:label "chapter title"@en ;
+    vann:example """
     :my-title a doco:ChapterTitle ;
         c4o:hasContent 'The First Chapter'@en ;
         pattern:isContainedByAsHeader :my-chapter .
     """ ;
-                                         rdfs:comment "The title of a chapter."@en ;
-                                         rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                         rdfs:label "chapter title"@en ;
-                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "The title of a chapter."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty po:isContainedByAsHeader ;
+            owl:someValuesFrom doco:Chapter ],
+        doco:Title ;
+    owl:disjointWith doco:SectionTitle ;
+    vs:term_status reg:statusStable .
 
-
-###  http://purl.org/spar/doco/Colophon
-<http://purl.org/spar/doco/Colophon> rdf:type owl:Class ;
-                                     rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/Section>
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                              owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                                   owl:unionOf ( <http://purl.org/spar/doco/BackMatter>
-                                                                                                                 <http://purl.org/spar/doco/FrontMatter>
-                                                                                                               )
-                                                                                                 ]
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ] ;
-                                     <http://purl.org/vocab/vann/example> """
-    :my-colophon a doco:Colophon ;
-        c4o:hasContent 'O most gracious reader, wash your hands and touch the book only like this: turn the pages softly and keep your fingers far away from the text'@en ;
-        dcterms:isPartOf :my-back-matter .
-    """ ;
-                                     rdfs:comment "A brief description of publication or production notes relevant to the document."@en ;
-                                     rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                     rdfs:label "colophon"@en ;
-                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/ComplexRunInQuotation
-<http://purl.org/spar/doco/ComplexRunInQuotation> rdf:type owl:Class ;
-                                                  rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                                  <http://www.essepuntato.it/2008/12/pattern#Popup> ;
-                                                  <http://purl.org/vocab/vann/example> """
-    :my-complex-run-in-quotation a doco:ComplexRunInQuotation ;
-        c4o:hasContent 'Carol said “Go ahead“ when I asked her if the launcher was ready.'@en .
-    """ ;
-                                                  rdfs:comment "A quotation with a complex structure, that is included inline and is usually enclosed within quotation marks."@en ;
-                                                  rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                                  rdfs:label "complex run-in quotation"@en ;
-                                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Figure
-<http://purl.org/spar/doco/Figure> rdf:type owl:Class ;
-                                   rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                   [ rdf:type owl:Class ;
-                                                     owl:unionOf ( <http://www.essepuntato.it/2008/12/pattern#Meta>
-                                                                   <http://www.essepuntato.it/2008/12/pattern#Milestone>
-                                                                 )
-                                                   ] ;
-                                   <http://purl.org/vocab/vann/example> """
-    :my-figure a doco:Figure .
-    """ ;
-                                   rdfs:comment "A communication object comprising one or more graphics, drawings, images, or other visual representations.."@en ;
-                                   rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                   rdfs:label "figure"@en ;
-                                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/FigureBox
-<http://purl.org/spar/doco/FigureBox> rdf:type owl:Class ;
-                                      rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/CaptionedBox>
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty <http://purl.org/dc/terms/hasPart> ;
-                                                                               owl:someValuesFrom <http://purl.org/spar/doco/Figure>
-                                                                             ]
-                                                                           ) ;
-                                                        rdf:type owl:Class
-                                                      ] ;
-                                      owl:disjointWith <http://purl.org/spar/doco/TableBox> ;
-                                      <http://purl.org/vocab/vann/example> """
-    :my-figure-box a doco:FigureBox ; 
-        dcterms:hasPart :my-figure, :my-caption .
-    """ ;
-                                      rdfs:comment "A space within a document that contains a figure and its caption."@en ;
-                                      rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                      rdfs:label "figure box"@en ;
-                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/FigureLabel
-<http://purl.org/spar/doco/FigureLabel> rdf:type owl:Class ;
-                                        rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/Label>
-                                                                               [ rdf:type owl:Restriction ;
-                                                                                 owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                                 owl:someValuesFrom <http://purl.org/spar/doco/FigureBox>
-                                                                               ]
-                                                                             ) ;
-                                                          rdf:type owl:Class
-                                                        ] ;
-                                        <http://purl.org/vocab/vann/example> """
+doco:FigureLabel a owl:Class ;
+    rdfs:label "figure label"@en ;
+    vann:example """
     :my-figure-label a doco:FigureLabel ;
         c4o:hasContent 'Figure 1'@en ;
         dcterms:isPartOf :my-figure-box .
     """ ;
-                                        rdfs:comment "A block containing a label for the figure box, that may include the figure number."@en ;
-                                        rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                        rdfs:label "figure label"@en ;
-                                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "A block containing a label for the figure box, that may include the figure number."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Label [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom doco:FigureBox ] ) ] ;
+    vs:term_status reg:statusStable .
 
-
-###  http://purl.org/spar/doco/Footnote
-<http://purl.org/spar/doco/Footnote> rdf:type owl:Class ;
-                                     rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                     [ rdf:type owl:Class ;
-                                                       owl:unionOf ( <http://www.essepuntato.it/2008/12/pattern#Container>
-                                                                     <http://www.essepuntato.it/2008/12/pattern#Popup>
-                                                                   )
-                                                     ] ;
-                                     <http://purl.org/vocab/vann/example> """
-    :my-footnote a doco:Footnote ;
-        c4o:hasContent '1. ^ Hayes, Andrea (2011). Language Toolkit for New Zealand 2. Cambridge University Press. p. 17. ISBN 9781107624702.'@en .
-    """ ;
-                                     rdfs:comment "A structure within a sentence that permits the author to make a comment or to cite another publication in support of the text, or both. A footnote is normally flagged by a superscript number immediately following that portion of the text to which it relates. For convenience of reading, the text of the footnote is usually printed at the bottom of the page or at the end of a text."@en ;
-                                     rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                     rdfs:label "footnote"@en ;
-                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Foreword
-<http://purl.org/spar/doco/Foreword> rdf:type owl:Class ;
-                                     rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/Section>
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                              owl:someValuesFrom <http://purl.org/spar/doco/FrontMatter>
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ] ;
-                                     <http://purl.org/vocab/vann/example> """
-    :my-foreword a doco:Foreword ; 
-        dcterms:isPartOf :my-front-matter .
-    """ ;
-                                     rdfs:comment "A section in a book or report, usually written by someone other than the author, that introduces or commends the document to the reader. It may include description of the interaction between the writer of the foreword and the author."@en ;
-                                     rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                     rdfs:label "foreword"@en ;
-                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Formula
-<http://purl.org/spar/doco/Formula> rdf:type owl:Class ;
-                                    rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                    <http://www.essepuntato.it/2008/12/pattern#Popup> ;
-                                    <http://purl.org/vocab/vann/example> """
-    :my-formula a doco:Formula ;
-        c4o:hasContent 'a^2 * b^2 = a^2b^2' .
-    """ ;
-                                    rdfs:comment "A unit of information expressed in mathematical, chemical or logical symbols and language."@en ;
-                                    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                    rdfs:label "formula"@en ;
-                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/FormulaBox
-<http://purl.org/spar/doco/FormulaBox> rdf:type owl:Class ;
-                                       rdfs:subClassOf [ owl:intersectionOf ( [ owl:intersectionOf ( <http://purl.org/spar/deo/DiscourseElement>
-                                                                                                     <http://www.essepuntato.it/2008/12/pattern#Container>
-                                                                                                   ) ;
-                                                                                rdf:type owl:Class
-                                                                              ]
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <http://purl.org/dc/terms/hasPart> ;
-                                                                                owl:someValuesFrom <http://purl.org/spar/doco/Formula>
-                                                                              ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ] ;
-                                       <http://purl.org/vocab/vann/example> """
-    :my-formula-box a doco:FormulaBox ; 
-        dcterms:hasPart :my-formula .
-    """ ;
-                                       rdfs:comment "A space within a document that contains one or more formulae."@en ;
-                                       rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                       rdfs:label "formula box"@en ;
-                                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/FrontMatter
-<http://purl.org/spar/doco/FrontMatter> rdf:type owl:Class ;
-                                        rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/deo/DiscourseElement>
-                                                                               <http://www.essepuntato.it/2008/12/pattern#Container>
-                                                                             ) ;
-                                                          rdf:type owl:Class
-                                                        ] ,
-                                                        [ rdf:type owl:Restriction ;
-                                                          owl:onProperty <http://www.essepuntato.it/2008/12/pattern#isContainedBy> ;
-                                                          owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                              owl:complementOf [ rdf:type owl:Class ;
-                                                                                                 owl:unionOf ( <http://purl.org/spar/doco/BackMatter>
-                                                                                                               <http://purl.org/spar/doco/BodyMatter>
-                                                                                                               <http://purl.org/spar/doco/FrontMatter>
-                                                                                                             )
-                                                                                               ]
-                                                                            ]
-                                                        ] ;
-                                        <http://purl.org/vocab/vann/example> """
-    :my-front-matter a doco:FrontMatter ; 
-        pattern:contains :my-table-of-contents .
-    """ ;
-                                        rdfs:comment "The initial principle part of a document, usually containing self-referential metadata. In a book, this typically includes its title, authors, publisher, publication date, ISBN and copyright declaration, together with the preface, foreword, table of content, etc. In a journal article, the front matter is normally restricted to the title, authors and the authors' affiliation details, although the latter may alternatively be included in a footnote or the back matter. In books, the front matter pages may be numbered in lowercase Roman numerals."@en ;
-                                        rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                        rdfs:label "front matter"@en ;
-                                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Glossary
-<http://purl.org/spar/doco/Glossary> rdf:type owl:Class ;
-                                     rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/Section>
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                              owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                                   owl:unionOf ( <http://purl.org/spar/doco/BackMatter>
-                                                                                                                 <http://purl.org/spar/doco/FrontMatter>
-                                                                                                               )
-                                                                                                 ]
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ] ;
-                                     <http://purl.org/vocab/vann/example> """
-    :my-glossary a doco:Glossary ; 
-        dcterms:isPartOf :my-back-matter .
-    """ ;
-                                     rdfs:comment "A set of definitions of words or phrases of importance to the work, normally alphabetized. In longer works of fiction, the entries may contains places and characters."@en ;
-                                     rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                     rdfs:label "glossary"@en ;
-                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Index
-<http://purl.org/spar/doco/Index> rdf:type owl:Class ;
-                                  rdfs:subClassOf [ owl:intersectionOf ( [ owl:intersectionOf ( <http://purl.org/spar/doco/Section>
-                                                                                                <http://www.essepuntato.it/2008/12/pattern#HeadedContainer>
-                                                                                              ) ;
-                                                                           rdf:type owl:Class
-                                                                         ]
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                           owl:someValuesFrom <http://purl.org/spar/doco/BackMatter>
-                                                                         ]
-                                                                       ) ;
-                                                    rdf:type owl:Class
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <http://purl.org/dc/terms/hasPart> ;
-                                                    owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/spar/doco/ListOfReferences>
-                                                                                              [ rdf:type owl:Restriction ;
-                                                                                                owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                                                                owl:allValuesFrom [ rdf:type owl:Restriction ;
-                                                                                                                    owl:onProperty <http://purl.org/dc/terms/relation> ;
-                                                                                                                    owl:someValuesFrom <http://purl.org/spar/doco/TextChunk>
-                                                                                                                  ]
-                                                                                              ]
-                                                                                            ) ;
-                                                                         rdf:type owl:Class
-                                                                       ]
-                                                  ] ;
-                                  <http://purl.org/vocab/vann/example> """
-    :my-index a doco:Index ; 
-        dcterms:isPartOf :my-back-matter ;
-        pattern:contains :my-list-of-references .
-    """ ;
-                                  rdfs:comment "A section containing a list of references to information on the named topic of importance to the content of the document. The references may be to page numbers, paragraph numbers, section numbers or chapter numbers within the document."@en ;
-                                  rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                  rdfs:label "index"@en ;
-                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Label
-<http://purl.org/spar/doco/Label> rdf:type owl:Class ;
-                                  rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <http://www.essepuntato.it/2008/12/pattern#isContainedBy> ;
-                                                    owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                         owl:unionOf ( <http://www.essepuntato.it/2008/12/pattern#Block>
-                                                                                       <http://www.essepuntato.it/2008/12/pattern#Container>
-                                                                                     )
-                                                                       ]
-                                                  ] ;
-                                  <http://purl.org/vocab/vann/example> """
-    :my-label a doco:Label ;
-        c4o:hasContent 'Chapter One'@en .
-    """ ;
-                                  rdfs:comment "A block containing text, that may include a number (e.g., \"Chapter Three\", \"3.2\", \"Figure 1\", \"Table\"), used to identify an item within the document, for example a chapter, a figure, a section or a table."@en ;
-                                  rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                  rdfs:label "label"@en ;
-                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Line
-<http://purl.org/spar/doco/Line> rdf:type owl:Class ;
-                                 rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                 <http://www.essepuntato.it/2008/12/pattern#Block> ;
-                                 <http://purl.org/vocab/vann/example> """
-    :my-line a doco:Line ;
-        c4o:hasContent 'Tyger Tyger, burning bright,'@en .
-    """ ;
-                                 rdfs:comment """A line in poetry is a unit of language into which a poem is divided which operates on principles which are distinct from and not necessarily coincident with grammatical structures, such as the sentence or clauses in sentences.
-
-A distinct numbered group of lines in verse is normally called a stanza."""@en ;
-                                 rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                 rdfs:label "line"@en ;
-                                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/List
-<http://purl.org/spar/doco/List> rdf:type owl:Class ;
-                                 rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                 [ owl:intersectionOf ( <http://www.essepuntato.it/2008/12/pattern#Table>
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                                          owl:someValuesFrom <http://www.essepuntato.it/2008/12/pattern#Pattern>
-                                                                        ]
-                                                                      ) ;
-                                                   rdf:type owl:Class
-                                                 ] ,
-                                                 [ rdf:type owl:Restriction ;
-                                                   owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                   owl:allValuesFrom [ rdf:type owl:Class ;
-                                                                       owl:unionOf ( <http://www.essepuntato.it/2008/12/pattern#Block>
-                                                                                     <http://www.essepuntato.it/2008/12/pattern#Field>
-                                                                                     [ owl:intersectionOf ( <http://www.essepuntato.it/2008/12/pattern#Container>
-                                                                                                            [ rdf:type owl:Class ;
-                                                                                                              owl:complementOf [ rdf:type owl:Class ;
-                                                                                                                                 owl:unionOf ( <http://www.essepuntato.it/2008/12/pattern#HeadedContainer>
-                                                                                                                                               <http://www.essepuntato.it/2008/12/pattern#Table>
-                                                                                                                                             )
-                                                                                                                               ]
-                                                                                                            ]
-                                                                                                          ) ;
-                                                                                       rdf:type owl:Class
-                                                                                     ]
-                                                                                   )
-                                                                     ]
-                                                 ] ;
-                                 <http://purl.org/vocab/vann/example> """
-    :my-list a doco:List ; 
-        pattern:contains :my-item .
-    """ ;
-                                 rdfs:comment "An enumeration of items."@en ;
-                                 rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                 rdfs:label "list"@en ;
-                                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/ListOfAgents
-<http://purl.org/spar/doco/ListOfAgents> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/spar/doco/List> ;
-                                         owl:disjointWith <http://purl.org/spar/doco/ListOfReferences> ;
-                                         <http://purl.org/vocab/vann/example> """
-    :my-list-of-agents a doco:ListOfAgents .
-    """ ;
-                                         rdfs:comment "A list of items each denoting an agent, such as an author, a contributor or an organization, related to a particular publication."@en ;
-                                         rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                         rdfs:label "list of agents"@en ;
-                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/ListOfAuthors
-<http://purl.org/spar/doco/ListOfAuthors> rdf:type owl:Class ;
-                                          rdfs:subClassOf <http://purl.org/spar/doco/ListOfAgents> ;
-                                          <http://purl.org/vocab/vann/example> """
-    :my-list-of-authors a doco:ListOfAuthors .
-    """ ;
-                                          rdfs:comment "A list of items each denoting an author of a particular publication."@en ;
-                                          rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                          rdfs:label "list of authors"@en ;
-                                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/ListOfContributors
-<http://purl.org/spar/doco/ListOfContributors> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.org/spar/doco/ListOfAgents> ;
-                                               <http://purl.org/vocab/vann/example> """
-    :my-list-of-contributors a doco:ListOfContributors .
-    """ ;
-                                               rdfs:comment "A list of items, each denoting a contributor to a publication such as an encyclopedia or a text book, where such contributions are insufficient to warrant classification as author."@en ;
-                                               rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                               rdfs:label "list of contributors"@en ;
-                                               <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/ListOfFigures
-<http://purl.org/spar/doco/ListOfFigures> rdf:type owl:Class ;
-                                          rdfs:subClassOf [ owl:intersectionOf ( [ owl:intersectionOf ( <http://purl.org/spar/doco/Section>
-                                                                                                        <http://www.essepuntato.it/2008/12/pattern#HeadedContainer>
-                                                                                                      ) ;
-                                                                                   rdf:type owl:Class
-                                                                                 ]
-                                                                                 [ rdf:type owl:Restriction ;
-                                                                                   owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                                   owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                                        owl:unionOf ( <http://purl.org/spar/doco/BackMatter>
-                                                                                                                      <http://purl.org/spar/doco/FrontMatter>
-                                                                                                                    )
-                                                                                                      ]
-                                                                                 ]
-                                                                               ) ;
-                                                            rdf:type owl:Class
-                                                          ] ,
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <http://purl.org/dc/terms/hasPart> ;
-                                                            owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/spar/doco/ListOfReferences>
-                                                                                                      [ rdf:type owl:Restriction ;
-                                                                                                        owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                                                                        owl:allValuesFrom [ rdf:type owl:Restriction ;
-                                                                                                                            owl:onProperty <http://purl.org/dc/terms/relation> ;
-                                                                                                                            owl:someValuesFrom <http://purl.org/spar/doco/FigureBox>
-                                                                                                                          ]
-                                                                                                      ]
-                                                                                                    ) ;
-                                                                                 rdf:type owl:Class
-                                                                               ]
-                                                          ] ;
-                                          <http://purl.org/vocab/vann/example> """
-    :my-list-of-figures a doco:ListOfFigures ; 
-        dcterms:isPartOf :my-front-matter ;
-        pattern:contains :my-list-of-references .
-    """ ;
-                                          rdfs:comment "A section of the document listing all the figures, identified by their titles and referenced to their locations in the document. May also be referred to as 'List of illustrations'."@en ;
-                                          rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                          rdfs:label "list of figures"@en ;
-                                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/ListOfOrganizations
-<http://purl.org/spar/doco/ListOfOrganizations> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://purl.org/spar/doco/ListOfAgents> ;
-                                                <http://purl.org/vocab/vann/example> """
-    :my-list-or-organizations a doco:ListOfOrganizations .
-    """ ;
-                                                rdfs:comment "A list of items, each denoting an organization or institution related to the publication, for example the authors' affiliations, or the suppliers of information, software, equipment or consumables used in the work described in the publication."@en ;
-                                                rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                                rdfs:label "list of organizations"@en ;
-                                                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/ListOfReferences
-<http://purl.org/spar/doco/ListOfReferences> rdf:type owl:Class ;
-                                             rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/List>
-                                                                                    [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                                                      owl:allValuesFrom <http://purl.org/spar/deo/Reference>
-                                                                                    ]
-                                                                                  ) ;
-                                                               rdf:type owl:Class
-                                                             ] ;
-                                             <http://purl.org/vocab/vann/example> """
-    :my-list-of-references a doco:ListOfReferences ;
-        pattern:contains :my-reference-01 , :my-reference-02 .
-    """ ;
-                                             rdfs:comment "A list of items each representing a reference to a specific part of the same document, or to another publication."@en ;
-                                             rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                             rdfs:label "list of references"@en ;
-                                             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/ListOfTables
-<http://purl.org/spar/doco/ListOfTables> rdf:type owl:Class ;
-                                         rdfs:subClassOf [ owl:intersectionOf ( [ owl:intersectionOf ( <http://purl.org/spar/doco/Section>
-                                                                                                       <http://www.essepuntato.it/2008/12/pattern#HeadedContainer>
-                                                                                                     ) ;
-                                                                                  rdf:type owl:Class
-                                                                                ]
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                                  owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                                       owl:unionOf ( <http://purl.org/spar/doco/BackMatter>
-                                                                                                                     <http://purl.org/spar/doco/FrontMatter>
-                                                                                                                   )
-                                                                                                     ]
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ] ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <http://purl.org/dc/terms/hasPart> ;
-                                                           owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/spar/doco/ListOfReferences>
-                                                                                                     [ rdf:type owl:Restriction ;
-                                                                                                       owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                                                                       owl:allValuesFrom [ rdf:type owl:Restriction ;
-                                                                                                                           owl:onProperty <http://purl.org/dc/terms/relation> ;
-                                                                                                                           owl:someValuesFrom <http://purl.org/spar/doco/TableBox>
-                                                                                                                         ]
-                                                                                                     ]
-                                                                                                   ) ;
-                                                                                rdf:type owl:Class
-                                                                              ]
-                                                         ] ;
-                                         <http://purl.org/vocab/vann/example> """
-    :my-list-of-tables a doco:ListOfTables ; 
-        dcterms:isPartOf :my-front-matter ;
-        pattern:contains :my-list-of-references .
-    """ ;
-                                         rdfs:comment "A section of the document listing all the tables, identified by their titles and referenced to their locations in the document."@en ;
-                                         rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                         rdfs:label "list of tables"@en ;
-                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Paragraph
-<http://purl.org/spar/doco/Paragraph> rdf:type owl:Class ;
-                                      rdfs:subClassOf [ owl:intersectionOf ( [ owl:intersectionOf ( <http://purl.org/spar/deo/DiscourseElement>
-                                                                                                    <http://www.essepuntato.it/2008/12/pattern#Block>
-                                                                                                  ) ;
-                                                                               rdf:type owl:Class
-                                                                             ]
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                                               owl:someValuesFrom <http://purl.org/spar/doco/Sentence>
-                                                                             ]
-                                                                           ) ;
-                                                        rdf:type owl:Class
-                                                      ] ;
-                                      <http://purl.org/vocab/vann/example> """
-    :my-paragraph a doco:Paragraph ;
-        pattern:contains :my-sentence .
-    """ ;
-                                      rdfs:comment "A self-contained unit of discourse that deals with a particular point or idea. Paragraphs contains one or more sentences. The start of a paragraph is indicated by beginning on a new line, which may be indented or separated by a small vertical space by the preceding paragraph. "@en ;
-                                      rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                      rdfs:label "paragraph"@en ;
-                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Part
-<http://purl.org/spar/doco/Part> rdf:type owl:Class ;
-                                 rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/deo/DiscourseElement>
-                                                                        <http://www.essepuntato.it/2008/12/pattern#Container>
-                                                                      ) ;
-                                                   rdf:type owl:Class
-                                                 ] ;
-                                 <http://purl.org/vocab/vann/example> """
-    :my-part a doco:Part ; 
-        pattern:contains :my-chapter-01 , :my-chapter-02 .
-    """ ;
-                                 rdfs:comment "A container of a semantic subdivision of a document. For example, chapters of a novel may be grouped into distinct parts that may be named 'Part 1', 'Part 2', etc., 'Book 1', 'Book 2', etc., or 'Genesis', 'Exodus', etc."@en ;
-                                 rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                 rdfs:label "part"@en ;
-                                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Preface
-<http://purl.org/spar/doco/Preface> rdf:type owl:Class ;
-                                    rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/Section>
-                                                                           [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                             owl:someValuesFrom <http://purl.org/spar/doco/FrontMatter>
-                                                                           ]
-                                                                         ) ;
-                                                      rdf:type owl:Class
-                                                    ] ;
-                                    <http://purl.org/vocab/vann/example> """
-    :my-preface a doco:Preface ; 
-        dcterms:isPartOf :my-front-matter .
-    """ ;
-                                    rdfs:comment "A section describing how the document came into being, or how the idea for it was developed. The preface may contains acknowledgements. The preface to a later edition of the work often explains in what respect that edition differs from previous ones."@en ;
-                                    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                    rdfs:label "preface"@en ;
-                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Section
-<http://purl.org/spar/doco/Section> rdf:type owl:Class ;
-                                    rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/deo/DiscourseElement>
-                                                                           <http://www.essepuntato.it/2008/12/pattern#HeadedContainer>
-                                                                         ) ;
-                                                      rdf:type owl:Class
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                      owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                           owl:unionOf ( <http://purl.org/spar/doco/Paragraph>
-                                                                                         <http://purl.org/spar/doco/Section>
-                                                                                       )
-                                                                         ]
-                                                    ] ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                      owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                           owl:complementOf <http://purl.org/spar/doco/Chapter>
-                                                                         ]
-                                                    ] ;
-                                    <http://purl.org/vocab/vann/example> """
-    :my-section a doco:Section ; 
-        pattern:contains :my-paragraph .
-    """ ;
-                                    rdfs:comment "A logical division of the text, usually numbered and/or titled, which may contain subsections."@en ;
-                                    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                    rdfs:label "section"@en ;
-                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/SectionLabel
-<http://purl.org/spar/doco/SectionLabel> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/spar/doco/Label> ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                           owl:someValuesFrom <http://purl.org/spar/doco/Section>
-                                                         ] ;
-                                         <http://purl.org/vocab/vann/example> """
-    :my-section-label a doco:SectionLabel ; 
-        c4o:hasContent 'Section 1'@en ;
-        dcterms:isPartOf :my-section .
-    """ ;
-                                         rdfs:comment "A block containing a label for the section, that may include the section number."@en ;
-                                         rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                         rdfs:label "section label"@en ;
-                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/SectionSubtitle
-<http://purl.org/spar/doco/SectionSubtitle> rdf:type owl:Class ;
-                                            rdfs:subClassOf <http://purl.org/spar/doco/Subtitle> ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                              owl:someValuesFrom <http://purl.org/spar/doco/Section>
-                                                            ] ;
-                                            <http://purl.org/vocab/vann/example> """
-    :my-section-subtitle a doco:SectionSubtitle ;
-        c4o:hasContent 'The first section of the book'@en ;
-        dcterms:isPartOf :my-section .
-    """ ;
-                                            rdfs:comment "The subtitle of a section."@en ;
-                                            rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                            rdfs:label "section subtitle"@en ;
-                                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/SectionTitle
-<http://purl.org/spar/doco/SectionTitle> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/spar/doco/Title> ,
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty <http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader> ;
-                                                           owl:someValuesFrom <http://purl.org/spar/doco/Section>
-                                                         ] ;
-                                         <http://purl.org/vocab/vann/example> """
-    :my-section-title a doco:SectionTitle ; 
-        c4o:hasContent 'Another Beginning'@en ;
-        pattern:isContainedByAsHeader :my-section .
-    """ ;
-                                         rdfs:comment "The title of a section."@en ;
-                                         rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                         rdfs:label "section title"@en ;
-                                         <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Sentence
-<http://purl.org/spar/doco/Sentence> rdf:type owl:Class ;
-                                     rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                     <http://www.essepuntato.it/2008/12/pattern#Inline> ;
-                                     <http://purl.org/vocab/vann/example> """
-    :my-sentence a doco:Sentence ;
-        c4o:hasContent 'The most straightforward and widely adopted approach reduces the concept of an identifier to a simple literal string or an URI, attaching it directly to the described resource.'@en .
-    """ ;
-                                     rdfs:comment "An expression in natural language forming a single grammatical unit. A sentence minimally consists of a subject and an intransitive verb, or a subject, a transitive verb and an object, and may include additional dependent clauses. In written text, a sentence is always terminated by a full stop. A sentence can include words grouped meaningfully to express a statement, a question, an exclamation, a request or a command."@en ;
-                                     rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                     rdfs:label "sentence"@en ;
-                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/SimpleRunInQuotation
-<http://purl.org/spar/doco/SimpleRunInQuotation> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <http://www.essepuntato.it/2008/12/pattern#Inline> ;
-                                                 <http://purl.org/vocab/vann/example> """
-    :my-simple-run-in-quotation a doco:SimpleRunInQuotation ;
-        c4o:hasContent 'The Minister said, “Prospects for growth are not good.”'@en .
-    """ ;
-                                                 rdfs:comment "A textual quotation that is included inline and is usually enclosed within quotation marks."@en ;
-                                                 rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                                 rdfs:label "simple run-in quotation"@en ;
-                                                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/Stanza
-<http://purl.org/spar/doco/Stanza> rdf:type owl:Class ;
-                                   rdfs:subClassOf [ owl:intersectionOf ( [ owl:intersectionOf ( <http://purl.org/spar/deo/DiscourseElement>
-                                                                                                 <http://www.essepuntato.it/2008/12/pattern#Container>
-                                                                                               ) ;
-                                                                            rdf:type owl:Class
-                                                                          ]
-                                                                          [ rdf:type owl:Restriction ;
-                                                                            owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                                            owl:allValuesFrom <http://purl.org/spar/doco/Line>
-                                                                          ]
-                                                                        ) ;
-                                                     rdf:type owl:Class
-                                                   ] ;
-                                   <http://purl.org/vocab/vann/example> """
+doco:Stanza a owl:Class ;
+    rdfs:label "stanza"@en ;
+    vann:example """
     :my-stanza a doco:Stanza ; 
         pattern:contains :my-line-01, :my-line-02 .
     """ ;
-                                   rdfs:comment "A unit within a larger poem. A stanza consists of a grouping of lines, set off by a vertical space from other stanzas, that usually has a set pattern of meter and rhyme."@en ;
-                                   rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                   rdfs:label "stanza"@en ;
-                                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "A unit within a larger poem. A stanza consists of a grouping of lines, set off by a vertical space from other stanzas, that usually has a set pattern of meter and rhyme."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:intersectionOf ( deo:DiscourseElement po:Container ) ] [ a owl:Restriction ;
+                        owl:allValuesFrom doco:Line ;
+                        owl:onProperty po:contains ] ) ] ;
+    vs:term_status reg:statusStable .
 
-
-###  http://purl.org/spar/doco/Subtitle
-<http://purl.org/spar/doco/Subtitle> rdf:type owl:Class ;
-                                     rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                     <http://www.essepuntato.it/2008/12/pattern#Block> ;
-                                     <http://purl.org/vocab/vann/example> """
-    :my-subtitle a doco:Subtitle ;
-        c4o:hasContent 'The Modern Prometheus'@en .
-    """ ;
-                                     rdfs:comment "An explanatory or alternative title of a publication."@en ;
-                                     rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                     rdfs:label "subtitle"@en ;
-                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en ;
-                                     <http://www.w3.org/2004/02/skos/core#scopeNote> "For example, Mary Shelley uses the alternative title 'The Modern Prometheus' to hint at the theme of her most famous novel 'Frankenstein'; Nick Efford uses the subtitle 'a practical introduction using Java' to qualify the title of his book 'Digital Image Processing'"@en .
-
-
-###  http://purl.org/spar/doco/Table
-<http://purl.org/spar/doco/Table> rdf:type owl:Class ;
-                                  rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                  <http://www.essepuntato.it/2008/12/pattern#Table> ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                    owl:someValuesFrom <http://www.essepuntato.it/2008/12/pattern#Container>
-                                                  ] ;
-                                  <http://purl.org/vocab/vann/example> """
-    :my-table a doco:Table ;
-        pattern:contains :my-container .
-    """ ;
-                                  rdfs:comment "A set of data arranged in cells within rows and columns."@en ;
-                                  rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                  rdfs:label "table"@en ;
-                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/TableBox
-<http://purl.org/spar/doco/TableBox> rdf:type owl:Class ;
-                                     rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/CaptionedBox>
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.org/dc/terms/hasPart> ;
-                                                                              owl:someValuesFrom <http://purl.org/spar/doco/Table>
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ] ;
-                                     <http://purl.org/vocab/vann/example> """
-    :my-table-box a doco:TableBox ; 
-        dcterms:hasPart :my-table .
-    """ ;
-                                     rdfs:comment "A space within a document that contains a table and its caption."@en ;
-                                     rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                     rdfs:label "table box"@en ;
-                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/TableLabel
-<http://purl.org/spar/doco/TableLabel> rdf:type owl:Class ;
-                                       rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/Label>
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                                owl:someValuesFrom <http://purl.org/spar/doco/TableBox>
-                                                                              ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ] ;
-                                       <http://purl.org/vocab/vann/example> """
+doco:TableLabel a owl:Class ;
+    rdfs:label "table label"@en ;
+    vann:example """
     :my-table-label a doco:TableLabel ;
         c4o:hasContent 'Table 1'@en ;
         dcterms:isPartOf :my-table-box .
     """ ;
-                                       rdfs:comment "A block containing a label for the table box, that may include the table number."@en ;
-                                       rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                       rdfs:label "table label"@en ;
-                                       <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "A block containing a label for the table box, that may include the table number."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Label [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom doco:TableBox ] ) ] ;
+    vs:term_status reg:statusStable .
 
-
-###  http://purl.org/spar/doco/TableOfContents
-<http://purl.org/spar/doco/TableOfContents> rdf:type owl:Class ;
-                                            rdfs:subClassOf [ owl:intersectionOf ( <http://purl.org/spar/doco/Section>
-                                                                                   [ rdf:type owl:Restriction ;
-                                                                                     owl:onProperty <http://purl.org/dc/terms/isPartOf> ;
-                                                                                     owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                                          owl:unionOf ( <http://purl.org/spar/doco/BackMatter>
-                                                                                                                        <http://purl.org/spar/doco/FrontMatter>
-                                                                                                                      )
-                                                                                                        ]
-                                                                                   ]
-                                                                                 ) ;
-                                                              rdf:type owl:Class
-                                                            ] ,
-                                                            [ rdf:type owl:Restriction ;
-                                                              owl:onProperty <http://purl.org/dc/terms/hasPart> ;
-                                                              owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/spar/doco/ListOfReferences>
-                                                                                                        [ rdf:type owl:Restriction ;
-                                                                                                          owl:onProperty <http://www.essepuntato.it/2008/12/pattern#contains> ;
-                                                                                                          owl:allValuesFrom [ rdf:type owl:Restriction ;
-                                                                                                                              owl:onProperty <http://purl.org/dc/terms/relation> ;
-                                                                                                                              owl:someValuesFrom <http://purl.org/spar/doco/Section>
-                                                                                                                            ]
-                                                                                                        ]
-                                                                                                      ) ;
-                                                                                   rdf:type owl:Class
-                                                                                 ]
-                                                            ] ;
-                                            <http://purl.org/vocab/vann/example> """
-    :my-table-of-contents a doco:TableOfContents ; 
-        dcterms:isPartOf :my-front-matter .
-    """ ;
-                                            rdfs:comment "A section of the document listing all the chapters and sections, identified by their titles and referenced to their locations in the document. The table of contents may include a list of the front-matter and back-matter items, in addition to the body-matter items.  Where the document is a journal or magazine issue, the table of content lists the constituent items contained in that issue, typically by title, authors and first page number."@en ;
-                                            rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                            rdfs:label "table of contents"@en ;
-                                            <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
-
-
-###  http://purl.org/spar/doco/TextBox
-<http://purl.org/spar/doco/TextBox> rdf:type owl:Class ;
-                                    rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                    <http://www.essepuntato.it/2008/12/pattern#Container> ;
-                                    <http://purl.org/vocab/vann/example> """
+doco:TextBox a owl:Class ;
+    rdfs:label "text box"@en ;
+    vann:example """
     :my-text-box a doco:TextBox ;
         c4o:hasContent 'Using a text box, you can create a block of text that appears above, below, or around pictures, charts, or other objects.'@en .
     """ ;
-                                    rdfs:comment "A space within a document that contains textual content relating to, quoting from or expanding upon the main text. Usually a textbox is delimited by a border or use of a background colour distinct from that of the main text."@en ;
-                                    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                    rdfs:label "text box"@en ;
-                                    <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "A space within a document that contains textual content relating to, quoting from or expanding upon the main text. Usually a textbox is delimited by a border or use of a background colour distinct from that of the main text."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf deo:DiscourseElement,
+        po:Container ;
+    vs:term_status reg:statusStable .
 
+vann:example a owl:AnnotationProperty .
 
-###  http://purl.org/spar/doco/TextChunk
-<http://purl.org/spar/doco/TextChunk> rdf:type owl:Class ;
-                                      rdfs:subClassOf <http://www.essepuntato.it/2008/12/pattern#Inline> ;
-                                      <http://purl.org/vocab/vann/example> """
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+vs:term_status a owl:AnnotationProperty .
+
+skos:note a owl:AnnotationProperty .
+
+foaf:logo a owl:AnnotationProperty .
+
+schema:codeRepository a owl:AnnotationProperty .
+
+schema:includedInDataCatalog a owl:AnnotationProperty .
+
+deo:Caption a owl:Class ;
+    rdfs:label "caption"@en ;
+    rdfs:comment "Text accompanying another item, such as a picture."@en ;
+    rdfs:isDefinedBy deo: .
+
+deo:Reference a owl:Class ;
+    rdfs:label "reference"@en ;
+    rdfs:comment "A reference to a specific part of the document, or to another publication."@en ;
+    rdfs:isDefinedBy deo: .
+
+doco:Abstract a owl:Class ;
+    rdfs:label "abstract" ;
+    vann:example """
+    :my-abstract a doco:Abstract ;
+        c4o:hasContent 'The history of abstracting dates back to the point when it was felt necessary to summarise the content of documents in order to make the information contained in them more accessible.'@en ;
+        dcterms:isPartOf :my-front-matter .
+    """ ;
+    rdfs:comment "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose." ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:unionOf ( doco:Chapter doco:Section ) ] [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:unionOf ( doco:BodyMatter doco:FrontMatter ) ] ] ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:Afterword a owl:Class ;
+    rdfs:label "afterword"@en ;
+    vann:example """
+    :my-afterword a doco:Afterword ; 
+        dcterms:isPartOf :my-back-matter .
+    """ ;
+    rdfs:comment "A literary device that is often found at the end of a piece of literature. It generally covers the story of how the book came into being, or how the idea for the book was developed. Alternatively, it may be written by someone other than the author of the book, and may discuss the work's historical or cultural context, if the work is being reissued many years after its original publication."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Section [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom doco:BackMatter ] ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:Appendix a owl:Class ;
+    rdfs:label "appendix"@en ;
+    vann:example """
+    :my-appendix a doco:Appendix ; 
+        dcterms:isPartOf :my-back-matter .
+    """ ;
+    rdfs:comment "A supplemental addition to the main work. It may contain data, more detailed information about methods and materials, or provide additional detail concerning the information found in the main work."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:intersectionOf ( doco:Section po:HeadedContainer ) ] [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom doco:BackMatter ] ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:Colophon a owl:Class ;
+    rdfs:label "colophon"@en ;
+    vann:example """
+    :my-colophon a doco:Colophon ;
+        c4o:hasContent 'O most gracious reader, wash your hands and touch the book only like this: turn the pages softly and keep your fingers far away from the text'@en ;
+        dcterms:isPartOf :my-back-matter .
+    """ ;
+    rdfs:comment "A brief description of publication or production notes relevant to the document."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Section [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:unionOf ( doco:BackMatter doco:FrontMatter ) ] ] ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:ComplexRunInQuotation a owl:Class ;
+    rdfs:label "complex run-in quotation"@en ;
+    vann:example """
+    :my-complex-run-in-quotation a doco:ComplexRunInQuotation ;
+        c4o:hasContent 'Carol said “Go ahead“ when I asked her if the launcher was ready.'@en .
+    """ ;
+    rdfs:comment "A quotation with a complex structure, that is included inline and is usually enclosed within quotation marks."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf deo:DiscourseElement,
+        po:Popup ;
+    vs:term_status reg:statusStable .
+
+doco:Figure a owl:Class ;
+    rdfs:label "figure"@en ;
+    vann:example """
+    :my-figure a doco:Figure .
+    """ ;
+    rdfs:comment "A communication object comprising one or more graphics, drawings, images, or other visual representations.."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf ( po:Meta po:Milestone ) ],
+        deo:DiscourseElement ;
+    vs:term_status reg:statusStable .
+
+doco:Footnote a owl:Class ;
+    rdfs:label "footnote"@en ;
+    vann:example """
+    :my-footnote a doco:Footnote ;
+        c4o:hasContent '1. ^ Hayes, Andrea (2011). Language Toolkit for New Zealand 2. Cambridge University Press. p. 17. ISBN 9781107624702.'@en .
+    """ ;
+    rdfs:comment "A structure within a sentence that permits the author to make a comment or to cite another publication in support of the text, or both. A footnote is normally flagged by a superscript number immediately following that portion of the text to which it relates. For convenience of reading, the text of the footnote is usually printed at the bottom of the page or at the end of a text."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf ( po:Container po:Popup ) ],
+        deo:DiscourseElement ;
+    vs:term_status reg:statusStable .
+
+doco:Foreword a owl:Class ;
+    rdfs:label "foreword"@en ;
+    vann:example """
+    :my-foreword a doco:Foreword ; 
+        dcterms:isPartOf :my-front-matter .
+    """ ;
+    rdfs:comment "A section in a book or report, usually written by someone other than the author, that introduces or commends the document to the reader. It may include description of the interaction between the writer of the foreword and the author."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Section [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom doco:FrontMatter ] ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:FormulaBox a owl:Class ;
+    rdfs:label "formula box"@en ;
+    vann:example """
+    :my-formula-box a doco:FormulaBox ; 
+        dcterms:hasPart :my-formula .
+    """ ;
+    rdfs:comment "A space within a document that contains one or more formulae."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:intersectionOf ( deo:DiscourseElement po:Container ) ] [ a owl:Restriction ;
+                        owl:onProperty dcterms:hasPart ;
+                        owl:someValuesFrom doco:Formula ] ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:Glossary a owl:Class ;
+    rdfs:label "glossary"@en ;
+    vann:example """
+    :my-glossary a doco:Glossary ; 
+        dcterms:isPartOf :my-back-matter .
+    """ ;
+    rdfs:comment "A set of definitions of words or phrases of importance to the work, normally alphabetized. In longer works of fiction, the entries may contains places and characters."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Section [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:unionOf ( doco:BackMatter doco:FrontMatter ) ] ] ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:Index a owl:Class ;
+    rdfs:label "index"@en ;
+    vann:example """
+    :my-index a doco:Index ; 
+        dcterms:isPartOf :my-back-matter ;
+        pattern:contains :my-list-of-references .
+    """ ;
+    rdfs:comment "A section containing a list of references to information on the named topic of importance to the content of the document. The references may be to page numbers, paragraph numbers, section numbers or chapter numbers within the document."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:intersectionOf ( doco:Section po:HeadedContainer ) ] [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom doco:BackMatter ] ) ],
+        [ a owl:Restriction ;
+            owl:onProperty dcterms:hasPart ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( doco:ListOfReferences [ a owl:Restriction ;
+                                owl:allValuesFrom [ a owl:Restriction ;
+                                        owl:onProperty dcterms:relation ;
+                                        owl:someValuesFrom doco:TextChunk ] ;
+                                owl:onProperty po:contains ] ) ] ] ;
+    vs:term_status reg:statusStable .
+
+doco:Line a owl:Class ;
+    rdfs:label "line"@en ;
+    vann:example """
+    :my-line a doco:Line ;
+        c4o:hasContent 'Tyger Tyger, burning bright,'@en .
+    """ ;
+    rdfs:comment """A line in poetry is a unit of language into which a poem is divided which operates on principles which are distinct from and not necessarily coincident with grammatical structures, such as the sentence or clauses in sentences.
+
+A distinct numbered group of lines in verse is normally called a stanza."""@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf deo:DiscourseElement,
+        po:Block ;
+    vs:term_status reg:statusStable .
+
+doco:ListOfAuthors a owl:Class ;
+    rdfs:label "list of authors"@en ;
+    vann:example """
+    :my-list-of-authors a doco:ListOfAuthors .
+    """ ;
+    rdfs:comment "A list of items each denoting an author of a particular publication."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf doco:ListOfAgents ;
+    vs:term_status reg:statusStable .
+
+doco:ListOfContributors a owl:Class ;
+    rdfs:label "list of contributors"@en ;
+    vann:example """
+    :my-list-of-contributors a doco:ListOfContributors .
+    """ ;
+    rdfs:comment "A list of items, each denoting a contributor to a publication such as an encyclopedia or a text book, where such contributions are insufficient to warrant classification as author."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf doco:ListOfAgents ;
+    vs:term_status reg:statusStable .
+
+doco:ListOfFigures a owl:Class ;
+    rdfs:label "list of figures"@en ;
+    vann:example """
+    :my-list-of-figures a doco:ListOfFigures ; 
+        dcterms:isPartOf :my-front-matter ;
+        pattern:contains :my-list-of-references .
+    """ ;
+    rdfs:comment "A section of the document listing all the figures, identified by their titles and referenced to their locations in the document. May also be referred to as 'List of illustrations'."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:intersectionOf ( doco:Section po:HeadedContainer ) ] [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:unionOf ( doco:BackMatter doco:FrontMatter ) ] ] ) ],
+        [ a owl:Restriction ;
+            owl:onProperty dcterms:hasPart ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( doco:ListOfReferences [ a owl:Restriction ;
+                                owl:allValuesFrom [ a owl:Restriction ;
+                                        owl:onProperty dcterms:relation ;
+                                        owl:someValuesFrom doco:FigureBox ] ;
+                                owl:onProperty po:contains ] ) ] ] ;
+    vs:term_status reg:statusStable .
+
+doco:ListOfOrganizations a owl:Class ;
+    rdfs:label "list of organizations"@en ;
+    vann:example """
+    :my-list-or-organizations a doco:ListOfOrganizations .
+    """ ;
+    rdfs:comment "A list of items, each denoting an organization or institution related to the publication, for example the authors' affiliations, or the suppliers of information, software, equipment or consumables used in the work described in the publication."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf doco:ListOfAgents ;
+    vs:term_status reg:statusStable .
+
+doco:ListOfTables a owl:Class ;
+    rdfs:label "list of tables"@en ;
+    vann:example """
+    :my-list-of-tables a doco:ListOfTables ; 
+        dcterms:isPartOf :my-front-matter ;
+        pattern:contains :my-list-of-references .
+    """ ;
+    rdfs:comment "A section of the document listing all the tables, identified by their titles and referenced to their locations in the document."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:intersectionOf ( doco:Section po:HeadedContainer ) ] [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:unionOf ( doco:BackMatter doco:FrontMatter ) ] ] ) ],
+        [ a owl:Restriction ;
+            owl:onProperty dcterms:hasPart ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( doco:ListOfReferences [ a owl:Restriction ;
+                                owl:allValuesFrom [ a owl:Restriction ;
+                                        owl:onProperty dcterms:relation ;
+                                        owl:someValuesFrom doco:TableBox ] ;
+                                owl:onProperty po:contains ] ) ] ] ;
+    vs:term_status reg:statusStable .
+
+doco:Part a owl:Class ;
+    rdfs:label "part"@en ;
+    vann:example """
+    :my-part a doco:Part ; 
+        pattern:contains :my-chapter-01 , :my-chapter-02 .
+    """ ;
+    rdfs:comment "A container of a semantic subdivision of a document. For example, chapters of a novel may be grouped into distinct parts that may be named 'Part 1', 'Part 2', etc., 'Book 1', 'Book 2', etc., or 'Genesis', 'Exodus', etc."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( deo:DiscourseElement po:Container ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:Preface a owl:Class ;
+    rdfs:label "preface"@en ;
+    vann:example """
+    :my-preface a doco:Preface ; 
+        dcterms:isPartOf :my-front-matter .
+    """ ;
+    rdfs:comment "A section describing how the document came into being, or how the idea for it was developed. The preface may contains acknowledgements. The preface to a later edition of the work often explains in what respect that edition differs from previous ones."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Section [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom doco:FrontMatter ] ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:SectionLabel a owl:Class ;
+    rdfs:label "section label"@en ;
+    vann:example """
+    :my-section-label a doco:SectionLabel ; 
+        c4o:hasContent 'Section 1'@en ;
+        dcterms:isPartOf :my-section .
+    """ ;
+    rdfs:comment "A block containing a label for the section, that may include the section number."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty dcterms:isPartOf ;
+            owl:someValuesFrom doco:Section ],
+        doco:Label ;
+    vs:term_status reg:statusStable .
+
+doco:SectionSubtitle a owl:Class ;
+    rdfs:label "section subtitle"@en ;
+    vann:example """
+    :my-section-subtitle a doco:SectionSubtitle ;
+        c4o:hasContent 'The first section of the book'@en ;
+        dcterms:isPartOf :my-section .
+    """ ;
+    rdfs:comment "The subtitle of a section."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty dcterms:isPartOf ;
+            owl:someValuesFrom doco:Section ],
+        doco:Subtitle ;
+    vs:term_status reg:statusStable .
+
+doco:SectionTitle a owl:Class ;
+    rdfs:label "section title"@en ;
+    vann:example """
+    :my-section-title a doco:SectionTitle ; 
+        c4o:hasContent 'Another Beginning'@en ;
+        pattern:isContainedByAsHeader :my-section .
+    """ ;
+    rdfs:comment "The title of a section."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty po:isContainedByAsHeader ;
+            owl:someValuesFrom doco:Section ],
+        doco:Title ;
+    vs:term_status reg:statusStable .
+
+doco:SimpleRunInQuotation a owl:Class ;
+    rdfs:label "simple run-in quotation"@en ;
+    vann:example """
+    :my-simple-run-in-quotation a doco:SimpleRunInQuotation ;
+        c4o:hasContent 'The Minister said, “Prospects for growth are not good.”'@en .
+    """ ;
+    rdfs:comment "A textual quotation that is included inline and is usually enclosed within quotation marks."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf po:Inline ;
+    vs:term_status reg:statusStable .
+
+doco:TableOfContents a owl:Class ;
+    rdfs:label "table of contents"@en ;
+    vann:example """
+    :my-table-of-contents a doco:TableOfContents ; 
+        dcterms:isPartOf :my-front-matter .
+    """ ;
+    rdfs:comment "A section of the document listing all the chapters and sections, identified by their titles and referenced to their locations in the document. The table of contents may include a list of the front-matter and back-matter items, in addition to the body-matter items.  Where the document is a journal or magazine issue, the table of content lists the constituent items contained in that issue, typically by title, authors and first page number."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Section [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:unionOf ( doco:BackMatter doco:FrontMatter ) ] ] ) ],
+        [ a owl:Restriction ;
+            owl:onProperty dcterms:hasPart ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( doco:ListOfReferences [ a owl:Restriction ;
+                                owl:allValuesFrom [ a owl:Restriction ;
+                                        owl:onProperty dcterms:relation ;
+                                        owl:someValuesFrom doco:Section ] ;
+                                owl:onProperty po:contains ] ) ] ] ;
+    vs:term_status reg:statusStable .
+
+po:Meta a owl:Class ;
+    rdfs:label "meta element"@en ;
+    rdfs:comment "A document content nestable element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+This class describes elements that contain neither other elements nor textual content. 
+Contrarily to the pattern Milestone, which was meant to describe markup elements that impact the document because of their location, the main feature of its disjoint sibling is the mere existence, independently from the position it has within the document. 
+
+Meta elements convey metadata information about the document or part of it, independently of where they are. 
+Thus, meta elements can be contained only within container elements.
+  """@en .
+
+po:Milestone a owl:Class ;
+    rdfs:label "milestone element"@en ;
+    rdfs:comment "A document content nestable element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+This class describe elements that contain neither other elements nor textual content. 
+Moreover, similarly to Inline, elements following the Milestone pattern can only be contained within block or inline elements (and consequently they also cannot be used as root elements of documents).
+
+The distinctive characteristic of the pattern Milestone is the location it assumes within the document.
+  """@en .
+
+po:Pattern a owl:Class ;
+    rdfs:label "pattern-based element"@en ;
+    rdfs:comment "A document content nestable element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+Any entity belonging to this class is compliant with exactly one structural pattern.
+"""@en .
+
+po:containsAsHeader a owl:ObjectProperty ;
+    rdfs:label "contains as header"@en ;
+    rdfs:comment "A structured element contains another generic element as part of its header."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    rdfs:subProperyOf po:contains .
+
+deo:BibliographicReference a owl:Class ;
+    rdfs:label "bibliographic reference"@en ;
+    rdfs:comment "A reference, usually contained in a footnote or a bibliographic reference list, that refer to another publication, such as a journal article, a book, a book chapter or a Web site. The inclusion of the bibliographic reference in a publication constitutes the performative act of bibliographic citation."@en ;
+    rdfs:isDefinedBy deo: .
+
+doco:FigureBox a owl:Class ;
+    rdfs:label "figure box"@en ;
+    vann:example """
+    :my-figure-box a doco:FigureBox ; 
+        dcterms:hasPart :my-figure, :my-caption .
+    """ ;
+    rdfs:comment "A space within a document that contains a figure and its caption."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:CaptionedBox [ a owl:Restriction ;
+                        owl:onProperty dcterms:hasPart ;
+                        owl:someValuesFrom doco:Figure ] ) ] ;
+    owl:disjointWith doco:TableBox ;
+    vs:term_status reg:statusStable .
+
+doco:Formula a owl:Class ;
+    rdfs:label "formula"@en ;
+    vann:example """
+    :my-formula a doco:Formula ;
+        c4o:hasContent 'a^2 * b^2 = a^2b^2' .
+    """ ;
+    rdfs:comment "A unit of information expressed in mathematical, chemical or logical symbols and language."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf deo:DiscourseElement,
+        po:Popup ;
+    vs:term_status reg:statusStable .
+
+doco:Sentence a owl:Class ;
+    rdfs:label "sentence"@en ;
+    vann:example """
+    :my-sentence a doco:Sentence ;
+        c4o:hasContent 'The most straightforward and widely adopted approach reduces the concept of an identifier to a simple literal string or an URI, attaching it directly to the described resource.'@en .
+    """ ;
+    rdfs:comment "An expression in natural language forming a single grammatical unit. A sentence minimally consists of a subject and an intransitive verb, or a subject, a transitive verb and an object, and may include additional dependent clauses. In written text, a sentence is always terminated by a full stop. A sentence can include words grouped meaningfully to express a statement, a question, an exclamation, a request or a command."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf deo:DiscourseElement,
+        po:Inline ;
+    vs:term_status reg:statusStable .
+
+doco:Table a owl:Class ;
+    rdfs:label "table"@en ;
+    vann:example """
+    :my-table a doco:Table ;
+        pattern:contains :my-container .
+    """ ;
+    rdfs:comment "A set of data arranged in cells within rows and columns."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty po:contains ;
+            owl:someValuesFrom po:Container ],
+        deo:DiscourseElement,
+        po:Table ;
+    vs:term_status reg:statusStable .
+
+doco:TextChunk a owl:Class ;
+    rdfs:label "text chunk"@en ;
+    vann:example """
     :my-text-chunk a doco:TextChunk ;
         c4o:hasContent 'The most straightforward and widely adopted approach reduces the concept of an identifier [...]'@en .
     """ ;
-                                      rdfs:comment "A piece of text defined by a start point and an end point."@en ;
-                                      rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                      rdfs:label "text chunk"@en ;
-                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "A piece of text defined by a start point and an end point."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf po:Inline ;
+    vs:term_status reg:statusStable .
 
+po:Field a owl:Class ;
+    rdfs:label "field element"@en ;
+    rdfs:comment "A document content nestable element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+This class is defined to describe literal metadata or text that is not really part of the document body, contrarily to its disjointed sibling Atom. 
+Its main difference with Meta is that Field can contain textual content.
+  """@en .
 
-###  http://purl.org/spar/doco/Title
-<http://purl.org/spar/doco/Title> rdf:type owl:Class ;
-                                  rdfs:subClassOf <http://purl.org/spar/deo/DiscourseElement> ,
-                                                  [ rdf:type owl:Class ;
-                                                    owl:unionOf ( <http://www.essepuntato.it/2008/12/pattern#Block>
-                                                                  <http://www.essepuntato.it/2008/12/pattern#Field>
-                                                                )
-                                                  ] ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty <http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader> ;
-                                                    owl:someValuesFrom <http://www.essepuntato.it/2008/12/pattern#HeadedContainer>
-                                                  ] ;
-                                  <http://purl.org/vocab/vann/example> """
+doco:CaptionedBox a owl:Class ;
+    rdfs:label "captioned box"@en ;
+    vann:example """
+    :my-captioned-box a doco:CaptionedBox ; 
+        dcterms:hasPart :my-caption .
+    """ ;
+    rdfs:comment "A rectangle space within a page that contains an object and its related caption."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:intersectionOf ( deo:DiscourseElement po:Container ) ] [ a owl:Restriction ;
+                        owl:onProperty dcterms:hasPart ;
+                        owl:someValuesFrom deo:Caption ] ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:List a owl:Class ;
+    rdfs:label "list"@en ;
+    vann:example """
+    :my-list a doco:List ; 
+        pattern:contains :my-item .
+    """ ;
+    rdfs:comment "An enumeration of items."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( po:Table [ a owl:Restriction ;
+                        owl:onProperty po:contains ;
+                        owl:someValuesFrom po:Pattern ] ) ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:unionOf ( po:Block po:Field [ a owl:Class ;
+                                owl:intersectionOf ( po:Container [ a owl:Class ;
+                                            owl:complementOf [ a owl:Class ;
+                                                    owl:unionOf ( po:HeadedContainer po:Table ) ] ] ) ] ) ] ;
+            owl:onProperty po:contains ],
+        deo:DiscourseElement ;
+    vs:term_status reg:statusStable .
+
+doco:ListOfAgents a owl:Class ;
+    rdfs:label "list of agents"@en ;
+    vann:example """
+    :my-list-of-agents a doco:ListOfAgents .
+    """ ;
+    rdfs:comment "A list of items each denoting an agent, such as an author, a contributor or an organization, related to a particular publication."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf doco:List ;
+    owl:disjointWith doco:ListOfReferences ;
+    vs:term_status reg:statusStable .
+
+doco:Paragraph a owl:Class ;
+    rdfs:label "paragraph"@en ;
+    vann:example """
+    :my-paragraph a doco:Paragraph ;
+        pattern:contains :my-sentence .
+    """ ;
+    rdfs:comment "A self-contained unit of discourse that deals with a particular point or idea. Paragraphs contains one or more sentences. The start of a paragraph is indicated by beginning on a new line, which may be indented or separated by a small vertical space by the preceding paragraph. "@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:intersectionOf ( deo:DiscourseElement po:Block ) ] [ a owl:Restriction ;
+                        owl:onProperty po:contains ;
+                        owl:someValuesFrom doco:Sentence ] ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:Subtitle a owl:Class ;
+    rdfs:label "subtitle"@en ;
+    vann:example """
+    :my-subtitle a doco:Subtitle ;
+        c4o:hasContent 'The Modern Prometheus'@en .
+    """ ;
+    rdfs:comment "An explanatory or alternative title of a publication."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf deo:DiscourseElement,
+        po:Block ;
+    vs:term_status reg:statusStable ;
+    skos:note "For example, Mary Shelley uses the alternative title 'The Modern Prometheus' to hint at the theme of her most famous novel 'Frankenstein'; Nick Efford uses the subtitle 'a practical introduction using Java' to qualify the title of his book 'Digital Image Processing'"@en .
+
+doco:TableBox a owl:Class ;
+    rdfs:label "table box"@en ;
+    vann:example """
+    :my-table-box a doco:TableBox ; 
+        dcterms:hasPart :my-table .
+    """ ;
+    rdfs:comment "A space within a document that contains a table and its caption."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:CaptionedBox [ a owl:Restriction ;
+                        owl:onProperty dcterms:hasPart ;
+                        owl:someValuesFrom doco:Table ] ) ] ;
+    vs:term_status reg:statusStable .
+
+doco:Title a owl:Class ;
+    rdfs:label "title"@en ;
+    vann:example """
     :my-title a doco:Title ;
         c4o:hasContent 'Frankenstein'@en ;
         pattern:isContainedByAsHeader :my-header-container .
     """ ;
-                                  rdfs:comment "A word, phrase or sentence that precedes and indicates the subject of a document or a document component - e.g., a book, a report, a news article, a chapter, a section or a table."@en ;
-                                  rdfs:isDefinedBy <http://purl.org/spar/doco> ;
-                                  rdfs:label "title"@en ;
-                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+    rdfs:comment "A word, phrase or sentence that precedes and indicates the subject of a document or a document component - e.g., a book, a report, a news article, a chapter, a section or a table."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf ( po:Block po:Field ) ],
+        [ a owl:Restriction ;
+            owl:onProperty po:isContainedByAsHeader ;
+            owl:someValuesFrom po:HeadedContainer ],
+        deo:DiscourseElement ;
+    vs:term_status reg:statusStable .
 
+po:Inline a owl:Class ;
+    rdfs:label "inline element"@en ;
+    rdfs:comment "A document content nestable element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+This class has the same use and content model of the pattern Block, but differing primarily because a) inline elements can contain other elements compliant with the same pattern while block elements cannot, and b) inline elements must always be contained by other block or inline elements and by no other type of element.
 
-###  http://salt.semanticauthoring.org/ontologies/sro#Abstract
-<http://salt.semanticauthoring.org/ontologies/sro#Abstract> rdf:type owl:Class .
+These constraints also imply that inline elements cannot be used as root elements of documents and that the class Block is disjoint with the class Inline (i.e., a markup element cannot be a block and an inline at the same time).
+  """@en .
 
+po:Popup a owl:Class ;
+    rdfs:label "popup element"@en ;
+    rdfs:comment "A bucket element that is only present within block and inline elements."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+Popup elements are used whenever complex structures need to be placed within content elements such as paragraphs.
+"""@en .
 
-#################################################################
-#    General axioms
-#################################################################
+po:Table a owl:Class ;
+    rdfs:label "table element"@en ;
+    rdfs:comment "A container element that must contain only homogeneous elements (but they can be repeated)."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> .
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://purl.org/spar/doco/Abstract>
-                <http://purl.org/spar/doco/Afterword>
-                <http://purl.org/spar/doco/Appendix>
-                <http://purl.org/spar/doco/Colophon>
-                <http://purl.org/spar/doco/Foreword>
-                <http://purl.org/spar/doco/Glossary>
-                <http://purl.org/spar/doco/Index>
-                <http://purl.org/spar/doco/ListOfFigures>
-                <http://purl.org/spar/doco/ListOfTables>
-                <http://purl.org/spar/doco/Preface>
-                <http://purl.org/spar/doco/TableOfContents>
-              )
-] .
+po:isContainedByAsHeader a owl:ObjectProperty ;
+    rdfs:label "is contained by as header"@en ;
+    rdfs:comment "An element is contained by another structured element as part of its header."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    rdfs:subProperyOf po:isContainedBy ;
+    owl:inverseOf po:containsAsHeader .
 
+doco:BodyMatter a owl:Class ;
+    rdfs:label "body matter"@en ;
+    vann:example """
+    :my-body-matter a doco:BodyMatter ; 
+        pattern:contains :my-chapter .
+    """ ;
+    rdfs:comment "The central principle part of a document, that contains the real content. It may be subdivided hierarchically by the use of chapters and sections."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( deo:DiscourseElement po:Container ) ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:complementOf [ a owl:Class ;
+                            owl:unionOf ( doco:BackMatter doco:BodyMatter doco:FrontMatter ) ] ] ;
+            owl:onProperty po:isContainedBy ] ;
+    vs:term_status reg:statusStable .
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://purl.org/spar/doco/BackMatter>
-                <http://purl.org/spar/doco/BodyMatter>
-                <http://purl.org/spar/doco/CaptionedBox>
-                <http://purl.org/spar/doco/Chapter>
-                <http://purl.org/spar/doco/ComplexRunInQuotation>
-                <http://purl.org/spar/doco/Footnote>
-                <http://purl.org/spar/doco/Formula>
-                <http://purl.org/spar/doco/FormulaBox>
-                <http://purl.org/spar/doco/FrontMatter>
-                <http://purl.org/spar/doco/List>
-                <http://purl.org/spar/doco/Part>
-                <http://purl.org/spar/doco/Section>
-                <http://purl.org/spar/doco/Table>
-              )
-] .
+doco:Label a owl:Class ;
+    rdfs:label "label"@en ;
+    vann:example """
+    :my-label a doco:Label ;
+        c4o:hasContent 'Chapter One'@en .
+    """ ;
+    rdfs:comment "A block containing text, that may include a number (e.g., \"Chapter Three\", \"3.2\", \"Figure 1\", \"Table\"), used to identify an item within the document, for example a chapter, a figure, a section or a table."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty po:isContainedBy ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( po:Block po:Container ) ] ],
+        deo:DiscourseElement ;
+    vs:term_status reg:statusStable .
 
+po:isContainedBy a owl:ObjectProperty ;
+    rdfs:label "is contained by"@en ;
+    rdfs:comment "A structured element is contained by another generic element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    owl:inverseOf po:contains .
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://purl.org/spar/doco/Label>
-                <http://purl.org/spar/doco/Paragraph>
-                <http://purl.org/spar/doco/Subtitle>
-                <http://purl.org/spar/doco/Title>
-              )
-] .
+dcterms:relation a owl:ObjectProperty ;
+    rdfs:label "relation"@en ;
+    rdfs:comment "A related resource."@en ;
+    rdfs:isDefinedBy dcterms: .
 
+doco:ListOfReferences a owl:Class ;
+    rdfs:label "list of references"@en ;
+    vann:example """
+    :my-list-of-references a doco:ListOfReferences ;
+        pattern:contains :my-reference-01 , :my-reference-02 .
+    """ ;
+    rdfs:comment "A list of items each representing a reference to a specific part of the same document, or to another publication."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:List [ a owl:Restriction ;
+                        owl:allValuesFrom deo:Reference ;
+                        owl:onProperty po:contains ] ) ] ;
+    vs:term_status reg:statusStable .
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://purl.org/spar/doco/ListOfAuthors>
-                <http://purl.org/spar/doco/ListOfContributors>
-                <http://purl.org/spar/doco/ListOfOrganizations>
-              )
-] .
+po:Block a owl:Class ;
+    rdfs:label "block element"@en ;
+    rdfs:comment "A document content nestable element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+This class organise the document content as a sequence of nestable elements and text nodes. In particular, elements following this pattern can contain text and other elements compliant with the patterns Inline, Atom, Milestones and Popup, which will be introduced in the following. 
+Furthermore, it is a requirement that block elements are contained only by container and popup elements
+  """@en .
 
+doco:Chapter a owl:Class ;
+    rdfs:label "chapter"@en ;
+    vann:example """
+    :my-chapter a doco:Chapter ; 
+        pattern:contains :my-section .
+    """ ;
+    rdfs:comment "A principle division of the body matter of a large document, such as a book, a report or a legislative document."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( deo:DiscourseElement po:HeadedContainer ) ],
+        [ a owl:Restriction ;
+            owl:onProperty po:contains ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( doco:Paragraph doco:Section ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty po:contains ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:complementOf doco:Chapter ] ] ;
+    vs:term_status reg:statusStable .
 
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( <http://purl.org/spar/doco/Sentence>
-                <http://purl.org/spar/doco/SimpleRunInQuotation>
-                <http://purl.org/spar/doco/TextChunk>
-              )
-] .
+po:HeadedContainer a owl:Class ;
+    rdfs:label "headed-container element"@en ;
+    rdfs:comment "A document content nestable element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+This class describes container elements whose content model need to begin with one or more block elements (the heading), specified through the property `po:containsAsHeader`.
+  """@en .
 
+dcterms:hasPart a owl:ObjectProperty ;
+    rdfs:label "has part"@en ;
+    rdfs:comment "A related resource that is included either physically or logically in the described resource."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    rdfs:subPropertyOf dcterms:relation .
 
-###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
+doco:BackMatter a owl:Class ;
+    rdfs:label "back matter"@en ;
+    vann:example """
+    :my-back-matter a doco:BackMatter ; 
+        pattern:contains :my-bibliography .
+    """ ;
+    rdfs:comment "The final principle part of a document, in which is usually found the bibliography, index, appendixes, etc."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( deo:DiscourseElement po:Container ) ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:complementOf [ a owl:Class ;
+                            owl:unionOf ( doco:BackMatter doco:BodyMatter doco:FrontMatter ) ] ] ;
+            owl:onProperty po:isContainedBy ] ;
+    vs:term_status reg:statusStable .
+
+doco:FrontMatter a owl:Class ;
+    rdfs:label "front matter"@en ;
+    vann:example """
+    :my-front-matter a doco:FrontMatter ; 
+        pattern:contains :my-table-of-contents .
+    """ ;
+    rdfs:comment "The initial principle part of a document, usually containing self-referential metadata. In a book, this typically includes its title, authors, publisher, publication date, ISBN and copyright declaration, together with the preface, foreword, table of content, etc. In a journal article, the front matter is normally restricted to the title, authors and the authors' affiliation details, although the latter may alternatively be included in a footnote or the back matter. In books, the front matter pages may be numbered in lowercase Roman numerals."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( deo:DiscourseElement po:Container ) ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:complementOf [ a owl:Class ;
+                            owl:unionOf ( doco:BackMatter doco:BodyMatter doco:FrontMatter ) ] ] ;
+            owl:onProperty po:isContainedBy ] ;
+    vs:term_status reg:statusStable .
+
+po:Container a owl:Class ;
+    rdfs:label "container element"@en ;
+    rdfs:comment "A document content nestable element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+This class concerns the structural organization of a document. 
+Elements following this pattern contain no textual content and contain only elements compliant with the patterns: Meta, Field, Block and any subtype of Container. 
+It is disjointed with the pattern Popup, although they share the same content model.
+  """@en .
+
+dcterms:isPartOf a owl:ObjectProperty ;
+    rdfs:label "is part of"@en ;
+    rdfs:comment "A related resource in which the described resource is physically or logically included."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    rdfs:subPropertyOf dcterms:relation ;
+    owl:inverseOf dcterms:hasPart .
+
+po:contains a owl:ObjectProperty ;
+    rdfs:label "contains"@en ;
+    rdfs:comment "A structured element contains another generic element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> .
+
+doco:Section a owl:Class ;
+    rdfs:label "section"@en ;
+    vann:example """
+    :my-section a doco:Section ; 
+        pattern:contains :my-paragraph .
+    """ ;
+    rdfs:comment "A logical division of the text, usually numbered and/or titled, which may contain subsections."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( deo:DiscourseElement po:HeadedContainer ) ],
+        [ a owl:Restriction ;
+            owl:onProperty po:contains ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:unionOf ( doco:Paragraph doco:Section ) ] ],
+        [ a owl:Restriction ;
+            owl:onProperty po:contains ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:complementOf doco:Chapter ] ] ;
+    vs:term_status reg:statusStable .
+
+deo:DiscourseElement a owl:Class ;
+    rdfs:label "discourse element"@en ;
+    rdfs:comment "An element of a document that carries out a rhetorical function."@en ;
+    rdfs:isDefinedBy deo: .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:Abstract doco:Afterword doco:Appendix doco:Colophon doco:Foreword doco:Glossary doco:Index doco:ListOfFigures doco:ListOfTables doco:Preface doco:TableOfContents ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:BackMatter doco:BodyMatter doco:CaptionedBox doco:Chapter doco:ComplexRunInQuotation doco:Footnote doco:Formula doco:FormulaBox doco:FrontMatter doco:List doco:Part doco:Section doco:Table ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:Label doco:Paragraph doco:Subtitle doco:Title ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:ListOfAuthors doco:ListOfContributors doco:ListOfOrganizations ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:Sentence doco:SimpleRunInQuotation doco:TextChunk ) .
+

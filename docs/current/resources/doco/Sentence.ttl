@@ -1,0 +1,25 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Sentence a owl:Class ;
+    rdfs:label "sentence"@en ;
+    vann:example """
+    :my-sentence a doco:Sentence ;
+        c4o:hasContent 'The most straightforward and widely adopted approach reduces the concept of an identifier to a simple literal string or an URI, attaching it directly to the described resource.'@en .
+    """ ;
+    rdfs:comment "An expression in natural language forming a single grammatical unit. A sentence minimally consists of a subject and an intransitive verb, or a subject, a transitive verb and an object, and may include additional dependent clauses. In written text, a sentence is always terminated by a full stop. A sentence can include words grouped meaningfully to express a statement, a question, an exclamation, a request or a command."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf deo:DiscourseElement,
+        po:Inline ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:Sentence doco:SimpleRunInQuotation doco:TextChunk ) .
+

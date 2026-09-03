@@ -1,0 +1,5 @@
+<http://www.essepuntato.it/2008/12/pattern#containsAsHeader> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured element contains another generic element as part of its header."@en .
+<http://www.essepuntato.it/2008/12/pattern#containsAsHeader> <http://www.w3.org/2000/01/rdf-schema#subProperyOf> <http://www.essepuntato.it/2008/12/pattern#contains> .
+<http://www.essepuntato.it/2008/12/pattern#containsAsHeader> <http://www.w3.org/2000/01/rdf-schema#label> "contains as header"@en .
+<http://www.essepuntato.it/2008/12/pattern#containsAsHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2008/12/pattern#containsAsHeader> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/po/> .

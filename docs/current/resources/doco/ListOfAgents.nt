@@ -1,0 +1,8 @@
+<http://purl.org/spar/doco/ListOfAgents> <http://purl.org/vocab/vann/example> "\n    :my-list-of-agents a doco:ListOfAgents .\n    " .
+<http://purl.org/spar/doco/ListOfAgents> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/doco/List> .
+<http://purl.org/spar/doco/ListOfAgents> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+<http://purl.org/spar/doco/ListOfAgents> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of items each denoting an agent, such as an author, a contributor or an organization, related to a particular publication."@en .
+<http://purl.org/spar/doco/ListOfAgents> <http://www.w3.org/2000/01/rdf-schema#label> "list of agents"@en .
+<http://purl.org/spar/doco/ListOfAgents> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/ListOfAgents> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/doco/ListOfReferences> .
+<http://purl.org/spar/doco/ListOfAgents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

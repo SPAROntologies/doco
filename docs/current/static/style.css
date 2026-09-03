@@ -1,0 +1,901 @@
+/* ==========================================================================
+   LODE - style.css
+   Aligned with W3C TR 2021 base.css
+   https://www.w3.org/StyleSheets/TR/2021/base.css
+
+/* ==========================================================================
+   0. DESIGN TOKENS
+   Colors definition.
+   ========================================================================== */
+
+:root {
+    /* --- Primary Blue --- */
+    --lode-blue:            #034575;   
+    --lode-blue-dark:       #023154;   
+    --lode-blue-tint:       #e7eef7;   
+    --lode-blue-pale:       #f5f9fc;   
+    --lode-blue-hairline:   #d9e1ec;   
+
+    /* Heading */
+    --lode-heading:         var(--lode-blue);
+
+    /* --- Link --- */
+    --lode-link:            #00C;
+    --lode-link-underline:  #00C;  
+
+    /* --- Other neutrals --- */
+    --lode-text:            #000;
+    --lode-bg:              #fff;
+    --lode-muted:           #6c757d;
+    --lode-border:          #ccc;
+    --lode-border-dashed:   #b0bfcf;
+    --lode-surface:         #f5f5f5;   
+    --lode-surface-alt:     #f9f9f9;   
+    --lode-surface-block:   #f2f3f4;   
+    --lode-hairline:        silver;    
+
+    /* --- Accent --- */
+    --lode-yellow:          #f5d815;   
+    --lode-alert:           #c00;      
+
+    /* --- Entity type colors (legacy LODE) --- */
+    --lode-type-concept:    orange;
+    --lode-type-relation:   var(--lode-blue);
+    --lode-type-annotation: maroon;
+    --lode-type-individual: brown;
+    --lode-type-attribute:  green;
+    --lode-type-language:   slateblue;
+    --lode-type-logic:      purple;
+
+    /* --- Sidebar metrics --- */
+    --toc-sidebar-w:            18rem;
+    --toc-sidebar-collapsed-w:  3.5rem;
+}
+
+
+/* ==========================================================================
+   1. BASE TYPOGRAPHY
+   ========================================================================== */
+
+body {
+    font-optical-sizing: auto;
+    font-weight: 400;              
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5;              
+    font-family: sans-serif;      
+    color: var(--lode-text);
+    background-color: var(--lode-bg);
+}
+
+/* --- Headings --- */
+h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+h1, h2, h3 { color: var(--lode-heading); }
+
+h1 { font-size: 170%; }
+h2 { font-size: 140%; }
+h3 { font-size: 120%; }
+h4 { font-weight: bold; }
+h5 { font-style: italic; }
+
+h1.display-5 {
+    font-size: 170%;
+    border-bottom: 2px solid var(--lode-heading);
+    padding-bottom: 10px;
+}
+
+/* --- Code: stack monospace --- */
+pre {
+    background-color: var(--lode-surface);
+    border: 1px dashed var(--lode-border-dashed);
+    padding: 0.75rem 1rem;
+    color: var(--lode-text);
+    font-family: Menlo, Consolas, "DejaVu Sans Mono", Monaco, monospace;
+    overflow-x: auto;
+    font-size: .9em;
+}
+
+code, samp {
+    font-family: Menlo, Consolas, "DejaVu Sans Mono", Monaco, monospace;
+    font-size: .9em;
+    color: var(--lode-text);
+}
+
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 100%;
+}
+
+p { padding-bottom: 0.5rem; }
+
+/* --- Definition lists --- */
+dt { font-weight: bold; }
+dd { margin: 0 0 .5em 2em; }
+
+/* --- Anchor offset per il salto ai frammenti --- */
+.anchor-offset { scroll-margin-top: 60px; }
+
+.section-header {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+
+/* ==========================================================================
+   2. BOOTSTRAP FLATTENING
+   as W3C TR does not include border radius nor shadows  
+   ========================================================================== */
+
+.card, .btn, .alert, .form-control, .badge, .rounded, .rounded-pill {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+
+/* ==========================================================================
+   3. ENTITY CARDS
+   ========================================================================== */
+
+.card {
+    border: 1px solid var(--lode-blue-dark) !important;
+    margin-bottom: 20px;
+    background-color: var(--lode-bg);
+}
+
+.card-header {
+    background-color: transparent !important;
+    border-bottom: 1px solid var(--lode-blue-dark) !important;
+    padding: 5px 8px !important;
+    margin: 0 2px !important;
+}
+
+.card-header h4 {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.card-body .row { margin: 0; }
+
+/* Risorse non ulteriormente classificate */
+.external-ref {
+    text-decoration: underline dotted;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    cursor: help;
+    color: inherit;
+}
+
+/* Entita definite nell'ontologia vs importate da vocabolari esterni */
+.entity-internal { color: var(--lode-blue); }
+.entity-external { color: var(--lode-muted); }
+.entity-external .bi { font-size: .75em; opacity: .7; }
+
+
+/* ==========================================================================
+   4. ENTITY TYPE COLOR CODING
+   ========================================================================== */
+
+.badge {
+    background-color: transparent !important;
+    font-weight: normal;
+    font-size: 0.9em;
+    border: none !important;
+    padding: 0;
+}
+
+.badge-type { font-size: 0.85em; }
+
+/* Concept */
+.c,
+.text-info-emphasis { color: var(--lode-type-concept) !important; font-size: 0.8em; }
+
+/* Relation */
+.op  { color: var(--lode-type-relation) !important;   font-size: 0.8em !important; }
+
+/* Annotation */
+.an  { color: var(--lode-type-annotation) !important; font-size: 0.8em !important; }
+
+/* Individual */
+.ni  { color: var(--lode-type-individual) !important; font-size: 0.8em !important; }
+
+/* Attribute */
+.dp  { color: var(--lode-type-attribute) !important;  font-size: 0.8em !important; }
+
+/* Language tag */
+.lan { color: var(--lode-type-language) !important;   font-size: 0.8em !important; }
+
+
+/* ==========================================================================
+   5. DEFINITION BLOCKS
+   ========================================================================== */
+
+dt, .text-uppercase.fw-bold {
+    color: var(--lode-text) !important;
+    font-weight: bold !important;
+    text-transform: none !important;
+    margin-top: 5px;
+}
+
+/* Blocchi relazioni: bordo tratteggiato LODE */
+.bg-light-subtle {
+    background-color: var(--lode-surface-block) !important;
+    border-top: 1px dashed var(--lode-hairline) !important;
+    border-bottom: 1px dashed var(--lode-hairline) !important;
+    border-radius: 0 !important;
+}
+
+/* IRI inline */
+code.bg-light {
+    background-color: transparent !important;
+    color: var(--lode-text);
+    font-family: Menlo, Consolas, "DejaVu Sans Mono", Monaco, monospace;
+    border: none !important;
+    padding: 0 !important;
+    font-weight: normal !important;
+}
+
+.list-unstyled li { margin-bottom: 4px; }
+
+/* Attributes section */
+.attribute {
+    border-left: 3px solid var(--lode-blue);
+}
+
+/* Statement in Manchester-like syntax */
+.statement {
+    background-color: var(--lode-bg);
+    font-size: 0.92em;
+}
+
+.logic,
+.statement .logic {
+    color: var(--lode-type-logic);
+    font-weight: bold;
+}
+
+
+/* ==========================================================================
+   6. BUTTONS
+   ========================================================================== */
+
+.btn-outline-secondary,
+.btn-outline-dark,
+.btn-outline-primary {
+    border: 1px solid var(--lode-border) !important;
+    color: var(--lode-blue) !important;
+    background: var(--lode-surface-alt);
+    padding: 2px 8px;
+    font-size: 0.85rem;
+    margin-left: 5px;
+}
+
+.btn:hover {
+    background: var(--lode-blue) !important;
+    color: var(--lode-bg) !important;
+}
+
+.mt-3 a.btn {
+    border: none !important;
+    text-decoration: underline;
+}
+
+.text-danger { color: var(--lode-alert); }
+
+.hide { display: none; }
+
+
+/* ==========================================================================
+   7. TOC INLINE
+   ========================================================================== */
+
+.toc-card {
+    border: 1px solid var(--lode-blue-dark) !important;
+    border-left: 5px solid var(--lode-blue) !important;
+    background-color: var(--lode-blue-pale) !important;
+}
+
+.toc-card .btn-outline-primary {
+    border: none !important;
+    background: transparent !important;
+    color: var(--lode-link) !important;
+    text-decoration: underline;
+    text-decoration-color: var(--lode-link-underline);
+    text-align: left;
+}
+
+/* Ritorno all'indice */
+.backlink {
+    font-size: 10pt !important;
+    text-align: right !important;
+    float: right !important;
+    color: var(--lode-text) !important;
+    padding: 2px !important;
+    border: 1px dotted var(--lode-blue-dark) !important;
+    background-color: var(--lode-blue-pale) !important;
+}
+
+.border-primary.border-top-4 { border-top: none !important; }
+
+
+/* ==========================================================================
+   8. TOC SIDEBAR
+   ========================================================================== */
+
+body.toc-sidebar-open   { margin-left: calc(var(--toc-sidebar-w) + 1rem); }
+body.toc-sidebar-closed { margin-left: 5rem; }
+
+.toc-sidebar {
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    width: var(--toc-sidebar-w);
+    border-right: 2px solid var(--lode-blue-dark);
+    z-index: 1030;
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s ease, width .2s ease;
+}
+
+.toc-sidebar.closed { width: var(--toc-sidebar-collapsed-w); }
+.toc-sidebar.closed .toc-sidebar-inner { display: none; }
+
+/* Logo nella sidebar chiusa */
+.toc-sidebar.closed::before {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left: 0; right: 0;
+    height: 10rem;
+    background-image: url('https://www.essepuntato.it/assets/img/lode/LODELogo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+
+.toc-sidebar-inner {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 1rem .75rem 2rem .75rem;
+}
+
+.toc-sidebar-header {
+    padding: .25rem .25rem .75rem .25rem;
+    border-bottom: 1px solid var(--lode-blue-hairline);
+    margin-bottom: .5rem;
+}
+
+.toc-sidebar-title {
+    color: var(--lode-blue) !important;
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+
+.toc-sidebar-toggle {
+    position: absolute;
+    top: .5rem;
+    right: -1.6rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 1px solid var(--lode-blue-dark);
+    background: var(--lode-bg);
+    color: var(--lode-blue);
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toc-sidebar-toggle:hover { background: var(--lode-blue); color: var(--lode-bg); }
+
+.toc-sidebar-nav { font-size: .9rem; }
+
+/* --- Collapse sections --- */
+.toc-sidebar-section { margin-bottom: .25rem; }
+.toc-sidebar-section[open] > .toc-sidebar-section-head { color: var(--lode-blue); }
+
+.toc-sidebar-section-head {
+    list-style: none;
+    cursor: pointer;
+    padding: .3rem .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    font-weight: 600;
+    color: var(--lode-text);
+}
+.toc-sidebar-section-head::-webkit-details-marker { display: none; }
+.toc-sidebar-section-head::before {
+    content: "\25B8";
+    color: var(--lode-muted);
+    font-size: .7rem;
+    margin-right: .15rem;
+    transition: transform .15s ease;
+    display: inline-block;
+}
+.toc-sidebar-section[open] > .toc-sidebar-section-head::before { transform: rotate(90deg); }
+
+.toc-sidebar-section-title { flex: 1 1 auto; min-width: 0; }
+.toc-sidebar-section-title a { color: inherit; text-decoration: none; }
+.toc-sidebar-section-title a:hover { text-decoration: underline; }
+
+.toc-sidebar-section-count {
+    background: var(--lode-blue-tint);
+    color: var(--lode-blue);
+    padding: 0 .45rem;
+    font-size: .72rem;
+    font-weight: 700;
+    min-width: 1.6rem;
+    text-align: center;
+}
+
+/* --- Lists --- */
+.toc-sidebar-list {
+    list-style: none;
+    padding: .15rem 0 .35rem .9rem;
+    margin: 0 0 0 .35rem;
+    border-left: 1px dashed var(--lode-blue-hairline);
+}
+.toc-sidebar-list li { margin: 0; }
+.toc-sidebar-list a {
+    display: block;
+    color: var(--lode-text);
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: .85rem;
+}
+.toc-sidebar-list a:hover  { background: var(--lode-blue-tint); color: var(--lode-blue); }
+.toc-sidebar-list a.active { background: var(--lode-blue); color: var(--lode-bg); }
+
+/* --- Albero gerarchico --- */
+.toc-tree-root,
+.toc-tree-children {
+    list-style: none;
+    margin: 0;
+    padding-left: .9rem;
+    border-left: 1px dashed var(--lode-blue-hairline);
+}
+.toc-tree-root {
+    margin-left: .35rem;
+    padding-top: .15rem;
+    padding-bottom: .35rem;
+}
+.toc-tree-children {
+    margin-left: .15rem;
+    padding-top: .1rem;
+}
+
+.toc-node { margin: 0; }
+
+.toc-tree-branch > .toc-tree-summary,
+.toc-tree-leaf {
+    display: block;
+    padding: .15rem .4rem;
+    color: var(--lode-text);
+    text-decoration: none;
+    font-size: .85rem;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.toc-tree-branch > .toc-tree-summary {
+    list-style: none;
+    position: relative;
+    padding-left: 1rem;
+}
+.toc-tree-branch > .toc-tree-summary::-webkit-details-marker { display: none; }
+.toc-tree-branch > .toc-tree-summary::before {
+    content: "\25B8";
+    position: absolute;
+    left: .15rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--lode-muted);
+    font-size: .65rem;
+    transition: transform .15s ease;
+}
+.toc-tree-branch[open] > .toc-tree-summary::before { transform: translateY(-50%) rotate(90deg); }
+
+.toc-tree-branch > .toc-tree-summary a { color: var(--lode-text); text-decoration: none; }
+.toc-tree-leaf { padding-left: 1rem; }
+
+.toc-tree-branch > .toc-tree-summary:hover,
+.toc-tree-leaf:hover {
+    background: var(--lode-blue-tint);
+    color: var(--lode-blue);
+}
+
+.toc-tree-branch > .toc-tree-summary a.active,
+.toc-tree-leaf.active {
+    background: var(--lode-blue);
+    color: var(--lode-bg);
+}
+
+/* --- Sidebar: nascosta sotto 992px --- */
+@media (max-width: 991.98px) {
+    #toc-sidebar,
+    #toc-sidebar .toc-sidebar-toggle { display: none !important; }
+    body.toc-sidebar-open,
+    body.toc-sidebar-closed {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+/* --- Mobile: slide-over --- */
+@media (max-width: 768px) {
+    body.toc-sidebar-open,
+    body.toc-sidebar-closed { margin-left: 1rem; }
+    .toc-sidebar { box-shadow: 4px 0 12px rgba(0,0,0,.12); }
+    .toc-sidebar.closed {
+        transform: translateX(calc(-1 * var(--toc-sidebar-w)));
+        width: var(--toc-sidebar-w);
+    }
+    .toc-sidebar.closed .toc-sidebar-inner { display: block; }
+    .toc-sidebar.closed .toc-sidebar-toggle { right: -2rem; }
+}
+
+
+/* ==========================================================================
+   9. FLOATING SEARCH
+   ========================================================================== */
+
+.toc-float-search {
+    position: fixed;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    z-index: 1050;
+    display: flex;
+    align-items: center;
+}
+
+.toc-float-search-toggle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--lode-blue-dark);
+    background: var(--lode-bg);
+    color: var(--lode-blue);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toc-float-search-panel {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: width 0.2s ease, opacity 0.2s ease;
+}
+
+.toc-float-search.open .toc-float-search-panel {
+    width: 320px;
+    opacity: 1;
+    margin-right: 0.5rem;
+}
+
+.toc-float-search-input {
+    border: 1px solid var(--lode-border);
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.toc-float-search-count {
+    font-size: 0.8rem;
+    color: var(--lode-muted);
+    min-width: 2.5rem;
+    text-align: center;
+}
+
+.toc-float-search-nav {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--lode-border);
+    background: var(--lode-bg);
+    color: var(--lode-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toc-search-dim { opacity: 0.35; }
+
+.toc-search-current {
+    outline: 3px solid var(--lode-blue);
+    outline-offset: 2px;
+}
+
+
+/* ==========================================================================
+   10. SINGLE RESOURCE FRONTMATTER
+   ========================================================================== */
+
+.resource-frontmatter {
+    border-bottom: 1px solid var(--lode-border);
+    padding-bottom: .75rem;
+    margin-bottom: .5rem;
+}
+
+.resource-title {
+    color: var(--lode-heading);
+    font-weight: 700;
+    font-size: 170%;
+    padding: 0;
+    margin: 0;
+}
+
+.resource-subtitle {
+    color: var(--lode-text);
+    font-style: italic;
+    font-size: 105%;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.resource-subtitle-ontology {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--lode-heading);
+}
+
+.resource-meta-line {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .85rem;
+    color: var(--lode-muted);
+}
+
+.resource-meta-uri { max-width: 60%; }
+
+.resource-meta-link {
+    color: var(--lode-link) !important;
+    text-decoration: none !important;
+}
+.resource-meta-link:hover {
+    text-decoration: underline !important;
+    text-decoration-thickness: 2px !important;
+}
+
+/* --- Accordion metadata --- */
+.metadata-accordion-summary {
+    cursor: pointer;
+    list-style: none;
+}
+.metadata-accordion-summary::-webkit-details-marker { display: none; }
+
+.metadata-accordion-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    margin-left: auto;          /* allinea a destra, come i controlli W3C */
+    border: 1px solid var(--lode-border);
+    background: var(--lode-surface-alt);
+    color: var(--lode-blue);
+    font-size: .85rem;
+    cursor: pointer;
+}
+.metadata-accordion-toggle:hover {
+    background: var(--lode-blue);
+    color: var(--lode-bg);
+}
+.metadata-accordion-toggle i { transition: transform .2s ease; }
+.metadata-accordion[open] .metadata-accordion-toggle i { transform: rotate(180deg); }
+
+
+/* ==========================================================================
+   11. RDF PROVENANCE ACCORDION
+   ========================================================================== */
+
+.prov-accordion .accordion-button {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--lode-blue);
+}
+.prov-accordion .accordion-button:hover {
+    background: var(--lode-link-hover-bg);
+}
+.prov-accordion .accordion-button:not(.collapsed) {
+    background: var(--lode-blue-tint);
+    color: var(--lode-blue);
+    box-shadow: none;
+}
+.prov-accordion .accordion-button:focus { box-shadow: none; }
+
+/* Via la freccia di default di Bootstrap */
+.prov-accordion .accordion-button::after { display: none; }
+
+.prov-accordion .accordion-button i { transition: transform 0.2s ease; }
+.prov-accordion .accordion-button:not(.collapsed) i { transform: rotate(90deg); }
+
+
+/* ==========================================================================
+   12. MARKDOWN RENDERING
+   ========================================================================== */
+
+.inline-markdown > *:last-child {
+    display: block !important;
+    margin-bottom: 0 !important;
+}
+
+.inline-markdown > *:last-child:not(pre) {
+    display: inline !important;
+    margin-bottom: 0 !important;
+}
+
+.markdown-with-badge { display: inline !important; }
+.markdown-with-badge:has(pre) { display: block !important; }
+
+/* I blocchi pre devono restare block anche dentro le card */
+.markdown-with-badge pre,
+.inline-markdown pre {
+    display: block !important;
+    width: 100%;
+    white-space: pre;
+}
+
+.markdown-with-badge p { margin-bottom: 0; }
+.markdown-with-badge p:last-child {
+    display: inline !important;
+    margin-bottom: 0 !important;
+}
+
+/* Rientro liste: i bullet non devono toccare il bordo sinistro */
+.render-markdown ul,
+.render-markdown ol {
+    padding-left: 1.5rem !important;
+    margin-bottom: 0.5rem;
+}
+
+/* Se l'ultimo elemento e' una lista, la lista va in linea */
+.markdown-with-badge ul:last-child,
+.markdown-with-badge ol:last-child {
+    display: inline !important;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+.markdown-with-badge ul:last-child > li:last-child,
+.markdown-with-badge ol:last-child > li:last-child {
+    display: inline !important;
+}
+
+.markdown-with-badge ul:last-child > li,
+.markdown-with-badge ol:last-child > li {
+    list-style-type: none !important;
+}
+
+/* Ridisegno del bullet per l'elemento reso inline */
+.markdown-with-badge ul:last-child > li::before {
+    content: "\2022";
+    padding-right: 10px;
+    margin-left: 0.65rem;
+    font-size: 1.2em;
+    line-height: 0;
+    vertical-align: middle;
+}
+
+
+/* ==========================================================================
+   13. INDEX PAGE
+   Submission form, toggle url/file, button pill.
+   ========================================================================== */
+
+.submission-form-container {
+    border-bottom: 2px solid var(--lode-blue-dark);
+    padding: 2rem 4rem 2rem 6rem;
+}
+
+.button {
+    display: inline-block;
+    padding: .65rem 1.6rem;
+    border: 2px solid var(--lode-blue);
+    border-radius: 50px;
+    background: var(--lode-bg);
+    color: var(--lode-blue);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .15s ease, color .15s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+    background: var(--lode-blue);
+    color: var(--lode-bg);
+}
+
+.button:active {
+    background: var(--lode-yellow);
+    border-color: var(--lode-blue);
+    color: var(--lode-text);
+}
+
+.button:focus-visible {
+    outline: 2px solid var(--lode-blue);
+    outline-offset: 2px;
+}
+
+.button:disabled {
+    border-color: var(--lode-border);
+    background: var(--lode-bg);
+    color: var(--lode-muted);
+    cursor: not-allowed;
+}
+
+.info-icon {
+    cursor: pointer;
+    color: var(--lode-alert);
+    font-size: 1.1rem;
+}
+.info-icon:hover { color: var(--lode-blue-dark); }
+
+/* --- Toggle url / file --- */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    background: var(--lode-bg);
+    border: 2px solid var(--lode-blue);
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    padding: 0;
+}
+
+.toggle-option {
+    display: inline-block;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.toggle-option.inactive { color: var(--lode-blue); opacity: 0.5; }
+.toggle-option.active   { color: var(--lode-text); }
+
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: var(--lode-yellow);
+    border-radius: 50px;
+    transition: left 0.3s ease;
+    z-index: 1;
+}
+
+.toggle-slider.url-mode  { left: 0;   width: 50%; }
+.toggle-slider.file-mode { left: 50%; width: 50%; }

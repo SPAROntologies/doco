@@ -1,0 +1,16 @@
+_:n3b1bab1f2e67482f9ea2fcacd8712072b286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/SimpleRunInQuotation> .
+<http://purl.org/spar/doco/Sentence> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b286 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b284 <http://www.w3.org/2002/07/owl#members> _:n3b1bab1f2e67482f9ea2fcacd8712072b285 .
+<http://purl.org/spar/doco/Sentence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Sentence> <http://www.w3.org/2000/01/rdf-schema#label> "sentence"@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b287 .
+<http://purl.org/spar/doco/Sentence> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/TextChunk> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Sentence> .
+<http://purl.org/spar/doco/Sentence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/DiscourseElement> .
+<http://purl.org/spar/doco/Sentence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#Inline> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/doco/Sentence> <http://purl.org/vocab/vann/example> "\n    :my-sentence a doco:Sentence ;\n        c4o:hasContent 'The most straightforward and widely adopted approach reduces the concept of an identifier to a simple literal string or an URI, attaching it directly to the described resource.'@en .\n    " .
+<http://purl.org/spar/doco/Sentence> <http://www.w3.org/2000/01/rdf-schema#comment> "An expression in natural language forming a single grammatical unit. A sentence minimally consists of a subject and an intransitive verb, or a subject, a transitive verb and an object, and may include additional dependent clauses. In written text, a sentence is always terminated by a full stop. A sentence can include words grouped meaningfully to express a statement, a question, an exclamation, a request or a command."@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .

@@ -1,0 +1,14 @@
+_:n3b1bab1f2e67482f9ea2fcacd8712072b82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/doco/Figure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/DiscourseElement> .
+<http://purl.org/spar/doco/Figure> <http://www.w3.org/2000/01/rdf-schema#comment> "A communication object comprising one or more graphics, drawings, images, or other visual representations.."@en .
+<http://purl.org/spar/doco/Figure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b80 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2008/12/pattern#Milestone> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b80 <http://www.w3.org/2002/07/owl#unionOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b81 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b82 .
+<http://purl.org/spar/doco/Figure> <http://www.w3.org/2000/01/rdf-schema#label> "figure"@en .
+<http://purl.org/spar/doco/Figure> <http://purl.org/vocab/vann/example> "\n    :my-figure a doco:Figure .\n    " .
+<http://purl.org/spar/doco/Figure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Figure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+<http://purl.org/spar/doco/Figure> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2008/12/pattern#Meta> .

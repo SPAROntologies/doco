@@ -1,0 +1,11 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dcterms:isPartOf a owl:ObjectProperty ;
+    rdfs:label "is part of"@en ;
+    rdfs:comment "A related resource in which the described resource is physically or logically included."@en ;
+    rdfs:isDefinedBy dcterms: ;
+    rdfs:subPropertyOf dcterms:relation ;
+    owl:inverseOf dcterms:hasPart .
+

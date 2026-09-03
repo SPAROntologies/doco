@@ -1,0 +1,5 @@
+<http://www.essepuntato.it/2008/12/pattern#HeadedContainer> <http://www.w3.org/2004/02/skos/core#note> "\nThis class describes container elements whose content model need to begin with one or more block elements (the heading), specified through the property `po:containsAsHeader`.\n  "@en .
+<http://www.essepuntato.it/2008/12/pattern#HeadedContainer> <http://www.w3.org/2000/01/rdf-schema#comment> "A document content nestable element."@en .
+<http://www.essepuntato.it/2008/12/pattern#HeadedContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#HeadedContainer> <http://www.w3.org/2000/01/rdf-schema#label> "headed-container element"@en .
+<http://www.essepuntato.it/2008/12/pattern#HeadedContainer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/po/> .

@@ -1,0 +1,30 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:BackMatter a owl:Class ;
+    rdfs:label "back matter"@en ;
+    vann:example """
+    :my-back-matter a doco:BackMatter ; 
+        pattern:contains :my-bibliography .
+    """ ;
+    rdfs:comment "The final principle part of a document, in which is usually found the bibliography, index, appendixes, etc."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( deo:DiscourseElement po:Container ) ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom [ a owl:Class ;
+                    owl:complementOf [ a owl:Class ;
+                            owl:unionOf ( doco:BackMatter doco:BodyMatter doco:FrontMatter ) ] ] ;
+            owl:onProperty po:isContainedBy ] ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:BackMatter doco:BodyMatter doco:CaptionedBox doco:Chapter doco:ComplexRunInQuotation doco:Footnote doco:Formula doco:FormulaBox doco:FrontMatter doco:List doco:Part doco:Section doco:Table ) .
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2008/12/pattern#Popup">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A bucket element that is only present within block and inline elements.</rdfs:comment>
+    <skos:note xml:lang="en">
+Popup elements are used whenever complex structures need to be placed within content elements such as paragraphs.
+</skos:note>
+    <rdfs:label xml:lang="en">popup element</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
+  </rdf:Description>
+</rdf:RDF>

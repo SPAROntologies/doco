@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader">
+    <rdfs:subProperyOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#isContainedBy"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
+    <owl:inverseOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#containsAsHeader"/>
+    <rdfs:label xml:lang="en">is contained by as header</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">An element is contained by another structured element as part of its header.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,25 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Stanza a owl:Class ;
+    rdfs:label "stanza"@en ;
+    vann:example """
+    :my-stanza a doco:Stanza ; 
+        pattern:contains :my-line-01, :my-line-02 .
+    """ ;
+    rdfs:comment "A unit within a larger poem. A stanza consists of a grouping of lines, set off by a vertical space from other stanzas, that usually has a set pattern of meter and rhyme."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:intersectionOf ( deo:DiscourseElement po:Container ) ] [ a owl:Restriction ;
+                        owl:allValuesFrom doco:Line ;
+                        owl:onProperty po:contains ] ) ] ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,24 @@
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:ChapterTitle a owl:Class ;
+    rdfs:label "chapter title"@en ;
+    vann:example """
+    :my-title a doco:ChapterTitle ;
+        c4o:hasContent 'The First Chapter'@en ;
+        pattern:isContainedByAsHeader :my-chapter .
+    """ ;
+    rdfs:comment "The title of a chapter."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty po:isContainedByAsHeader ;
+            owl:someValuesFrom doco:Chapter ],
+        doco:Title ;
+    owl:disjointWith doco:SectionTitle ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/BlockQuotation">
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#Container"/>
+    <vann:example>
+    :my-block-quotation a doco:BlockQuotation ; 
+        c4o:hasContent '''
+            Now, in reality, the world have paid too great a compliment to critics, and 
+            have imagined them men of much greater profundity than they really are. 
+            From this complaisance the critics have been emboldened to assume a dictatorial 
+            power, and have so far succeeded that they are now become the masters, and have 
+            the assurance to give laws to those authors from whose predecessors they 
+            originally received them.
+        '''@en .
+    </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdfs:comment xml:lang="en">A block quotation (also known as a long quotation or extract) is a quotation in a written document which is set off from the main text as a container for distinct paragraphs, which is typically distinguished visually using indentation, a different font, or smaller size. Block quotations are used for longer passages than run-in quotations (which are set off with quotation marks).</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:label xml:lang="en">block quotation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

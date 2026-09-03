@@ -1,0 +1,15 @@
+_:n3b1bab1f2e67482f9ea2fcacd8712072b286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/SimpleRunInQuotation> .
+<http://purl.org/spar/doco/TextChunk> <http://www.w3.org/2000/01/rdf-schema#label> "text chunk"@en .
+<http://purl.org/spar/doco/TextChunk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b286 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/TextChunk> .
+<http://purl.org/spar/doco/TextChunk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#Inline> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b284 <http://www.w3.org/2002/07/owl#members> _:n3b1bab1f2e67482f9ea2fcacd8712072b285 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b285 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Sentence> .
+<http://purl.org/spar/doco/TextChunk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b287 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/doco/TextChunk> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b286 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b287 .
+<http://purl.org/spar/doco/TextChunk> <http://www.w3.org/2000/01/rdf-schema#comment> "A piece of text defined by a start point and an end point."@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b284 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<http://purl.org/spar/doco/TextChunk> <http://purl.org/vocab/vann/example> "\n    :my-text-chunk a doco:TextChunk ;\n        c4o:hasContent 'The most straightforward and widely adopted approach reduces the concept of an identifier [...]'@en .\n    " .

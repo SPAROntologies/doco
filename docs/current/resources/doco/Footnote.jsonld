@@ -1,0 +1,112 @@
+[
+  {
+    "@id": "http://purl.org/spar/doco/Footnote",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-footnote a doco:Footnote ;\n        c4o:hasContent '1. ^ Hayes, Andrea (2011). Language Toolkit for New Zealand 2. Cambridge University Press. p. 17. ISBN 9781107624702.'@en .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A structure within a sentence that permits the author to make a comment or to cite another publication in support of the text, or both. A footnote is normally flagged by a superscript number immediately following that portion of the text to which it relates. For convenience of reading, the text of the footnote is usually printed at the bottom of the page or at the end of a text."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "footnote"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://purl.org/spar/deo/DiscourseElement"
+      },
+      {
+        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b91"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b91",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Container"
+          },
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Popup"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b261",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/BackMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/BodyMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/CaptionedBox"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Chapter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ComplexRunInQuotation"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Footnote"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Formula"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FormulaBox"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FrontMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/List"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Part"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Section"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Table"
+          }
+        ]
+      }
+    ]
+  }
+]

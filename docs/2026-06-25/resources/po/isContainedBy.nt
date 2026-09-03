@@ -1,0 +1,5 @@
+<http://www.essepuntato.it/2008/12/pattern#isContainedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/po/> .
+<http://www.essepuntato.it/2008/12/pattern#isContainedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2008/12/pattern#isContainedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured element is contained by another generic element."@en .
+<http://www.essepuntato.it/2008/12/pattern#isContainedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is contained by"@en .
+<http://www.essepuntato.it/2008/12/pattern#isContainedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.essepuntato.it/2008/12/pattern#contains> .

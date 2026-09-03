@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b34">
+    <rdf:first rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b32"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b32">
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2008/12/pattern#contains"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/deo/BibliographicReference"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b33">
+    <rdf:rest rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b34"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/ListOfReferences"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/BibliographicReferenceList">
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:subClassOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b31"/>
+    <rdfs:label xml:lang="en">bibliographic reference list</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vann:example>
+    :my-bibliographic-reference-list a doco:BibliographicReferenceList ; 
+        pattern:contains :my-bibliographic-reference-01, :my-bibliographic-reference-02 .
+    </vann:example>
+    <rdfs:comment xml:lang="en">A list, usually within a bibliography, of all the references within the citing document that refer to  journal articles, books, book chapters, Web sites or similar publications.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b31">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="n3b1bab1f2e67482f9ea2fcacd8712072b33"/>
+  </rdf:Description>
+</rdf:RDF>

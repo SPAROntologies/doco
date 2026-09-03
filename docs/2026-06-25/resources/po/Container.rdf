@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://www.essepuntato.it/2008/12/pattern#Container">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
+    <skos:note xml:lang="en">
+This class concerns the structural organization of a document. 
+Elements following this pattern contain no textual content and contain only elements compliant with the patterns: Meta, Field, Block and any subtype of Container. 
+It is disjointed with the pattern Popup, although they share the same content model.
+  </skos:note>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A document content nestable element.</rdfs:comment>
+    <rdfs:label xml:lang="en">container element</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

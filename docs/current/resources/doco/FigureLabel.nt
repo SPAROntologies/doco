@@ -1,0 +1,16 @@
+_:n3b1bab1f2e67482f9ea2fcacd8712072b89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Label> .
+<http://purl.org/spar/doco/FigureLabel> <http://purl.org/vocab/vann/example> "\n    :my-figure-label a doco:FigureLabel ;\n        c4o:hasContent 'Figure 1'@en ;\n        dcterms:isPartOf :my-figure-box .\n    " .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "A block containing a label for the figure box, that may include the figure number."@en .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#label> "figure label"@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b87 <http://www.w3.org/2002/07/owl#intersectionOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b89 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b88 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/FigureBox> .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3b1bab1f2e67482f9ea2fcacd8712072b88 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b88 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/isPartOf> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b90 .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b87 .

@@ -1,0 +1,8 @@
+<http://purl.org/spar/doco/TextBox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/TextBox> <http://www.w3.org/2000/01/rdf-schema#comment> "A space within a document that contains textual content relating to, quoting from or expanding upon the main text. Usually a textbox is delimited by a border or use of a background colour distinct from that of the main text."@en .
+<http://purl.org/spar/doco/TextBox> <http://www.w3.org/2000/01/rdf-schema#label> "text box"@en .
+<http://purl.org/spar/doco/TextBox> <http://purl.org/vocab/vann/example> "\n    :my-text-box a doco:TextBox ;\n        c4o:hasContent 'Using a text box, you can create a block of text that appears above, below, or around pictures, charts, or other objects.'@en .\n    " .
+<http://purl.org/spar/doco/TextBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#Container> .
+<http://purl.org/spar/doco/TextBox> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+<http://purl.org/spar/doco/TextBox> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/DiscourseElement> .
+<http://purl.org/spar/doco/TextBox> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

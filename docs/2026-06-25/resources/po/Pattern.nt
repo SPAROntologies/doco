@@ -1,0 +1,5 @@
+<http://www.essepuntato.it/2008/12/pattern#Pattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.essepuntato.it/2008/12/pattern#Pattern> <http://www.w3.org/2000/01/rdf-schema#comment> "A document content nestable element."@en .
+<http://www.essepuntato.it/2008/12/pattern#Pattern> <http://www.w3.org/2004/02/skos/core#note> "\nAny entity belonging to this class is compliant with exactly one structural pattern.\n"@en .
+<http://www.essepuntato.it/2008/12/pattern#Pattern> <http://www.w3.org/2000/01/rdf-schema#label> "pattern-based element"@en .
+<http://www.essepuntato.it/2008/12/pattern#Pattern> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/po/> .

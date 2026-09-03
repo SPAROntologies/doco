@@ -1,0 +1,6 @@
+<http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader> <http://www.w3.org/2000/01/rdf-schema#subProperyOf> <http://www.essepuntato.it/2008/12/pattern#isContainedBy> .
+<http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/po/> .
+<http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.essepuntato.it/2008/12/pattern#containsAsHeader> .
+<http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader> <http://www.w3.org/2000/01/rdf-schema#label> "is contained by as header"@en .
+<http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader> <http://www.w3.org/2000/01/rdf-schema#comment> "An element is contained by another structured element as part of its header."@en .

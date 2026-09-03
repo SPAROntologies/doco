@@ -1,0 +1,21 @@
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:ListOfContributors a owl:Class ;
+    rdfs:label "list of contributors"@en ;
+    vann:example """
+    :my-list-of-contributors a doco:ListOfContributors .
+    """ ;
+    rdfs:comment "A list of items, each denoting a contributor to a publication such as an encyclopedia or a text book, where such contributions are insufficient to warrant classification as author."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf doco:ListOfAgents ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:ListOfAuthors doco:ListOfContributors doco:ListOfOrganizations ) .
+

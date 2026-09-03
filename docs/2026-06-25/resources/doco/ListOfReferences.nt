@@ -1,0 +1,16 @@
+_:n3b1bab1f2e67482f9ea2fcacd8712072b170 <http://www.w3.org/2002/07/owl#intersectionOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b172 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b171 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/deo/Reference> .
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/doco/ListOfReferences> <http://purl.org/vocab/vann/example> "\n    :my-list-of-references a doco:ListOfReferences ;\n        pattern:contains :my-reference-01 , :my-reference-02 .\n    " .
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of items each representing a reference to a specific part of the same document, or to another publication."@en .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3b1bab1f2e67482f9ea2fcacd8712072b171 .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3b1bab1f2e67482f9ea2fcacd8712072b173 .
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b171 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2008/12/pattern#contains> .
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/2000/01/rdf-schema#label> "list of references"@en .
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/List> .
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b170 .

@@ -1,0 +1,11 @@
+<http://purl.org/spar/doco/SectionSubtitle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/doco/Subtitle> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/doco/SectionSubtitle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+<http://purl.org/spar/doco/SectionSubtitle> <http://purl.org/vocab/vann/example> "\n    :my-section-subtitle a doco:SectionSubtitle ;\n        c4o:hasContent 'The first section of the book'@en ;\n        dcterms:isPartOf :my-section .\n    " .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b214 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/isPartOf> .
+_:n3b1bab1f2e67482f9ea2fcacd8712072b214 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/Section> .
+<http://purl.org/spar/doco/SectionSubtitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/SectionSubtitle> <http://www.w3.org/2000/01/rdf-schema#label> "section subtitle"@en .
+<http://purl.org/spar/doco/SectionSubtitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The subtitle of a section."@en .
+<http://purl.org/spar/doco/SectionSubtitle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/SectionSubtitle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3b1bab1f2e67482f9ea2fcacd8712072b214 .

@@ -1,0 +1,8 @@
+<http://purl.org/spar/doco/Line> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/Line> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Line> <http://purl.org/vocab/vann/example> "\n    :my-line a doco:Line ;\n        c4o:hasContent 'Tyger Tyger, burning bright,'@en .\n    " .
+<http://purl.org/spar/doco/Line> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/DiscourseElement> .
+<http://purl.org/spar/doco/Line> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#Block> .
+<http://purl.org/spar/doco/Line> <http://www.w3.org/2000/01/rdf-schema#comment> "A line in poetry is a unit of language into which a poem is divided which operates on principles which are distinct from and not necessarily coincident with grammatical structures, such as the sentence or clauses in sentences.\n\nA distinct numbered group of lines in verse is normally called a stanza."@en .
+<http://purl.org/spar/doco/Line> <http://www.w3.org/2000/01/rdf-schema#label> "line"@en .
+<http://purl.org/spar/doco/Line> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
