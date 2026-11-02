@@ -1,0 +1,5 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+

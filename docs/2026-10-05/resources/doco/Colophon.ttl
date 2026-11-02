@@ -1,0 +1,28 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Colophon a owl:Class ;
+    rdfs:label "colophon"@en ;
+    vann:example """
+    :my-colophon a doco:Colophon ;
+        c4o:hasContent 'O most gracious reader, wash your hands and touch the book only like this: turn the pages softly and keep your fingers far away from the text'@en ;
+        dcterms:isPartOf :my-back-matter .
+    """ ;
+    rdfs:comment "A brief description of publication or production notes relevant to the document."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Section [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:unionOf ( doco:BackMatter doco:FrontMatter ) ] ] ) ] ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:Abstract doco:Afterword doco:Appendix doco:Colophon doco:Foreword doco:Glossary doco:Index doco:ListOfFigures doco:ListOfTables doco:Preface doco:TableOfContents ) .
+

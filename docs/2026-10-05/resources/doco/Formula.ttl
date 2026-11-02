@@ -1,0 +1,25 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Formula a owl:Class ;
+    rdfs:label "formula"@en ;
+    vann:example """
+    :my-formula a doco:Formula ;
+        c4o:hasContent 'a^2 * b^2 = a^2b^2' .
+    """ ;
+    rdfs:comment "A unit of information expressed in mathematical, chemical or logical symbols and language."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf deo:DiscourseElement,
+        po:Popup ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:BackMatter doco:BodyMatter doco:CaptionedBox doco:Chapter doco:ComplexRunInQuotation doco:Footnote doco:Formula doco:FormulaBox doco:FrontMatter doco:List doco:Part doco:Section doco:Table ) .
+

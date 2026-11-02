@@ -1,0 +1,24 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:ChapterSubtitle a owl:Class ;
+    rdfs:label "chapter subtitle"@en ;
+    vann:example """
+    :my-chapter-subtitle a doco:ChapterSubtitle ;
+        c4o:hasContent 'Or: The beginning of this book'@en ;
+        dcterms:isPartOf :my-chapter .
+    """ ;
+    rdfs:comment "The subtitle of a chapter."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty dcterms:isPartOf ;
+            owl:someValuesFrom doco:Chapter ],
+        doco:Subtitle ;
+    owl:disjointWith doco:SectionSubtitle ;
+    vs:term_status reg:statusStable .
+

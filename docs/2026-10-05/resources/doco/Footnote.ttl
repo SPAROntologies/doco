@@ -1,0 +1,26 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Footnote a owl:Class ;
+    rdfs:label "footnote"@en ;
+    vann:example """
+    :my-footnote a doco:Footnote ;
+        c4o:hasContent '1. ^ Hayes, Andrea (2011). Language Toolkit for New Zealand 2. Cambridge University Press. p. 17. ISBN 9781107624702.'@en .
+    """ ;
+    rdfs:comment "A structure within a sentence that permits the author to make a comment or to cite another publication in support of the text, or both. A footnote is normally flagged by a superscript number immediately following that portion of the text to which it relates. For convenience of reading, the text of the footnote is usually printed at the bottom of the page or at the end of a text."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf ( po:Container po:Popup ) ],
+        deo:DiscourseElement ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:BackMatter doco:BodyMatter doco:CaptionedBox doco:Chapter doco:ComplexRunInQuotation doco:Footnote doco:Formula doco:FormulaBox doco:FrontMatter doco:List doco:Part doco:Section doco:Table ) .
+

@@ -1,0 +1,9 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+deo:Reference a owl:Class ;
+    rdfs:label "reference"@en ;
+    rdfs:comment "A reference to a specific part of the document, or to another publication."@en ;
+    rdfs:isDefinedBy deo: .
+

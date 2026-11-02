@@ -1,0 +1,28 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Table a owl:Class ;
+    rdfs:label "table"@en ;
+    vann:example """
+    :my-table a doco:Table ;
+        pattern:contains :my-container .
+    """ ;
+    rdfs:comment "A set of data arranged in cells within rows and columns."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty po:contains ;
+            owl:someValuesFrom po:Container ],
+        deo:DiscourseElement,
+        po:Table ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:BackMatter doco:BodyMatter doco:CaptionedBox doco:Chapter doco:ComplexRunInQuotation doco:Footnote doco:Formula doco:FormulaBox doco:FrontMatter doco:List doco:Part doco:Section doco:Table ) .
+

@@ -1,0 +1,22 @@
+_:ndf7937cf38824ac98bc5eceaf6903cb5b5 <http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b10 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Chapter> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/deo/BibliographicReference> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b8 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b6 <http://www.w3.org/2002/07/owl#unionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b7 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b9 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Bibliography> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b5 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Bibliography> <http://purl.org/vocab/vann/example> "\n    :my-bibliography a doco:Bibliography ; \n        dcterms:hasPart :my-bibliographic-reference-01 .\n    " .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b11 .
+<http://purl.org/spar/doco/Bibliography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/hasPart> .
+<http://purl.org/spar/doco/Bibliography> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/Bibliography> <http://www.w3.org/2000/01/rdf-schema#comment> "A document section containing a list of bibliographic references."@en .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b6 .
+<http://purl.org/spar/doco/Bibliography> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/doco/Bibliography> <http://www.w3.org/2000/01/rdf-schema#label> "bibliography"@en .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Section> .

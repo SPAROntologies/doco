@@ -1,0 +1,9 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+po:Table a owl:Class ;
+    rdfs:label "table element"@en ;
+    rdfs:comment "A container element that must contain only homogeneous elements (but they can be repeated)."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> .
+

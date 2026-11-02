@@ -1,0 +1,23 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:SectionLabel a owl:Class ;
+    rdfs:label "section label"@en ;
+    vann:example """
+    :my-section-label a doco:SectionLabel ; 
+        c4o:hasContent 'Section 1'@en ;
+        dcterms:isPartOf :my-section .
+    """ ;
+    rdfs:comment "A block containing a label for the section, that may include the section number."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty dcterms:isPartOf ;
+            owl:someValuesFrom doco:Section ],
+        doco:Label ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,35 @@
+[
+  {
+    "@id": "http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An element is contained by another structured element as part of its header."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/po/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "is contained by as header"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subProperyOf": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#isContainedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#inverseOf": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#containsAsHeader"
+      }
+    ]
+  }
+]

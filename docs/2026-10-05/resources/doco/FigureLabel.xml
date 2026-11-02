@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b19">
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/FigureBox"/>
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/FigureLabel">
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <vann:example>
+    :my-figure-label a doco:FigureLabel ;
+        c4o:hasContent 'Figure 1'@en ;
+        dcterms:isPartOf :my-figure-box .
+    </vann:example>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">figure label</rdfs:label>
+    <rdfs:comment xml:lang="en">A block containing a label for the figure box, that may include the figure number.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b18"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b21">
+    <rdf:first rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b19"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b18">
+    <owl:intersectionOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b20"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b20">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Label"/>
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b21"/>
+  </rdf:Description>
+</rdf:RDF>

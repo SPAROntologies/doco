@@ -1,0 +1,153 @@
+[
+  {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b249",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Abstract"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Afterword"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Appendix"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Colophon"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Foreword"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Glossary"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Index"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ListOfFigures"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ListOfTables"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Preface"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/TableOfContents"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/doco/Abstract",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-abstract a doco:Abstract ;\n        c4o:hasContent 'The history of abstracting dates back to the point when it was felt necessary to summarise the content of documents in order to make the information contained in them more accessible.'@en ;\n        dcterms:isPartOf :my-front-matter .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "abstract"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b33"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b33",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b34"
+          },
+          {
+            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b34",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Chapter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Section"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b37",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/isPartOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b38"
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b38",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/BodyMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FrontMatter"
+          }
+        ]
+      }
+    ]
+  }
+]
