@@ -244,20 +244,20 @@ What is the full bibliographic text of the reference cited by a specific inline 
     """ ;
         rdfs:comment "A space within a document that contains a table and its caption."@en ;
         rdfs:isDefinedBy doco: ;
-        rdfs:subClassOf _:ndf7937cf38824ac98bc5eceaf6903cb5b188 ;
+        rdfs:subClassOf _:n4a5d32b6784e4d0fbc9167d39a514eebb188 ;
         vs:term_status reg:statusStable .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b188 a owl:Class ;
-        owl:intersectionOf _:ndf7937cf38824ac98bc5eceaf6903cb5b190 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb188 a owl:Class ;
+        owl:intersectionOf _:n4a5d32b6784e4d0fbc9167d39a514eebb190 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b189 a owl:Restriction ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb189 a owl:Restriction ;
         owl:onProperty dcterms:hasPart ;
         owl:someValuesFrom doco:Table .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b190 rdf:first doco:CaptionedBox ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b191 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb190 rdf:first doco:CaptionedBox ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb191 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b191 rdf:first _:ndf7937cf38824ac98bc5eceaf6903cb5b189 ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb191 rdf:first _:n4a5d32b6784e4d0fbc9167d39a514eebb189 ;
         rdf:rest () .
 }
 
@@ -293,7 +293,7 @@ What is the full bibliographic text of the reference cited by a specific inline 
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b188"
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb188"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -303,7 +303,7 @@ What is the full bibliographic text of the reference cited by a specific inline 
         ]
       },
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b188",
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb188",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -314,14 +314,14 @@ What is the full bibliographic text of the reference cited by a specific inline 
                 "@id": "http://purl.org/spar/doco/CaptionedBox"
               },
               {
-                "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b189"
+                "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb189"
               }
             ]
           }
         ]
       },
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b189",
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb189",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -339,22 +339,22 @@ What is the full bibliographic text of the reference cited by a specific inline 
     ],
     "@id": "http://purl.org/spar/doco"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_a6582424088738effec97abfd2040c22_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/doco/TableBox> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b188 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b188 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/TableBox> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A space within a document that contains a table and its caption."@en &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b191 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b189 &lt;http://purl.org/spar/doco> .
+]</code></pre></div><div class="tab-pane fade" id=id_a6582424088738effec97abfd2040c22_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/doco/TableBox> &lt;http://purl.org/vocab/vann/example> "\n    :my-table-box a doco:TableBox ; \n        dcterms:hasPart :my-table .\n    " &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb190 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/CaptionedBox> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/TableBox> &lt;http://www.w3.org/2000/01/rdf-schema#label> "table box"@en &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb190 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb191 &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/TableBox> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb188 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb191 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb189 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb188 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb191 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a5d32b6784e4d0fbc9167d39a514eebb189 &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/TableBox> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/TableBox> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/doco/> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b191 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b189 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/hasPart> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb189 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/hasPart> &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/TableBox> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b190 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/CaptionedBox> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b189 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/doco/Table> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/TableBox> &lt;http://www.w3.org/2000/01/rdf-schema#label> "table box"@en &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b188 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b190 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b190 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b191 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b189 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/TableBox> &lt;http://purl.org/vocab/vann/example> "\n    :my-table-box a doco:TableBox ; \n        dcterms:hasPart :my-table .\n    " &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb188 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb190 &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/TableBox> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A space within a document that contains a table and its caption."@en &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb189 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/doco/Table> &lt;http://purl.org/spar/doco> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../doco.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

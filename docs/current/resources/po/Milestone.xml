@@ -5,6 +5,9 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="http://www.essepuntato.it/2008/12/pattern#Milestone">
+    <rdfs:comment xml:lang="en">A document content nestable element.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
     <skos:note xml:lang="en">
 This class describe elements that contain neither other elements nor textual content. 
 Moreover, similarly to Inline, elements following the Milestone pattern can only be contained within block or inline elements (and consequently they also cannot be used as root elements of documents).
@@ -12,8 +15,5 @@ Moreover, similarly to Inline, elements following the Milestone pattern can only
 The distinctive characteristic of the pattern Milestone is the location it assumes within the document.
   </skos:note>
     <rdfs:label xml:lang="en">milestone element</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
-    <rdfs:comment xml:lang="en">A document content nestable element.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

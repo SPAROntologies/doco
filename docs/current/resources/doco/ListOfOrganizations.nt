@@ -1,15 +1,15 @@
-<http://purl.org/spar/doco/ListOfOrganizations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/doco/ListOfAgents> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfContributors> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfOrganizations> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b280 <http://www.w3.org/2002/07/owl#members> _:ndf7937cf38824ac98bc5eceaf6903cb5b281 .
-<http://purl.org/spar/doco/ListOfOrganizations> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
-<http://purl.org/spar/doco/ListOfOrganizations> <http://purl.org/vocab/vann/example> "\n    :my-list-or-organizations a doco:ListOfOrganizations .\n    " .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfAuthors> .
-<http://purl.org/spar/doco/ListOfOrganizations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/doco/ListOfOrganizations> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of items, each denoting an organization or institution related to the publication, for example the authors' affiliations, or the suppliers of information, software, equipment or consumables used in the work described in the publication."@en .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb283 .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb282 .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfAuthors> .
 <http://purl.org/spar/doco/ListOfOrganizations> <http://www.w3.org/2000/01/rdf-schema#label> "list of organizations"@en .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b282 .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b283 .
+<http://purl.org/spar/doco/ListOfOrganizations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/ListOfOrganizations> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/doco/ListOfOrganizations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/doco/ListOfAgents> .
 <http://purl.org/spar/doco/ListOfOrganizations> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfContributors> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+<http://purl.org/spar/doco/ListOfOrganizations> <http://purl.org/vocab/vann/example> "\n    :my-list-or-organizations a doco:ListOfOrganizations .\n    " .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfOrganizations> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb280 <http://www.w3.org/2002/07/owl#members> _:n4a5d32b6784e4d0fbc9167d39a514eebb281 .

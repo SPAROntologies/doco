@@ -6,93 +6,93 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b257">
-    <rdf:first rdf:resource="http://purl.org/spar/doco/ListOfFigures"/>
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b258"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb82">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/FrontMatter"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b254">
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b255"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Foreword"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb253">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Colophon"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb254"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b255">
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b256"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Glossary"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b83">
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b84"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Section"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b250">
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Abstract"/>
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b251"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb251">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Afterword"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb252"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/doco/Glossary">
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b78"/>
     <rdfs:comment xml:lang="en">A set of definitions of words or phrases of importance to the work, normally alphabetized. In longer works of fiction, the entries may contains places and characters.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
     <rdfs:label xml:lang="en">glossary</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb78"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vann:example>
     :my-glossary a doco:Glossary ; 
         dcterms:isPartOf :my-back-matter .
     </vann:example>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b80">
-    <owl:unionOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b81"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b84">
-    <rdf:first rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b79"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb260">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/TableOfContents"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b78">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:intersectionOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b83"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb252">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Appendix"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb253"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b81">
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b82"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/BackMatter"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b259">
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Preface"/>
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b260"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b258">
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b259"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/ListOfTables"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b253">
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Colophon"/>
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b254"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b256">
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b257"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Index"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b79">
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb79">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:someValuesFrom rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b80"/>
+    <owl:someValuesFrom rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb80"/>
     <owl:onProperty rdf:resource="http://purl.org/dc/terms/isPartOf"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b252">
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Appendix"/>
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b253"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb254">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Foreword"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb255"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b251">
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b252"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Afterword"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb81">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/BackMatter"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb82"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b260">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/TableOfContents"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb255">
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb256"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Glossary"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b82">
-    <rdf:first rdf:resource="http://purl.org/spar/doco/FrontMatter"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb259">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Preface"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb260"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b249">
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb249">
+    <owl:members rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb250"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-    <owl:members rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b250"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb83">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Section"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb84"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb84">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb79"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb80">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb81"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb250">
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb251"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Abstract"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb258">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/ListOfTables"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb259"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb256">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Index"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb257"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb257">
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb258"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/ListOfFigures"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb78">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb83"/>
   </rdf:Description>
 </rdf:RDF>
