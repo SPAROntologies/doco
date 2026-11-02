@@ -1,0 +1,80 @@
+name: Docs and release
+
+on:
+  push:
+    branches: [ main, master ]
+    paths: [ docs/current/doco.ttl ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  docs:
+    uses: SPAROntologies/sparontologies.github.io/.github/workflows/lode.yml@master
+    with:
+      ontology: docs/current/doco.ttl
+
+  metadata:
+    needs: docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install rdflib and uv
+        run: pip install rdflib uv
+
+      - name: Copy docs/current to docs/<dcterms:modified>
+        run: |
+          date=$(python - docs/current/doco.ttl <<'EOF'
+          import sys
+          from rdflib import Graph, OWL, RDF, DCTERMS
+          g = Graph().parse(sys.argv[1])
+          print(g.value(g.value(None, RDF.type, OWL.Ontology), DCTERMS.modified) or "")
+          EOF
+          )
+          [[ $date =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "Bad or missing dcterms:modified: '$date'"; exit 1; }
+          rm -rf "docs/$date"
+          cp -r docs/current "docs/$date"
+          sed -i "s/^date-released: .*/date-released: '$date'/" CITATION.cff
+          echo "Snapshot -> docs/$date"
+
+      - name: Set version from owl:versionInfo
+        run: |
+          version=$(python - docs/current/doco.ttl <<'EOF'
+          import sys
+          from rdflib import Graph, OWL, RDF
+          g = Graph().parse(sys.argv[1])
+          print(g.value(g.value(None, RDF.type, OWL.Ontology), OWL.versionInfo) or "")
+          EOF
+          )
+          [[ $version =~ ^[0-9A-Za-z.+-]+$ ]] || { echo "Bad or missing owl:versionInfo: '$version'"; exit 1; }
+          sed -i "s/^version: .*/version: $version/" CITATION.cff
+          sed -i "0,/^version = .*/s//version = \"$version\"/" pyproject.toml
+          uv lock
+          echo "VERSION=$version" >> "$GITHUB_ENV"
+          echo "Version -> $version"
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add -A docs CITATION.cff pyproject.toml uv.lock
+          git diff --cached --quiet || git commit -m "DOCS: add versioned documentation snapshot and update version"
+          git push
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "v$VERSION" >/dev/null 2>&1; then
+            echo "Release v$VERSION already exists, skipping"
+          else
+            gh release create "v$VERSION" --title "v$VERSION" --generate-notes --target "$(git rev-parse HEAD)"
+          fi

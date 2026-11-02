@@ -1,6 +1,12 @@
 # Document Components Ontology (DoCO)
 
-The Document Components Ontology (DoCO) in an ontology that provides a structured vocabulary written of document components, both structural (e.g., block, inline, paragraph, section, chapter) and rhetorical (e.g., introduction, discussion, acknowledgements, reference list, figure, appendix).
+[![License](https://img.shields.io/github/license/SPAROntologies/doco)](LICENSE.md)
+[![Release](https://img.shields.io/github/v/release/SPAROntologies/doco)](https://github.com/SPAROntologies/doco/releases/latest)
+[![Tests](https://img.shields.io/github/actions/workflow/status/SPAROntologies/doco/validation.yml?label=tests)](https://github.com/SPAROntologies/doco/actions/workflows/validation.yml)
+[![Documentation](https://img.shields.io/badge/docs-sparontologies.net-blue)](http://www.sparontologies.net/ontologies/doco)
+[![IRI](https://img.shields.io/badge/IRI-purl.org%2Fspar%2Fdoco-blue)](http://purl.org/spar/doco)
+
+The **_Document Components Ontology (DoCO)_** in an ontology that provides a structured vocabulary written of document components, both structural (e.g., block, inline, paragraph, section, chapter) and rhetorical (e.g., introduction, discussion, acknowledgements, reference list, figure, appendix).
 
 **URL:** http://purl.org/spar/doco
 

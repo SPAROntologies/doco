@@ -52,7 +52,7 @@ bibo:doi a owl:AnnotationProperty .
     dc:contributor "Sebastian Barzaghi (https://orcid.org/0000-0002-0799-1527)" ;
     dc:creator "David Shotton (https://orcid.org/0000-0001-5506-523X)",
         "Silvio Peroni (https://orcid.org/0000-0003-0530-4305)" ;
-    dc:date "2026-06-25" ;
+    dc:date "2026-10-05" ;
     dc:title "The Document Components Ontology (DoCO)"@en ;
     dcterms:bibliographicCitation "Constantin, A., Peroni, S., Pettifer, S., Shotton, D., Vitali, F. (2016). The Document Components Ontology (DoCO). In Semantic Web, 7 (2): 167-181. DOI: http://doi.org/10.3233/SW-150177" ;
     dcterms:created "2015-07-03" ;
@@ -68,7 +68,7 @@ DoCO imports the [Pattern Ontology](http://www.essepuntato.it/2008/12/pattern) t
 Additionally, it also defines hybrid classes describing elements that are both structural and rhetorical in nature, such as _paragraph_ (`doco:Paragraph`), _section_ (`doco:Section`) or _list_ (`doco:List`). DoCO is also aligned with the [SALT Rhetorical Ontology](http://lov.okfn.org/dataset/lov/vocabs/sro) and the [Ontology of Rhetorical Blocks](http://www.w3.org/2001/sw/hcls/notes/orb/) (ORB).
 A concise summary of the main DoCO classes and its imported ontologies is shown in the following figure.
 
-![DoCO's architecture, with its mail classes distributed accoridng to the ontologies they have been imported from.](doco.png)
+![DoCO's architecture, with its main classes distributed according to the ontologies they have been imported from.](doco.png)
 
 ## Examples of use
 
@@ -274,25 +274,30 @@ What is the full bibliographic text of the reference cited by a specific inline 
     """@en ;
     dcterms:issued "2015-07-03" ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
-    dcterms:modified "2026-06-25" ;
+    dcterms:modified "2026-10-05" ;
     dcterms:publisher <https://ror.org/00wb4mk85> ;
     dcterms:source <https://github.com/SPAROntologies/doco/tree/master/docs> ;
     bibo:doi "https://doi.org/10.25504/FAIRsharing.162003" ;
     bibo:status <http://purl.org/ontology/bibo/status/published> ;
     vann:preferredNamespacePrefix "doco" ;
-    vann:preferredNamespaceUri "http://purl.org/spar/doco/"^^xsd:anyURI ;
+    vann:preferredNamespaceUri "http://purl.org/spar/doco"^^xsd:anyURI ;
     rdfs:seeAlso <http://www.sparontologies.net/ontologies/doco> ;
-    owl:backwardCompatibleWith doco:2015-07-03 ;
+    owl:backwardCompatibleWith doco:2026-06-25 ;
     owl:imports <http://purl.org/spar/deo>,
         <http://purl.org/spar/po> ;
-    owl:priorVersion doco:2015-07-03 ;
-    owl:versionIRI doco:2026-06-25 ;
-    owl:versionInfo "1.4.0" ;
-    foaf:logo <https://github.com/SPAROntologies/doco/blob/master/spar.png> ;
+    owl:priorVersion doco:2026-06-25 ;
+    owl:versionIRI doco:2026-10-05 ;
+    owl:versionInfo "1.4.1" ;
+    vann:changes <https://github.com/SPAROntologies/doco/blob/master/CHANGELOG.md> ;
+    foaf:logo <https://github.com/SPAROntologies/sparontologies.github.io/blob/master/static/img/spar/spar-logo.png> ;
     schema:codeRepository <https://github.com/SPAROntologies/doco> ;
     schema:image <https://github.com/SPAROntologies/doco/blob/master/docs/current/doco.png> ;
     schema:includedInDataCatalog <https://fairsharing.org/> ;
-    schema:keywords "bibliometrics"@en,
+    dc:language <http://id.loc.gov/vocabulary/iso639-2/eng> ;
+    schema:keywords 
+        "SPAR Ontologies"@en ,
+        "Semantic Publishing and Referencing Ontologies"@en ,
+        "bibliometrics"@en,
         "document components"@en,
         "scholarly publishing"@en,
         "scientometrics"@en,
@@ -581,7 +586,7 @@ doco:Foreword a owl:Class ;
     :my-foreword a doco:Foreword ; 
         dcterms:isPartOf :my-front-matter .
     """ ;
-    rdfs:comment "A section in a book or report, usually written by someone other than the author, that introduces or commends the document to the reader. It may include description of the interaction between the writer of the foreword and the author."@en ;
+    rdfs:comment "A section in a book or report, usually written by someone other than the author, that introduces or comments the document to the reader. It may include description of the interaction between the writer of the foreword and the author."@en ;
     rdfs:isDefinedBy doco: ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( doco:Section [ a owl:Restriction ;
