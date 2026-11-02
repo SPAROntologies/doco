@@ -1,0 +1,16 @@
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b209 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/List> .
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/2000/01/rdf-schema#label> "list of references"@en .
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b210 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2008/12/pattern#contains> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b210 .
+<http://purl.org/spar/doco/ListOfReferences> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of items each representing a reference to a specific part of the same document, or to another publication."@en .
+<http://purl.org/spar/doco/ListOfReferences> <http://purl.org/vocab/vann/example> "\n    :my-list-of-references a doco:ListOfReferences ;\n        pattern:contains :my-reference-01 , :my-reference-02 .\n    " .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b210 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/deo/Reference> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b209 <http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b211 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b212 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

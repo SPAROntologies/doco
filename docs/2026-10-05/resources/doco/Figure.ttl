@@ -1,0 +1,22 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Figure a owl:Class ;
+    rdfs:label "figure"@en ;
+    vann:example """
+    :my-figure a doco:Figure .
+    """ ;
+    rdfs:comment "A communication object comprising one or more graphics, drawings, images, or other visual representations.."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf ( po:Meta po:Milestone ) ],
+        deo:DiscourseElement ;
+    vs:term_status reg:statusStable .
+

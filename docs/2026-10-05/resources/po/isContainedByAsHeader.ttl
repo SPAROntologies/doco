@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+po:isContainedByAsHeader a owl:ObjectProperty ;
+    rdfs:label "is contained by as header"@en ;
+    rdfs:comment "An element is contained by another structured element as part of its header."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    rdfs:subProperyOf po:isContainedBy ;
+    owl:inverseOf po:containsAsHeader .
+

@@ -1,0 +1,38 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:ListOfTables a owl:Class ;
+    rdfs:label "list of tables"@en ;
+    vann:example """
+    :my-list-of-tables a doco:ListOfTables ; 
+        dcterms:isPartOf :my-front-matter ;
+        pattern:contains :my-list-of-references .
+    """ ;
+    rdfs:comment "A section of the document listing all the tables, identified by their titles and referenced to their locations in the document."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:intersectionOf ( doco:Section po:HeadedContainer ) ] [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:unionOf ( doco:BackMatter doco:FrontMatter ) ] ] ) ],
+        [ a owl:Restriction ;
+            owl:onProperty dcterms:hasPart ;
+            owl:someValuesFrom [ a owl:Class ;
+                    owl:intersectionOf ( doco:ListOfReferences [ a owl:Restriction ;
+                                owl:allValuesFrom [ a owl:Restriction ;
+                                        owl:onProperty dcterms:relation ;
+                                        owl:someValuesFrom doco:TableBox ] ;
+                                owl:onProperty po:contains ] ) ] ] ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:Abstract doco:Afterword doco:Appendix doco:Colophon doco:Foreword doco:Glossary doco:Index doco:ListOfFigures doco:ListOfTables doco:Preface doco:TableOfContents ) .
+

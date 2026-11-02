@@ -2,23 +2,10 @@ name: Ontology Validation
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ master ]
+    branches: [ main, master ]
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Install uv and Python
-        uses: astral-sh/setup-uv@v3
-        with:
-          version: "latest"
-
-      - name: Run syntax and FAIR validation
-        run: uv run main.py
-        continue-on-error: true
+    uses: SPAROntologies/sparontologies.github.io/.github/workflows/validation.yml@master

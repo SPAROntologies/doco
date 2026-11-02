@@ -1,0 +1,36 @@
+_:ndf7937cf38824ac98bc5eceaf6903cb5b271 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b272 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/CaptionedBox> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Table> .
+<http://purl.org/spar/doco/ComplexRunInQuotation> <http://www.w3.org/2000/01/rdf-schema#label> "complex run-in quotation"@en .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b269 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b271 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b267 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b264 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/FormulaBox> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b261 <http://www.w3.org/2002/07/owl#members> _:ndf7937cf38824ac98bc5eceaf6903cb5b262 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b266 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Footnote> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b266 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ComplexRunInQuotation> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b273 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Section> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b273 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b265 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Chapter> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b273 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b274 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b265 .
+<http://purl.org/spar/doco/ComplexRunInQuotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b268 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Formula> .
+<http://purl.org/spar/doco/ComplexRunInQuotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/ComplexRunInQuotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/deo/DiscourseElement> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b270 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b274 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/BackMatter> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b263 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/BodyMatter> .
+<http://purl.org/spar/doco/ComplexRunInQuotation> <http://www.w3.org/2000/01/rdf-schema#comment> "A quotation with a complex structure, that is included inline and is usually enclosed within quotation marks."@en .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b270 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/FrontMatter> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b267 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b268 .
+<http://purl.org/spar/doco/ComplexRunInQuotation> <http://purl.org/vocab/vann/example> "\n    :my-complex-run-in-quotation a doco:ComplexRunInQuotation ;\n        c4o:hasContent 'Carol said “Go ahead“ when I asked her if the launcher was ready.'@en .\n    " .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b261 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b262 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b263 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b272 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Part> .
+<http://purl.org/spar/doco/ComplexRunInQuotation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/ComplexRunInQuotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.essepuntato.it/2008/12/pattern#Popup> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b271 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/List> .

@@ -28,7 +28,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b200"
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b133"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -38,7 +38,7 @@
     ]
   },
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b200",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b133",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -49,14 +49,14 @@
             "@id": "http://purl.org/spar/doco/Section"
           },
           {
-            "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b201"
+            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b134"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b201",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b134",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b249",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b249",
     "@type": [
       "http://www.w3.org/2002/07/owl#AllDisjointClasses"
     ],

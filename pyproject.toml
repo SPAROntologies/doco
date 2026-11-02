@@ -1,12 +1,7 @@
 [project]
 name = "doco"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.4.1"
+description = "The Document Components Ontology (DoCO) is an OWL 2 DL ontology that provides a general-purpose structured vocabulary of document elements."
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = [
-    "codespell>=2.4.3",
-    "markdown>=3.10.2",
-    "rdflib>=7.6.0",
-    "requests>=2.34.2",
-]
+dependencies = []

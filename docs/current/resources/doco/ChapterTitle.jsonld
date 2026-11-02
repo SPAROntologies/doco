@@ -28,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/spar/doco/Title"
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b17"
       },
       {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b72"
+        "@id": "http://purl.org/spar/doco/Title"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
@@ -46,7 +46,7 @@
     ]
   },
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b72",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b17",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

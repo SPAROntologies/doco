@@ -17,20 +17,20 @@ doco:ListOfFigures a owl:Class ;
     """ ;
     rdfs:comment "A section of the document listing all the figures, identified by their titles and referenced to their locations in the document. May also be referred to as 'List of illustrations'."@en ;
     rdfs:isDefinedBy doco: ;
-    rdfs:subClassOf [ a owl:Class ;
-            owl:intersectionOf ( [ a owl:Class ;
-                        owl:intersectionOf ( doco:Section po:HeadedContainer ) ] [ a owl:Restriction ;
-                        owl:onProperty dcterms:isPartOf ;
-                        owl:someValuesFrom [ a owl:Class ;
-                                owl:unionOf ( doco:BackMatter doco:FrontMatter ) ] ] ) ],
-        [ a owl:Restriction ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty dcterms:hasPart ;
             owl:someValuesFrom [ a owl:Class ;
                     owl:intersectionOf ( doco:ListOfReferences [ a owl:Restriction ;
                                 owl:allValuesFrom [ a owl:Restriction ;
                                         owl:onProperty dcterms:relation ;
                                         owl:someValuesFrom doco:FigureBox ] ;
-                                owl:onProperty po:contains ] ) ] ] ;
+                                owl:onProperty po:contains ] ) ] ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Class ;
+                        owl:intersectionOf ( doco:Section po:HeadedContainer ) ] [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:unionOf ( doco:BackMatter doco:FrontMatter ) ] ] ) ] ;
     vs:term_status reg:statusStable .
 
 [] a owl:AllDisjointClasses ;

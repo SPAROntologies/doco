@@ -1,26 +1,5 @@
 [
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b280",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
-    ],
-    "http://www.w3.org/2002/07/owl#members": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/doco/ListOfAuthors"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/ListOfContributors"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/ListOfOrganizations"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "@id": "http://purl.org/spar/doco/ListOfOrganizations",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -55,6 +34,27 @@
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b280",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/ListOfAuthors"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ListOfContributors"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ListOfOrganizations"
+          }
+        ]
       }
     ]
   }
