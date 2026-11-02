@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b271">
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b272"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/List"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b264">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/CaptionedBox"/>
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b265"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b274">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Table"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b268">
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b269"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Formula"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/Footnote">
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <vann:example>
+    :my-footnote a doco:Footnote ;
+        c4o:hasContent '1. ^ Hayes, Andrea (2011). Language Toolkit for New Zealand 2. Cambridge University Press. p. 17. ISBN 9781107624702.'@en .
+    </vann:example>
+    <rdfs:label xml:lang="en">footnote</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdfs:subClassOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b64"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A structure within a sentence that permits the author to make a comment or to cite another publication in support of the text, or both. A footnote is normally flagged by a superscript number immediately following that portion of the text to which it relates. For convenience of reading, the text of the footnote is usually printed at the bottom of the page or at the end of a text.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b270">
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b271"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/FrontMatter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b266">
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b267"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/ComplexRunInQuotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b263">
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b264"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/BodyMatter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b269">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/FormulaBox"/>
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b270"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b261">
+    <owl:members rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b262"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b265">
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b266"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Chapter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b267">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Footnote"/>
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b268"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b65">
+    <rdf:first rdf:resource="http://www.essepuntato.it/2008/12/pattern#Container"/>
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b66"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b273">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Section"/>
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b274"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b272">
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b273"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b262">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/BackMatter"/>
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b263"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b64">
+    <owl:unionOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b65"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b66">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://www.essepuntato.it/2008/12/pattern#Popup"/>
+  </rdf:Description>
+</rdf:RDF>

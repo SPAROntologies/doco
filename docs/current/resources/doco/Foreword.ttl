@@ -13,7 +13,7 @@ doco:Foreword a owl:Class ;
     :my-foreword a doco:Foreword ; 
         dcterms:isPartOf :my-front-matter .
     """ ;
-    rdfs:comment "A section in a book or report, usually written by someone other than the author, that introduces or commends the document to the reader. It may include description of the interaction between the writer of the foreword and the author."@en ;
+    rdfs:comment "A section in a book or report, usually written by someone other than the author, that introduces or comments the document to the reader. It may include description of the interaction between the writer of the foreword and the author."@en ;
     rdfs:isDefinedBy doco: ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( doco:Section [ a owl:Restriction ;
