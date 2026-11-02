@@ -4,9 +4,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.essepuntato.it/2008/12/pattern#contains">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">contains</rdfs:label>
     <rdfs:comment xml:lang="en">A structured element contains another generic element.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
+    <rdfs:label xml:lang="en">contains</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

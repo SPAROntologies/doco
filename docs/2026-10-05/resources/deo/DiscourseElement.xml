@@ -4,9 +4,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/deo/DiscourseElement">
-    <rdfs:comment xml:lang="en">An element of a document that carries out a rhetorical function.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label xml:lang="en">discourse element</rdfs:label>
+    <rdfs:comment xml:lang="en">An element of a document that carries out a rhetorical function.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
   </rdf:Description>
 </rdf:RDF>

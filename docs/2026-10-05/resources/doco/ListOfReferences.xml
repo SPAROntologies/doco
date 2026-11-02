@@ -6,33 +6,33 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb212">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb210"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb211">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/List"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb212"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/doco/ListOfReferences">
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b209"/>
-    <rdfs:label xml:lang="en">list of references</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdfs:subClassOf rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb209"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment xml:lang="en">A list of items each representing a reference to a specific part of the same document, or to another publication.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdfs:label xml:lang="en">list of references</rdfs:label>
     <vann:example>
     :my-list-of-references a doco:ListOfReferences ;
         pattern:contains :my-reference-01 , :my-reference-02 .
     </vann:example>
+    <rdfs:comment xml:lang="en">A list of items each representing a reference to a specific part of the same document, or to another publication.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b211">
-    <rdf:first rdf:resource="http://purl.org/spar/doco/List"/>
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b212"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb209">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb211"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b210">
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb210">
+    <owl:allValuesFrom rdf:resource="http://purl.org/spar/deo/Reference"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://www.essepuntato.it/2008/12/pattern#contains"/>
-    <owl:allValuesFrom rdf:resource="http://purl.org/spar/deo/Reference"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b212">
-    <rdf:first rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b210"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b209">
-    <owl:intersectionOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b211"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

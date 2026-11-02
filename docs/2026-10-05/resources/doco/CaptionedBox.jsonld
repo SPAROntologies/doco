@@ -1,96 +1,6 @@
 [
   {
-    "@id": "http://purl.org/spar/doco/CaptionedBox",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-captioned-box a doco:CaptionedBox ; \n        dcterms:hasPart :my-caption .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "A rectangle space within a page that contains an object and its related caption."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/doco/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "captioned box"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b158"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b158",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b159"
-          },
-          {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b162"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b159",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/deo/DiscourseElement"
-          },
-          {
-            "@id": "http://www.essepuntato.it/2008/12/pattern#Container"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b162",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/dc/terms/hasPart"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://purl.org/spar/deo/Caption"
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b261",
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb261",
     "@type": [
       "http://www.w3.org/2002/07/owl#AllDisjointClasses"
     ],
@@ -137,6 +47,96 @@
             "@id": "http://purl.org/spar/doco/Table"
           }
         ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/doco/CaptionedBox",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-captioned-box a doco:CaptionedBox ; \n        dcterms:hasPart :my-caption .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A rectangle space within a page that contains an object and its related caption."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "captioned box"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb158"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb158",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb159"
+          },
+          {
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb162"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb159",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/deo/DiscourseElement"
+          },
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Container"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb162",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/hasPart"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/deo/Caption"
       }
     ]
   }

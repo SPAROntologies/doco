@@ -1,165 +1,6 @@
 [
   {
-    "@id": "http://purl.org/spar/doco/TableOfContents",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-table-of-contents a doco:TableOfContents ; \n        dcterms:isPartOf :my-front-matter .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "A section of the document listing all the chapters and sections, identified by their titles and referenced to their locations in the document. The table of contents may include a list of the front-matter and back-matter items, in addition to the body-matter items.  Where the document is a journal or magazine issue, the table of content lists the constituent items contained in that issue, typically by title, authors and first page number."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/doco/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "table of contents"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b140"
-      },
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b147"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b140",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/doco/Section"
-          },
-          {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b141"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b141",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/dc/terms/isPartOf"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b142"
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b142",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/doco/BackMatter"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/FrontMatter"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b147",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/dc/terms/hasPart"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b148"
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b148",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/doco/ListOfReferences"
-          },
-          {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b149"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b149",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b150"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b150",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://purl.org/dc/terms/relation"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://purl.org/spar/doco/Section"
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b249",
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb249",
     "@type": [
       "http://www.w3.org/2002/07/owl#AllDisjointClasses"
     ],
@@ -198,6 +39,165 @@
           },
           {
             "@id": "http://purl.org/spar/doco/TableOfContents"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/doco/TableOfContents",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-table-of-contents a doco:TableOfContents ; \n        dcterms:isPartOf :my-front-matter .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A section of the document listing all the chapters and sections, identified by their titles and referenced to their locations in the document. The table of contents may include a list of the front-matter and back-matter items, in addition to the body-matter items.  Where the document is a journal or magazine issue, the table of content lists the constituent items contained in that issue, typically by title, authors and first page number."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "table of contents"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb147"
+      },
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb140"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb147",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/hasPart"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb148"
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb148",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/ListOfReferences"
+          },
+          {
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb149"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb149",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb150"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb150",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/relation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://purl.org/spar/doco/Section"
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb140",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Section"
+          },
+          {
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb141"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb141",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/isPartOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb142"
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb142",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/BackMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FrontMatter"
           }
         ]
       }

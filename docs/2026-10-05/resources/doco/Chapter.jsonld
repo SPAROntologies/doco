@@ -1,6 +1,6 @@
 [
   {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b261",
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb261",
     "@type": [
       "http://www.w3.org/2002/07/owl#AllDisjointClasses"
     ],
@@ -79,13 +79,13 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b220"
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb216"
       },
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b213"
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb213"
       },
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b216"
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb220"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -95,7 +95,7 @@
     ]
   },
   {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b220",
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb216",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -106,23 +106,30 @@
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b221"
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb217"
       }
     ]
   },
   {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b221",
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb217",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2002/07/owl#complementOf": [
+    "http://www.w3.org/2002/07/owl#unionOf": [
       {
-        "@id": "http://purl.org/spar/doco/Chapter"
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Paragraph"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Section"
+          }
+        ]
       }
     ]
   },
   {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b213",
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb213",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -140,7 +147,7 @@
     ]
   },
   {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b216",
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb220",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -151,25 +158,18 @@
     ],
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b217"
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb221"
       }
     ]
   },
   {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b217",
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb221",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
+    "http://www.w3.org/2002/07/owl#complementOf": [
       {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/doco/Paragraph"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/Section"
-          }
-        ]
+        "@id": "http://purl.org/spar/doco/Chapter"
       }
     ]
   }

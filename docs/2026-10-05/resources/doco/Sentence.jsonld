@@ -1,5 +1,26 @@
 [
   {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb284",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Sentence"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/SimpleRunInQuotation"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/TextChunk"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "@id": "http://purl.org/spar/doco/Sentence",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -28,36 +49,15 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.essepuntato.it/2008/12/pattern#Inline"
+        "@id": "http://purl.org/spar/deo/DiscourseElement"
       },
       {
-        "@id": "http://purl.org/spar/deo/DiscourseElement"
+        "@id": "http://www.essepuntato.it/2008/12/pattern#Inline"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
       {
         "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b284",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
-    ],
-    "http://www.w3.org/2002/07/owl#members": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/doco/Sentence"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/SimpleRunInQuotation"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/TextChunk"
-          }
-        ]
       }
     ]
   }

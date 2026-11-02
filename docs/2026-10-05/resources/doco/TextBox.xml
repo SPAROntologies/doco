@@ -6,16 +6,16 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/doco/TextBox">
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#Container"/>
+    <rdfs:label xml:lang="en">text box</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
     <vann:example>
     :my-text-box a doco:TextBox ;
         c4o:hasContent 'Using a text box, you can create a block of text that appears above, below, or around pictures, charts, or other objects.'@en .
     </vann:example>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#Container"/>
     <rdfs:comment xml:lang="en">A space within a document that contains textual content relating to, quoting from or expanding upon the main text. Usually a textbox is delimited by a border or use of a background colour distinct from that of the main text.</rdfs:comment>
-    <rdfs:label xml:lang="en">text box</rdfs:label>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

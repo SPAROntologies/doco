@@ -245,20 +245,20 @@ What is the full bibliographic text of the reference cited by a specific inline 
     """ ;
         rdfs:comment "A list of items each representing a reference to a specific part of the same document, or to another publication."@en ;
         rdfs:isDefinedBy doco: ;
-        rdfs:subClassOf _:ndf7937cf38824ac98bc5eceaf6903cb5b209 ;
+        rdfs:subClassOf _:n4a5d32b6784e4d0fbc9167d39a514eebb209 ;
         vs:term_status reg:statusStable .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b209 a owl:Class ;
-        owl:intersectionOf _:ndf7937cf38824ac98bc5eceaf6903cb5b211 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb209 a owl:Class ;
+        owl:intersectionOf _:n4a5d32b6784e4d0fbc9167d39a514eebb211 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b210 a owl:Restriction ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb210 a owl:Restriction ;
         owl:allValuesFrom deo:Reference ;
         owl:onProperty po:contains .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b211 rdf:first doco:List ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b212 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb211 rdf:first doco:List ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb212 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b212 rdf:first _:ndf7937cf38824ac98bc5eceaf6903cb5b210 ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb212 rdf:first _:n4a5d32b6784e4d0fbc9167d39a514eebb210 ;
         rdf:rest () .
 }
 
@@ -294,7 +294,7 @@ What is the full bibliographic text of the reference cited by a specific inline 
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b209"
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb209"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -304,7 +304,7 @@ What is the full bibliographic text of the reference cited by a specific inline 
         ]
       },
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b209",
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb209",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -315,14 +315,14 @@ What is the full bibliographic text of the reference cited by a specific inline 
                 "@id": "http://purl.org/spar/doco/List"
               },
               {
-                "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b210"
+                "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb210"
               }
             ]
           }
         ]
       },
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b210",
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb210",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -340,22 +340,22 @@ What is the full bibliographic text of the reference cited by a specific inline 
     ],
     "@id": "http://purl.org/spar/doco"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_323e290592e5f0ebbfd681a6821ef77a_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b209 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b211 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/List> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://www.w3.org/2000/01/rdf-schema#label> "list of references"@en &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/doco/> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b210 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
+]</code></pre></div><div class="tab-pane fade" id=id_323e290592e5f0ebbfd681a6821ef77a_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n4a5d32b6784e4d0fbc9167d39a514eebb212 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb211 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/List> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb212 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a5d32b6784e4d0fbc9167d39a514eebb210 &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb209 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb209 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b210 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.essepuntato.it/2008/12/pattern#contains> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b212 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b210 &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A list of items each representing a reference to a specific part of the same document, or to another publication."@en &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/doco/> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://www.w3.org/2000/01/rdf-schema#label> "list of references"@en &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb210 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/deo/Reference> &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://purl.org/vocab/vann/example> "\n    :my-list-of-references a doco:ListOfReferences ;\n        pattern:contains :my-reference-01 , :my-reference-02 .\n    " &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b210 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> &lt;http://purl.org/spar/deo/Reference> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b209 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b211 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b212 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b211 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b212 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b209 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb210 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb211 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb212 &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A list of items each representing a reference to a specific part of the same document, or to another publication."@en &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb209 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb211 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb210 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.essepuntato.it/2008/12/pattern#contains> &lt;http://purl.org/spar/doco> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../doco.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

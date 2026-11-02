@@ -5,12 +5,12 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:about="http://www.essepuntato.it/2008/12/pattern#Pattern">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">pattern-based element</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
     <skos:note xml:lang="en">
 Any entity belonging to this class is compliant with exactly one structural pattern.
 </skos:note>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
     <rdfs:comment xml:lang="en">A document content nestable element.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">pattern-based element</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

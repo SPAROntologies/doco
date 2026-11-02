@@ -1,29 +1,5 @@
 [
   {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b275",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
-    ],
-    "http://www.w3.org/2002/07/owl#members": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/doco/Label"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/Paragraph"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/Subtitle"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/Title"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "@id": "http://purl.org/spar/doco/Subtitle",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -52,10 +28,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://purl.org/spar/deo/DiscourseElement"
+        "@id": "http://www.essepuntato.it/2008/12/pattern#Block"
       },
       {
-        "@id": "http://www.essepuntato.it/2008/12/pattern#Block"
+        "@id": "http://purl.org/spar/deo/DiscourseElement"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -67,6 +43,30 @@
       {
         "@language": "en",
         "@value": "For example, Mary Shelley uses the alternative title 'The Modern Prometheus' to hint at the theme of her most famous novel 'Frankenstein'; Nick Efford uses the subtitle 'a practical introduction using Java' to qualify the title of his book 'Digital Image Processing'"
+      }
+    ]
+  },
+  {
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb275",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Label"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Paragraph"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Subtitle"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Title"
+          }
+        ]
       }
     ]
   }
