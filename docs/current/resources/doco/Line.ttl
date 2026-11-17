@@ -16,7 +16,7 @@ doco:Line a owl:Class ;
     rdfs:comment """A line in poetry is a unit of language into which a poem is divided which operates on principles which are distinct from and not necessarily coincident with grammatical structures, such as the sentence or clauses in sentences.
 
 A distinct numbered group of lines in verse is normally called a stanza."""@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf deo:DiscourseElement,
         po:Block ;
     vs:term_status reg:statusStable .

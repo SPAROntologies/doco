@@ -16,7 +16,7 @@ doco:FormulaBox a owl:Class ;
         dcterms:hasPart :my-formula .
     """ ;
     rdfs:comment "A space within a document that contains one or more formulae."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( [ a owl:Class ;
                         owl:intersectionOf ( deo:DiscourseElement po:Container ) ] [ a owl:Restriction ;

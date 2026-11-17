@@ -14,7 +14,7 @@ doco:Figure a owl:Class ;
     :my-figure a doco:Figure .
     """ ;
     rdfs:comment "A communication object comprising one or more graphics, drawings, images, or other visual representations.."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:unionOf ( po:Meta po:Milestone ) ],
         deo:DiscourseElement ;

@@ -14,7 +14,7 @@ doco:ChapterSubtitle a owl:Class ;
         dcterms:isPartOf :my-chapter .
     """ ;
     rdfs:comment "The subtitle of a chapter."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty dcterms:isPartOf ;
             owl:someValuesFrom doco:Chapter ],

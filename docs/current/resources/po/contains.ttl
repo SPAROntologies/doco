@@ -5,5 +5,5 @@
 po:contains a owl:ObjectProperty ;
     rdfs:label "contains"@en ;
     rdfs:comment "A structured element contains another generic element."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/po/> .
+    rdfs:isDefinedBy <http://purl.org/spar/po> .
 

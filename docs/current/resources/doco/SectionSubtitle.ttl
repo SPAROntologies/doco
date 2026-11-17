@@ -14,7 +14,7 @@ doco:SectionSubtitle a owl:Class ;
         dcterms:isPartOf :my-section .
     """ ;
     rdfs:comment "The subtitle of a section."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty dcterms:isPartOf ;
             owl:someValuesFrom doco:Section ],

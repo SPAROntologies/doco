@@ -15,7 +15,7 @@ doco:Colophon a owl:Class ;
         dcterms:isPartOf :my-back-matter .
     """ ;
     rdfs:comment "A brief description of publication or production notes relevant to the document."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( doco:Section [ a owl:Restriction ;
                         owl:onProperty dcterms:isPartOf ;

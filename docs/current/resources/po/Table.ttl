@@ -5,5 +5,5 @@
 po:Table a owl:Class ;
     rdfs:label "table element"@en ;
     rdfs:comment "A container element that must contain only homogeneous elements (but they can be repeated)."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/po/> .
+    rdfs:isDefinedBy <http://purl.org/spar/po> .
 

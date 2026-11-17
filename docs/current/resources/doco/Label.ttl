@@ -15,7 +15,7 @@ doco:Label a owl:Class ;
         c4o:hasContent 'Chapter One'@en .
     """ ;
     rdfs:comment "A block containing text, that may include a number (e.g., \"Chapter Three\", \"3.2\", \"Figure 1\", \"Table\"), used to identify an item within the document, for example a chapter, a figure, a section or a table."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty po:isContainedBy ;
             owl:someValuesFrom [ a owl:Class ;

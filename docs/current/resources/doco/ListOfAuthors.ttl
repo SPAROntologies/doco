@@ -12,7 +12,7 @@ doco:ListOfAuthors a owl:Class ;
     :my-list-of-authors a doco:ListOfAuthors .
     """ ;
     rdfs:comment "A list of items each denoting an author of a particular publication."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf doco:ListOfAgents ;
     vs:term_status reg:statusStable .
 

@@ -14,7 +14,7 @@ doco:SimpleRunInQuotation a owl:Class ;
         c4o:hasContent 'The Minister said, “Prospects for growth are not good.”'@en .
     """ ;
     rdfs:comment "A textual quotation that is included inline and is usually enclosed within quotation marks."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf po:Inline ;
     vs:term_status reg:statusStable .
 

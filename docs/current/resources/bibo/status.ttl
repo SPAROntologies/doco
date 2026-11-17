@@ -1,0 +1,5 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+bibo:status a owl:AnnotationProperty .
+

@@ -16,7 +16,7 @@ doco:CaptionedBox a owl:Class ;
         dcterms:hasPart :my-caption .
     """ ;
     rdfs:comment "A rectangle space within a page that contains an object and its related caption."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( [ a owl:Class ;
                         owl:intersectionOf ( deo:DiscourseElement po:Container ) ] [ a owl:Restriction ;

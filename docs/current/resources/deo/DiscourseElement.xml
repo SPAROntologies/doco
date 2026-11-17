@@ -5,8 +5,8 @@
 >
   <rdf:Description rdf:about="http://purl.org/spar/deo/DiscourseElement">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label xml:lang="en">discourse element</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo"/>
     <rdfs:comment xml:lang="en">An element of a document that carries out a rhetorical function.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/deo/"/>
+    <rdfs:label xml:lang="en">discourse element</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -15,7 +15,7 @@ doco:BackMatter a owl:Class ;
         pattern:contains :my-bibliography .
     """ ;
     rdfs:comment "The final principle part of a document, in which is usually found the bibliography, index, appendixes, etc."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( deo:DiscourseElement po:Container ) ],
         [ a owl:Restriction ;

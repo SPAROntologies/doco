@@ -12,7 +12,7 @@ doco:ListOfOrganizations a owl:Class ;
     :my-list-or-organizations a doco:ListOfOrganizations .
     """ ;
     rdfs:comment "A list of items, each denoting an organization or institution related to the publication, for example the authors' affiliations, or the suppliers of information, software, equipment or consumables used in the work described in the publication."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf doco:ListOfAgents ;
     vs:term_status reg:statusStable .
 

@@ -15,7 +15,7 @@ doco:ComplexRunInQuotation a owl:Class ;
         c4o:hasContent 'Carol said “Go ahead“ when I asked her if the launcher was ready.'@en .
     """ ;
     rdfs:comment "A quotation with a complex structure, that is included inline and is usually enclosed within quotation marks."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf deo:DiscourseElement,
         po:Popup ;
     vs:term_status reg:statusStable .

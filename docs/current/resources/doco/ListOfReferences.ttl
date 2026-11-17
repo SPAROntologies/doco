@@ -15,7 +15,7 @@ doco:ListOfReferences a owl:Class ;
         pattern:contains :my-reference-01 , :my-reference-02 .
     """ ;
     rdfs:comment "A list of items each representing a reference to a specific part of the same document, or to another publication."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( doco:List [ a owl:Restriction ;
                         owl:allValuesFrom deo:Reference ;

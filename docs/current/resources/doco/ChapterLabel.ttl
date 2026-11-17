@@ -15,7 +15,7 @@ doco:ChapterLabel a owl:Class ;
         dcterms:isPartOf :my-chapter .
     """ ;
     rdfs:comment "A block containing a label for the chapter, that may include the chapter number."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( doco:Label [ a owl:Restriction ;
                         owl:onProperty dcterms:isPartOf ;

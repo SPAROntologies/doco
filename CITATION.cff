@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 title: The Document Components Ontology (DoCO)
 message: >-
-If you use this software, please cite it using the
-metadata from this file.
+  If you use this software, please cite it using the
+  metadata from this file.
 type: software
 authors:
 - given-names: Silvio
@@ -24,8 +24,8 @@ keywords:
 - scientometrics
 - semantic publishing
 license: CC-BY-4.0
-version: 1.4.1
-date-released: '2026-10-05'
+version: 1.4.2
+date-released: '2026-11-17'
 preferred-citation:
     type: article
     authors:

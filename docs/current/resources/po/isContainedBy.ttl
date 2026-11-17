@@ -5,6 +5,6 @@
 po:isContainedBy a owl:ObjectProperty ;
     rdfs:label "is contained by"@en ;
     rdfs:comment "A structured element is contained by another generic element."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/po> ;
     owl:inverseOf po:contains .
 

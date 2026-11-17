@@ -6,7 +6,7 @@
 po:Meta a owl:Class ;
     rdfs:label "meta element"@en ;
     rdfs:comment "A document content nestable element."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/po> ;
     skos:note """
 This class describes elements that contain neither other elements nor textual content. 
 Contrarily to the pattern Milestone, which was meant to describe markup elements that impact the document because of their location, the main feature of its disjoint sibling is the mere existence, independently from the position it has within the document. 

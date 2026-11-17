@@ -11,7 +11,7 @@ doco:ListOfAgents a owl:Class ;
     :my-list-of-agents a doco:ListOfAgents .
     """ ;
     rdfs:comment "A list of items each denoting an agent, such as an author, a contributor or an organization, related to a particular publication."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf doco:List ;
     owl:disjointWith doco:ListOfReferences ;
     vs:term_status reg:statusStable .

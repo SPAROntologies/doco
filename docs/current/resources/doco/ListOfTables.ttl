@@ -16,7 +16,7 @@ doco:ListOfTables a owl:Class ;
         pattern:contains :my-list-of-references .
     """ ;
     rdfs:comment "A section of the document listing all the tables, identified by their titles and referenced to their locations in the document."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( [ a owl:Class ;
                         owl:intersectionOf ( doco:Section po:HeadedContainer ) ] [ a owl:Restriction ;

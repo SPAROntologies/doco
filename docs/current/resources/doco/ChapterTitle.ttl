@@ -14,7 +14,7 @@ doco:ChapterTitle a owl:Class ;
         pattern:isContainedByAsHeader :my-chapter .
     """ ;
     rdfs:comment "The title of a chapter."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty po:isContainedByAsHeader ;
             owl:someValuesFrom doco:Chapter ],

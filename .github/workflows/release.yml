@@ -10,7 +10,23 @@ permissions:
   contents: write
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      stale: ${{ steps.hash.outputs.stale }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: hash
+        run: |
+          if sha256sum -c --quiet docs/doco.ttl.sha256 2>/dev/null; then
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+          fi
+
   docs:
+    needs: check
+    if: needs.check.outputs.stale == 'true'
     uses: SPAROntologies/sparontologies.github.io/.github/workflows/lode.yml@master
     with:
       ontology: docs/current/doco.ttl
@@ -65,14 +81,24 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          sha256sum docs/current/doco.ttl > docs/doco.ttl.sha256
           git add -A docs CITATION.cff pyproject.toml uv.lock
           git diff --cached --quiet || git commit -m "DOCS: add versioned documentation snapshot and update version"
           git push
 
+  release:
+    needs: metadata
+    if: ${{ !cancelled() && !failure() && !github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
       - name: Create release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          VERSION=$(sed -n 's/^version: //p' CITATION.cff)
           if gh release view "v$VERSION" >/dev/null 2>&1; then
             echo "Release v$VERSION already exists, skipping"
           else

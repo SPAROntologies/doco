@@ -14,7 +14,7 @@ doco:SectionTitle a owl:Class ;
         pattern:isContainedByAsHeader :my-section .
     """ ;
     rdfs:comment "The title of a section."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty po:isContainedByAsHeader ;
             owl:someValuesFrom doco:Section ],

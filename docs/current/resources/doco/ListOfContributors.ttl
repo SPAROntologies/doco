@@ -12,7 +12,7 @@ doco:ListOfContributors a owl:Class ;
     :my-list-of-contributors a doco:ListOfContributors .
     """ ;
     rdfs:comment "A list of items, each denoting a contributor to a publication such as an encyclopedia or a text book, where such contributions are insufficient to warrant classification as author."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf doco:ListOfAgents ;
     vs:term_status reg:statusStable .
 

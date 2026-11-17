@@ -5,5 +5,5 @@
 deo:Reference a owl:Class ;
     rdfs:label "reference"@en ;
     rdfs:comment "A reference to a specific part of the document, or to another publication."@en ;
-    rdfs:isDefinedBy deo: .
+    rdfs:isDefinedBy <http://purl.org/spar/deo> .
 

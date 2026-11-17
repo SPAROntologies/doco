@@ -14,7 +14,7 @@ doco:SectionLabel a owl:Class ;
         dcterms:isPartOf :my-section .
     """ ;
     rdfs:comment "A block containing a label for the section, that may include the section number."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty dcterms:isPartOf ;
             owl:someValuesFrom doco:Section ],

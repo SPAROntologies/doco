@@ -15,7 +15,7 @@ doco:BibliographicReferenceList a owl:Class ;
         pattern:contains :my-bibliographic-reference-01, :my-bibliographic-reference-02 .
     """ ;
     rdfs:comment "A list, usually within a bibliography, of all the references within the citing document that refer to  journal articles, books, book chapters, Web sites or similar publications."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( doco:ListOfReferences [ a owl:Restriction ;
                         owl:onProperty po:contains ;

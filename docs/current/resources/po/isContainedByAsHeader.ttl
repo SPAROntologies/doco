@@ -5,7 +5,7 @@
 po:isContainedByAsHeader a owl:ObjectProperty ;
     rdfs:label "is contained by as header"@en ;
     rdfs:comment "An element is contained by another structured element as part of its header."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/po> ;
     rdfs:subProperyOf po:isContainedBy ;
     owl:inverseOf po:containsAsHeader .
 

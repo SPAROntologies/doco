@@ -1,0 +1,8 @@
+[
+  {
+    "@id": "http://xmlns.com/foaf/0.1/logo",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  }
+]

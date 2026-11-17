@@ -16,7 +16,7 @@ doco:Subtitle a owl:Class ;
         c4o:hasContent 'The Modern Prometheus'@en .
     """ ;
     rdfs:comment "An explanatory or alternative title of a publication."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf deo:DiscourseElement,
         po:Block ;
     vs:term_status reg:statusStable ;
