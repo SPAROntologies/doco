@@ -1,0 +1,215 @@
+[
+  {
+    "@id": "http://purl.org/spar/doco/List",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-list a doco:List ; \n        pattern:contains :my-item .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "An enumeration of items."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "list"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb165"
+      },
+      {
+        "@id": "http://purl.org/spar/deo/DiscourseElement"
+      },
+      {
+        "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb169"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb165",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Table"
+          },
+          {
+            "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb166"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb166",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#Pattern"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb169",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb170"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb170",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Block"
+          },
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Field"
+          },
+          {
+            "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb171"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb171",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Container"
+          },
+          {
+            "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb172"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb172",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#complementOf": [
+      {
+        "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb173"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb173",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#HeadedContainer"
+          },
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#Table"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb261",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/BackMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/BodyMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/CaptionedBox"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Chapter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ComplexRunInQuotation"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Footnote"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Formula"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FormulaBox"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FrontMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/List"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Part"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Section"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Table"
+          }
+        ]
+      }
+    ]
+  }
+]

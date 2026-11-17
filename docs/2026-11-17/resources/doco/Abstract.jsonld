@@ -1,0 +1,153 @@
+[
+  {
+    "@id": "http://purl.org/spar/doco/Abstract",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-abstract a doco:Abstract ;\n        c4o:hasContent 'The history of abstracting dates back to the point when it was felt necessary to summarise the content of documents in order to make the information contained in them more accessible.'@en ;\n        dcterms:isPartOf :my-front-matter .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "abstract"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb33"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb33",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb34"
+          },
+          {
+            "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb37"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb34",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Chapter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Section"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb37",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://purl.org/dc/terms/isPartOf"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb38"
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb38",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/BodyMatter"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/FrontMatter"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb249",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Abstract"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Afterword"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Appendix"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Colophon"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Foreword"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Glossary"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Index"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ListOfFigures"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/ListOfTables"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Preface"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/TableOfContents"
+          }
+        ]
+      }
+    ]
+  }
+]

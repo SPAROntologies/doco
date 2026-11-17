@@ -1,0 +1,16 @@
+_:n3f44f1c7a5b0456db6b8a0f394a194afb21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "A block containing a label for the figure box, that may include the figure number."@en .
+_:n3f44f1c7a5b0456db6b8a0f394a194afb20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n3f44f1c7a5b0456db6b8a0f394a194afb21 .
+_:n3f44f1c7a5b0456db6b8a0f394a194afb20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Label> .
+<http://purl.org/spar/doco/FigureLabel> <http://purl.org/vocab/vann/example> "\n    :my-figure-label a doco:FigureLabel ;\n        c4o:hasContent 'Figure 1'@en ;\n        dcterms:isPartOf :my-figure-box .\n    " .
+_:n3f44f1c7a5b0456db6b8a0f394a194afb21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n3f44f1c7a5b0456db6b8a0f394a194afb19 .
+_:n3f44f1c7a5b0456db6b8a0f394a194afb19 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/isPartOf> .
+_:n3f44f1c7a5b0456db6b8a0f394a194afb18 <http://www.w3.org/2002/07/owl#intersectionOf> _:n3f44f1c7a5b0456db6b8a0f394a194afb20 .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco> .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n3f44f1c7a5b0456db6b8a0f394a194afb19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/FigureBox> .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n3f44f1c7a5b0456db6b8a0f394a194afb18 .
+_:n3f44f1c7a5b0456db6b8a0f394a194afb19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n3f44f1c7a5b0456db6b8a0f394a194afb18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#label> "figure label"@en .

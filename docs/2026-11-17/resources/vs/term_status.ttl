@@ -1,0 +1,5 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+vs:term_status a owl:AnnotationProperty .
+
