@@ -6,7 +6,7 @@
 po:HeadedContainer a owl:Class ;
     rdfs:label "headed-container element"@en ;
     rdfs:comment "A document content nestable element."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/po> ;
     skos:note """
 This class describes container elements whose content model need to begin with one or more block elements (the heading), specified through the property `po:containsAsHeader`.
   """@en .

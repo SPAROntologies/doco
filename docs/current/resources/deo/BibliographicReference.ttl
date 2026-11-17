@@ -5,5 +5,5 @@
 deo:BibliographicReference a owl:Class ;
     rdfs:label "bibliographic reference"@en ;
     rdfs:comment "A reference, usually contained in a footnote or a bibliographic reference list, that refer to another publication, such as a journal article, a book, a book chapter or a Web site. The inclusion of the bibliographic reference in a publication constitutes the performative act of bibliographic citation."@en ;
-    rdfs:isDefinedBy deo: .
+    rdfs:isDefinedBy <http://purl.org/spar/deo> .
 

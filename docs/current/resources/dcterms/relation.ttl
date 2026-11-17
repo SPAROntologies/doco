@@ -5,5 +5,5 @@
 dcterms:relation a owl:ObjectProperty ;
     rdfs:label "relation"@en ;
     rdfs:comment "A related resource."@en ;
-    rdfs:isDefinedBy dcterms: .
+    rdfs:isDefinedBy <http://purl.org/dc/terms> .
 

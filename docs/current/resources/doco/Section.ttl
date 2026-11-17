@@ -15,7 +15,7 @@ doco:Section a owl:Class ;
         pattern:contains :my-paragraph .
     """ ;
     rdfs:comment "A logical division of the text, usually numbered and/or titled, which may contain subsections."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( deo:DiscourseElement po:HeadedContainer ) ],
         [ a owl:Restriction ;

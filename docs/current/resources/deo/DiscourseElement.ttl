@@ -5,5 +5,5 @@
 deo:DiscourseElement a owl:Class ;
     rdfs:label "discourse element"@en ;
     rdfs:comment "An element of a document that carries out a rhetorical function."@en ;
-    rdfs:isDefinedBy deo: .
+    rdfs:isDefinedBy <http://purl.org/spar/deo> .
 

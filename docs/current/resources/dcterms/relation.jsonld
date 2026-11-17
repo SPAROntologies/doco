@@ -12,7 +12,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/dc/terms/"
+        "@id": "http://purl.org/dc/terms"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [

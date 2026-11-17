@@ -15,7 +15,7 @@ doco:Table a owl:Class ;
         pattern:contains :my-container .
     """ ;
     rdfs:comment "A set of data arranged in cells within rows and columns."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty po:contains ;
             owl:someValuesFrom po:Container ],

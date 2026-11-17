@@ -5,6 +5,6 @@
 po:containsAsHeader a owl:ObjectProperty ;
     rdfs:label "contains as header"@en ;
     rdfs:comment "A structured element contains another generic element as part of its header."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/po> ;
     rdfs:subProperyOf po:contains .
 

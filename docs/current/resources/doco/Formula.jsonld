@@ -17,7 +17,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
       {
-        "@id": "http://purl.org/spar/doco/"
+        "@id": "http://purl.org/spar/doco"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb261",
+    "@id": "_:n3f44f1c7a5b0456db6b8a0f394a194afb261",
     "@type": [
       "http://www.w3.org/2002/07/owl#AllDisjointClasses"
     ],

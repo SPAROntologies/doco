@@ -15,7 +15,7 @@ doco:TableOfContents a owl:Class ;
         dcterms:isPartOf :my-front-matter .
     """ ;
     rdfs:comment "A section of the document listing all the chapters and sections, identified by their titles and referenced to their locations in the document. The table of contents may include a list of the front-matter and back-matter items, in addition to the body-matter items.  Where the document is a journal or magazine issue, the table of content lists the constituent items contained in that issue, typically by title, authors and first page number."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( doco:Section [ a owl:Restriction ;
                         owl:onProperty dcterms:isPartOf ;

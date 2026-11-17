@@ -15,7 +15,7 @@ doco:Appendix a owl:Class ;
         dcterms:isPartOf :my-back-matter .
     """ ;
     rdfs:comment "A supplemental addition to the main work. It may contain data, more detailed information about methods and materials, or provide additional detail concerning the information found in the main work."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( [ a owl:Class ;
                         owl:intersectionOf ( doco:Section po:HeadedContainer ) ] [ a owl:Restriction ;

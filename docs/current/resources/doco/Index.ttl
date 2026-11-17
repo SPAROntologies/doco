@@ -16,7 +16,7 @@ doco:Index a owl:Class ;
         pattern:contains :my-list-of-references .
     """ ;
     rdfs:comment "A section containing a list of references to information on the named topic of importance to the content of the document. The references may be to page numbers, paragraph numbers, section numbers or chapter numbers within the document."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( [ a owl:Class ;
                         owl:intersectionOf ( doco:Section po:HeadedContainer ) ] [ a owl:Restriction ;

@@ -16,7 +16,7 @@ doco:Title a owl:Class ;
         pattern:isContainedByAsHeader :my-header-container .
     """ ;
     rdfs:comment "A word, phrase or sentence that precedes and indicates the subject of a document or a document component - e.g., a book, a report, a news article, a chapter, a section or a table."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:unionOf ( po:Block po:Field ) ],
         [ a owl:Restriction ;

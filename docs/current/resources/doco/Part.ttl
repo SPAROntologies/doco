@@ -15,7 +15,7 @@ doco:Part a owl:Class ;
         pattern:contains :my-chapter-01 , :my-chapter-02 .
     """ ;
     rdfs:comment "A container of a semantic subdivision of a document. For example, chapters of a novel may be grouped into distinct parts that may be named 'Part 1', 'Part 2', etc., 'Book 1', 'Book 2', etc., or 'Genesis', 'Exodus', etc."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( deo:DiscourseElement po:Container ) ] ;
     vs:term_status reg:statusStable .

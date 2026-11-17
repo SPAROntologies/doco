@@ -15,7 +15,7 @@ doco:TableLabel a owl:Class ;
         dcterms:isPartOf :my-table-box .
     """ ;
     rdfs:comment "A block containing a label for the table box, that may include the table number."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( doco:Label [ a owl:Restriction ;
                         owl:onProperty dcterms:isPartOf ;

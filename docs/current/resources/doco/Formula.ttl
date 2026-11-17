@@ -15,7 +15,7 @@ doco:Formula a owl:Class ;
         c4o:hasContent 'a^2 * b^2 = a^2b^2' .
     """ ;
     rdfs:comment "A unit of information expressed in mathematical, chemical or logical symbols and language."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf deo:DiscourseElement,
         po:Popup ;
     vs:term_status reg:statusStable .

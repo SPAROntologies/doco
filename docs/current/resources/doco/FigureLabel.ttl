@@ -15,7 +15,7 @@ doco:FigureLabel a owl:Class ;
         dcterms:isPartOf :my-figure-box .
     """ ;
     rdfs:comment "A block containing a label for the figure box, that may include the figure number."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( doco:Label [ a owl:Restriction ;
                         owl:onProperty dcterms:isPartOf ;

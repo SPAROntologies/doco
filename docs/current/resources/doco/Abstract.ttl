@@ -15,7 +15,7 @@ doco:Abstract a owl:Class ;
         dcterms:isPartOf :my-front-matter .
     """ ;
     rdfs:comment "A brief summary of a book, a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, the purpose of which is to help the reader quickly ascertain the publication's purpose." ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( [ a owl:Class ;
                         owl:unionOf ( doco:Chapter doco:Section ) ] [ a owl:Restriction ;

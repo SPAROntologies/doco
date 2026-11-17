@@ -5,5 +5,5 @@
 deo:Caption a owl:Class ;
     rdfs:label "caption"@en ;
     rdfs:comment "Text accompanying another item, such as a picture."@en ;
-    rdfs:isDefinedBy deo: .
+    rdfs:isDefinedBy <http://purl.org/spar/deo> .
 

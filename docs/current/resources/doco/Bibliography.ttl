@@ -15,7 +15,7 @@ doco:Bibliography a owl:Class ;
         dcterms:hasPart :my-bibliographic-reference-01 .
     """ ;
     rdfs:comment "A document section containing a list of bibliographic references."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( [ a owl:Class ;
                         owl:unionOf ( doco:Chapter doco:Section ) ] [ a owl:Restriction ;

@@ -15,7 +15,7 @@ doco:List a owl:Class ;
         pattern:contains :my-item .
     """ ;
     rdfs:comment "An enumeration of items."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( po:Table [ a owl:Restriction ;
                         owl:onProperty po:contains ;

@@ -14,7 +14,7 @@ doco:FigureBox a owl:Class ;
         dcterms:hasPart :my-figure, :my-caption .
     """ ;
     rdfs:comment "A space within a document that contains a figure and its caption."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( doco:CaptionedBox [ a owl:Restriction ;
                         owl:onProperty dcterms:hasPart ;

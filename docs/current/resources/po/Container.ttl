@@ -6,7 +6,7 @@
 po:Container a owl:Class ;
     rdfs:label "container element"@en ;
     rdfs:comment "A document content nestable element."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/po> ;
     skos:note """
 This class concerns the structural organization of a document. 
 Elements following this pattern contain no textual content and contain only elements compliant with the patterns: Meta, Field, Block and any subtype of Container. 

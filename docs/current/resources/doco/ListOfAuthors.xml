@@ -6,31 +6,31 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb282">
-    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb283"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/ListOfContributors"/>
+  <rdf:Description rdf:nodeID="n3f44f1c7a5b0456db6b8a0f394a194afb280">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="n3f44f1c7a5b0456db6b8a0f394a194afb281"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n3f44f1c7a5b0456db6b8a0f394a194afb283">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/ListOfOrganizations"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/doco/ListOfAuthors">
-    <rdfs:comment xml:lang="en">A list of items each denoting an author of a particular publication.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vann:example>
     :my-list-of-authors a doco:ListOfAuthors .
     </vann:example>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/doco/ListOfAgents"/>
     <rdfs:label xml:lang="en">list of authors</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/doco/ListOfAgents"/>
+    <rdfs:comment xml:lang="en">A list of items each denoting an author of a particular publication.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb281">
-    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb282"/>
+  <rdf:Description rdf:nodeID="n3f44f1c7a5b0456db6b8a0f394a194afb281">
+    <rdf:rest rdf:nodeID="n3f44f1c7a5b0456db6b8a0f394a194afb282"/>
     <rdf:first rdf:resource="http://purl.org/spar/doco/ListOfAuthors"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb283">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/ListOfOrganizations"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb280">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-    <owl:members rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb281"/>
+  <rdf:Description rdf:nodeID="n3f44f1c7a5b0456db6b8a0f394a194afb282">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/ListOfContributors"/>
+    <rdf:rest rdf:nodeID="n3f44f1c7a5b0456db6b8a0f394a194afb283"/>
   </rdf:Description>
 </rdf:RDF>

@@ -15,7 +15,7 @@ doco:Chapter a owl:Class ;
         pattern:contains :my-section .
     """ ;
     rdfs:comment "A principle division of the body matter of a large document, such as a book, a report or a legislative document."@en ;
-    rdfs:isDefinedBy doco: ;
+    rdfs:isDefinedBy <http://purl.org/spar/doco> ;
     rdfs:subClassOf [ a owl:Class ;
             owl:intersectionOf ( deo:DiscourseElement po:HeadedContainer ) ],
         [ a owl:Restriction ;

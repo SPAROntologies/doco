@@ -6,7 +6,7 @@
 po:Inline a owl:Class ;
     rdfs:label "inline element"@en ;
     rdfs:comment "A document content nestable element."@en ;
-    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    rdfs:isDefinedBy <http://purl.org/spar/po> ;
     skos:note """
 This class has the same use and content model of the pattern Block, but differing primarily because a) inline elements can contain other elements compliant with the same pattern while block elements cannot, and b) inline elements must always be contained by other block or inline elements and by no other type of element.
 
