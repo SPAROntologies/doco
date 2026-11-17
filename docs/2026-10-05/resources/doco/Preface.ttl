@@ -1,0 +1,26 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Preface a owl:Class ;
+    rdfs:label "preface"@en ;
+    vann:example """
+    :my-preface a doco:Preface ; 
+        dcterms:isPartOf :my-front-matter .
+    """ ;
+    rdfs:comment "A section describing how the document came into being, or how the idea for it was developed. The preface may contains acknowledgements. The preface to a later edition of the work often explains in what respect that edition differs from previous ones."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Section [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom doco:FrontMatter ] ) ] ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:Abstract doco:Afterword doco:Appendix doco:Colophon doco:Foreword doco:Glossary doco:Index doco:ListOfFigures doco:ListOfTables doco:Preface doco:TableOfContents ) .
+

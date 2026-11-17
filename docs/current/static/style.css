@@ -50,6 +50,12 @@
     /* --- Sidebar metrics --- */
     --toc-sidebar-w:            18rem;
     --toc-sidebar-collapsed-w:  3.5rem;
+
+    /* --- Override link Bootstrap --- */
+    --bs-link-color:           var(--lode-blue);
+    --bs-link-color-rgb:       3, 69, 117;      /* = #034575 */
+    --bs-link-hover-color:     var(--lode-blue-dark);
+    --bs-link-hover-color-rgb: 2, 49, 84;       /* = #023154 */
 }
 
 
@@ -164,19 +170,29 @@ dd { margin: 0 0 .5em 2em; }
 
 .card-body .row { margin: 0; }
 
+.card a:hover,
+.card a:focus-visible {
+    text-decoration-thickness: 3px;
+    color: var(--lode-blue);
+}
+
 /* Risorse non ulteriormente classificate */
 .external-ref {
     text-decoration: underline dotted;
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 2px;
     text-underline-offset: 2px;
-    cursor: help;
-    color: inherit;
+    cursor: pointer;
+    color: var(--lode-blue);
+    opacity: 0.8;
+}
+
+.card a.external-ref:hover,
+.card a.external-ref:focus-visible {
+    background-size: 6px 2px;          /* hover: stesso passo, più spesso */
 }
 
 /* Entita definite nell'ontologia vs importate da vocabolari esterni */
 .entity-internal { color: var(--lode-blue); }
-.entity-external { color: var(--lode-muted); }
-.entity-external .bi { font-size: .75em; opacity: .7; }
 
 
 /* ==========================================================================
@@ -899,3 +915,173 @@ body.toc-sidebar-closed { margin-left: 5rem; }
 
 .toggle-slider.url-mode  { left: 0;   width: 50%; }
 .toggle-slider.file-mode { left: 50%; width: 50%; }
+
+/* ===== SKOS entity card (templates/_card_skos.html) ===== */
+/* LODE-style entity card */
+.entity-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    background: #fff;
+}
+
+.entity-header {
+    background: #f8f9fa;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.entity-label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0d6efd;
+    margin: 0;
+}
+
+.entity-label a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.entity-label a:hover {
+    text-decoration: underline;
+}
+
+.back-to-toc {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.back-to-toc a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.back-to-toc a:hover {
+    color: #0d6efd;
+}
+
+.entity-uri {
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: #495057;
+    word-break: break-all;
+}
+
+.entity-body {
+    padding: 1.25rem;
+}
+
+.entity-definition {
+    font-size: 1rem;
+    color: #212529;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+/* Semantic sections */
+.semantic-section {
+    margin-bottom: 0.75rem;
+}
+
+.semantic-title {
+    font-weight: 600;
+    color: #495057;
+    margin-right: 0.5rem;
+}
+
+.semantic-items {
+    display: inline;
+}
+
+.semantic-item {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.semantic-item:hover {
+    text-decoration: underline;
+}
+
+.semantic-item.external {
+    color: #6f42c1;
+}
+
+.semantic-item.external::after {
+    content: ' ↗';
+    font-size: 0.75em;
+}
+
+.semantic-separator {
+    color: #6c757d;
+    margin: 0 0.25rem;
+}
+
+/* Subscript style for type indicators */
+.type-indicator {
+    font-size: 0.7rem;
+    vertical-align: sub;
+    color: #6c757d;
+    margin-left: 0.1rem;
+}
+
+/* Anchor offset */
+.anchor-offset {
+    scroll-margin-top: 1rem;
+}
+
+
+/* ==========================================================================
+   14. RESPONSIVE
+   Long IRIs must wrap instead of widening the page; the index form must
+   stay usable on narrow phones.
+   ========================================================================== */
+
+/* "anywhere" breaks only when a word would overflow, unlike break-all */
+.container-fluid a,
+.container-fluid code,
+.container-fluid dd,
+.container-fluid .card-body {
+    overflow-wrap: anywhere;
+}
+
+/* Header IRI: wrap on as many lines as needed instead of being cut */
+.resource-meta-uri {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 767.98px) {
+    .submission-form-container { padding: 1.5rem 1rem; }
+    .submission-form-container img {
+        display: block;
+        max-width: 10rem;
+        margin: 0 auto 1rem;
+    }
+    .resource-meta-uri { max-width: 100%; }
+}
+
+@media (max-width: 575.98px) {
+    /* full-width toggle: the 50% slider keeps working */
+    .toggle-switch { display: flex; width: 100%; }
+    .toggle-option { flex: 1 1 0; padding: 8px 12px; text-align: center; }
+}
+
+
+/* ==========================================================================
+   15. FOOTER
+   Shared by the index page and the viewer (live and static site).
+   ========================================================================== */
+
+.site-footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    border-top: 1px solid var(--lode-blue-hairline);
+    text-align: center;
+    font-size: .85rem;
+    color: var(--lode-muted);
+}
+
+.site-footer a { color: var(--lode-blue); }
+

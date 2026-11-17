@@ -1,5 +1,29 @@
 [
   {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b275",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
+    ],
+    "http://www.w3.org/2002/07/owl#members": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Label"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Paragraph"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Subtitle"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Title"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "@id": "http://purl.org/spar/doco/Title",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -28,13 +52,13 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b248"
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b195"
       },
       {
         "@id": "http://purl.org/spar/deo/DiscourseElement"
       },
       {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b245"
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b192"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -44,7 +68,7 @@
     ]
   },
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b248",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b195",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -60,7 +84,7 @@
     ]
   },
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b245",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b192",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -72,30 +96,6 @@
           },
           {
             "@id": "http://www.essepuntato.it/2008/12/pattern#Field"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b275",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AllDisjointClasses"
-    ],
-    "http://www.w3.org/2002/07/owl#members": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/doco/Label"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/Paragraph"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/Subtitle"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/Title"
           }
         ]
       }

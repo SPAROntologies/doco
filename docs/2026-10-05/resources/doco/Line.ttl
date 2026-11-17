@@ -1,0 +1,23 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Line a owl:Class ;
+    rdfs:label "line"@en ;
+    vann:example """
+    :my-line a doco:Line ;
+        c4o:hasContent 'Tyger Tyger, burning bright,'@en .
+    """ ;
+    rdfs:comment """A line in poetry is a unit of language into which a poem is divided which operates on principles which are distinct from and not necessarily coincident with grammatical structures, such as the sentence or clauses in sentences.
+
+A distinct numbered group of lines in verse is normally called a stanza."""@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf deo:DiscourseElement,
+        po:Block ;
+    vs:term_status reg:statusStable .
+

@@ -1,0 +1,30 @@
+@prefix deo: <http://purl.org/spar/deo/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Title a owl:Class ;
+    rdfs:label "title"@en ;
+    vann:example """
+    :my-title a doco:Title ;
+        c4o:hasContent 'Frankenstein'@en ;
+        pattern:isContainedByAsHeader :my-header-container .
+    """ ;
+    rdfs:comment "A word, phrase or sentence that precedes and indicates the subject of a document or a document component - e.g., a book, a report, a news article, a chapter, a section or a table."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:unionOf ( po:Block po:Field ) ],
+        [ a owl:Restriction ;
+            owl:onProperty po:isContainedByAsHeader ;
+            owl:someValuesFrom po:HeadedContainer ],
+        deo:DiscourseElement ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:Label doco:Paragraph doco:Subtitle doco:Title ) .
+

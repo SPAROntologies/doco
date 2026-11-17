@@ -1,0 +1,26 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:Afterword a owl:Class ;
+    rdfs:label "afterword"@en ;
+    vann:example """
+    :my-afterword a doco:Afterword ; 
+        dcterms:isPartOf :my-back-matter .
+    """ ;
+    rdfs:comment "A literary device that is often found at the end of a piece of literature. It generally covers the story of how the book came into being, or how the idea for the book was developed. Alternatively, it may be written by someone other than the author of the book, and may discuss the work's historical or cultural context, if the work is being reissued many years after its original publication."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( doco:Section [ a owl:Restriction ;
+                        owl:onProperty dcterms:isPartOf ;
+                        owl:someValuesFrom doco:BackMatter ] ) ] ;
+    vs:term_status reg:statusStable .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( doco:Abstract doco:Afterword doco:Appendix doco:Colophon doco:Foreword doco:Glossary doco:Index doco:ListOfFigures doco:ListOfTables doco:Preface doco:TableOfContents ) .
+

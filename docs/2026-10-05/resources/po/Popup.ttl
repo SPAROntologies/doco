@@ -1,0 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+po:Popup a owl:Class ;
+    rdfs:label "popup element"@en ;
+    rdfs:comment "A bucket element that is only present within block and inline elements."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+Popup elements are used whenever complex structures need to be placed within content elements such as paragraphs.
+"""@en .
+

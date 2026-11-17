@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+po:Milestone a owl:Class ;
+    rdfs:label "milestone element"@en ;
+    rdfs:comment "A document content nestable element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+This class describe elements that contain neither other elements nor textual content. 
+Moreover, similarly to Inline, elements following the Milestone pattern can only be contained within block or inline elements (and consequently they also cannot be used as root elements of documents).
+
+The distinctive characteristic of the pattern Milestone is the location it assumes within the document.
+  """@en .
+

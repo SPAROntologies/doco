@@ -1,129 +1,6 @@
 [
   {
-    "@id": "http://purl.org/spar/doco/Section",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://purl.org/vocab/vann/example": [
-      {
-        "@value": "\n    :my-section a doco:Section ; \n        pattern:contains :my-paragraph .\n    "
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@language": "en",
-        "@value": "A logical division of the text, usually numbered and/or titled, which may contain subsections."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-      {
-        "@id": "http://purl.org/spar/doco/"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "en",
-        "@value": "section"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b207"
-      },
-      {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b211"
-      },
-      {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b204"
-      }
-    ],
-    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-      {
-        "@id": "http://purl.org/linked-data/registry#statusStable"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b207",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b208"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b208",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/doco/Paragraph"
-          },
-          {
-            "@id": "http://purl.org/spar/doco/Section"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b211",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b212"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b212",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#complementOf": [
-      {
-        "@id": "http://purl.org/spar/doco/Chapter"
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b204",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://purl.org/spar/deo/DiscourseElement"
-          },
-          {
-            "@id": "http://www.essepuntato.it/2008/12/pattern#HeadedContainer"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b261",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b261",
     "@type": [
       "http://www.w3.org/2002/07/owl#AllDisjointClasses"
     ],
@@ -170,6 +47,129 @@
             "@id": "http://purl.org/spar/doco/Table"
           }
         ]
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/spar/doco/Section",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://purl.org/vocab/vann/example": [
+      {
+        "@value": "\n    :my-section a doco:Section ; \n        pattern:contains :my-paragraph .\n    "
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A logical division of the text, usually numbered and/or titled, which may contain subsections."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/doco/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "section"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b243"
+      },
+      {
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b240"
+      },
+      {
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b247"
+      }
+    ],
+    "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+      {
+        "@id": "http://purl.org/linked-data/registry#statusStable"
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b243",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b244"
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b244",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/doco/Paragraph"
+          },
+          {
+            "@id": "http://purl.org/spar/doco/Section"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b240",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://purl.org/spar/deo/DiscourseElement"
+          },
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#HeadedContainer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b247",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b248"
+      }
+    ]
+  },
+  {
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b248",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#complementOf": [
+      {
+        "@id": "http://purl.org/spar/doco/Chapter"
       }
     ]
   }

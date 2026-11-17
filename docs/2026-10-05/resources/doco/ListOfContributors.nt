@@ -1,0 +1,15 @@
+_:ndf7937cf38824ac98bc5eceaf6903cb5b283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfContributors> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b283 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfOrganizations> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b280 <http://www.w3.org/2002/07/owl#members> _:ndf7937cf38824ac98bc5eceaf6903cb5b281 .
+<http://purl.org/spar/doco/ListOfContributors> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/ListOfContributors> <http://purl.org/vocab/vann/example> "\n    :my-list-of-contributors a doco:ListOfContributors .\n    " .
+<http://purl.org/spar/doco/ListOfContributors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/ListOfContributors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/doco/ListOfAgents> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfAuthors> .
+<http://purl.org/spar/doco/ListOfContributors> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of items, each denoting a contributor to a publication such as an encyclopedia or a text book, where such contributions are insufficient to warrant classification as author."@en .
+<http://purl.org/spar/doco/ListOfContributors> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+<http://purl.org/spar/doco/ListOfContributors> <http://www.w3.org/2000/01/rdf-schema#label> "list of contributors"@en .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b281 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b282 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b282 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b283 .

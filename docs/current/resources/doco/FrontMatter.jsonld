@@ -1,6 +1,6 @@
 [
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b261",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b261",
     "@type": [
       "http://www.w3.org/2002/07/owl#AllDisjointClasses"
     ],
@@ -79,10 +79,10 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b105"
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b231"
       },
       {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b108"
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b234"
       }
     ],
     "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -92,7 +92,7 @@
     ]
   },
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b105",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b231",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -110,13 +110,13 @@
     ]
   },
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b108",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b234",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#allValuesFrom": [
       {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b109"
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b235"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
@@ -126,18 +126,18 @@
     ]
   },
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b109",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b235",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2002/07/owl#complementOf": [
       {
-        "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b110"
+        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b236"
       }
     ]
   },
   {
-    "@id": "_:n3b1bab1f2e67482f9ea2fcacd8712072b110",
+    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b236",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],

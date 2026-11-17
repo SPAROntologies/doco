@@ -1,0 +1,22 @@
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit within a larger poem. A stanza consists of a grouping of lines, set off by a vertical space from other stanzas, that usually has a set pattern of meter and rhyme."@en .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.essepuntato.it/2008/12/pattern#Container> .
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/2000/01/rdf-schema#label> "stanza"@en .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b25 .
+<http://purl.org/spar/doco/Stanza> <http://purl.org/vocab/vann/example> "\n    :my-stanza a doco:Stanza ; \n        pattern:contains :my-line-01, :my-line-02 .\n    " .
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/Stanza> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b22 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b28 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b26 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/deo/DiscourseElement> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2008/12/pattern#contains> .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b23 <http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b24 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b22 <http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b27 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b23 .
+_:ndf7937cf38824ac98bc5eceaf6903cb5b26 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/spar/doco/Line> .

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+   xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/spar/doco/TableBox">
+    <rdfs:subClassOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b188"/>
+    <rdfs:comment xml:lang="en">A space within a document that contains a table and its caption.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">table box</rdfs:label>
+    <vann:example>
+    :my-table-box a doco:TableBox ; 
+        dcterms:hasPart :my-table .
+    </vann:example>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b188">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b190"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b191">
+    <rdf:first rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b189"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b189">
+    <owl:onProperty rdf:resource="http://purl.org/dc/terms/hasPart"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/Table"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b190">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/CaptionedBox"/>
+    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b191"/>
+  </rdf:Description>
+</rdf:RDF>

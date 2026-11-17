@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+po:isContainedBy a owl:ObjectProperty ;
+    rdfs:label "is contained by"@en ;
+    rdfs:comment "A structured element is contained by another generic element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    owl:inverseOf po:contains .
+

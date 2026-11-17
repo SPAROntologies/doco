@@ -1,0 +1,31 @@
+[
+  {
+    "@id": "http://www.essepuntato.it/2008/12/pattern#Milestone",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@language": "en",
+        "@value": "A document content nestable element."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+      {
+        "@id": "http://purl.org/spar/po/"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "milestone element"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#note": [
+      {
+        "@language": "en",
+        "@value": "\nThis class describe elements that contain neither other elements nor textual content. \nMoreover, similarly to Inline, elements following the Milestone pattern can only be contained within block or inline elements (and consequently they also cannot be used as root elements of documents).\n\nThe distinctive characteristic of the pattern Milestone is the location it assumes within the document.\n  "
+      }
+    ]
+  }
+]

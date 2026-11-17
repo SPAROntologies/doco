@@ -1,0 +1,23 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doco: <http://purl.org/spar/doco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+
+doco:SectionSubtitle a owl:Class ;
+    rdfs:label "section subtitle"@en ;
+    vann:example """
+    :my-section-subtitle a doco:SectionSubtitle ;
+        c4o:hasContent 'The first section of the book'@en ;
+        dcterms:isPartOf :my-section .
+    """ ;
+    rdfs:comment "The subtitle of a section."@en ;
+    rdfs:isDefinedBy doco: ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty dcterms:isPartOf ;
+            owl:someValuesFrom doco:Section ],
+        doco:Subtitle ;
+    vs:term_status reg:statusStable .
+

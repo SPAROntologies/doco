@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <http://www.essepuntato.it/2008/12/pattern#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+po:Meta a owl:Class ;
+    rdfs:label "meta element"@en ;
+    rdfs:comment "A document content nestable element."@en ;
+    rdfs:isDefinedBy <http://purl.org/spar/po/> ;
+    skos:note """
+This class describes elements that contain neither other elements nor textual content. 
+Contrarily to the pattern Milestone, which was meant to describe markup elements that impact the document because of their location, the main feature of its disjoint sibling is the mere existence, independently from the position it has within the document. 
+
+Meta elements convey metadata information about the document or part of it, independently of where they are. 
+Thus, meta elements can be contained only within container elements.
+  """@en .
+
