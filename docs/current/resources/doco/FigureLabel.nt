@@ -1,16 +1,16 @@
-_:ndf7937cf38824ac98bc5eceaf6903cb5b19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/FigureBox> .
-<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b19 .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb18 <http://www.w3.org/2002/07/owl#intersectionOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb20 .
 <http://purl.org/spar/doco/FigureLabel> <http://purl.org/vocab/vann/example> "\n    :my-figure-label a doco:FigureLabel ;\n        c4o:hasContent 'Figure 1'@en ;\n        dcterms:isPartOf :my-figure-box .\n    " .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b18 <http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b20 .
-<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#label> "figure label"@en .
 <http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "A block containing a label for the figure box, that may include the figure number."@en .
-<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b18 .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Label> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b19 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/isPartOf> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/FigureBox> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Label> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb21 .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb19 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/isPartOf> .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#label> "figure label"@en .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b21 .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/doco/FigureLabel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb18 .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a5d32b6784e4d0fbc9167d39a514eebb19 .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .

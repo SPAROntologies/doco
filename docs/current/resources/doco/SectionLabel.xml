@@ -7,22 +7,22 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/doco/SectionLabel">
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b137"/>
+    <rdfs:subClassOf rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb137"/>
     <rdfs:subClassOf rdf:resource="http://purl.org/spar/doco/Label"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdfs:label xml:lang="en">section label</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">A block containing a label for the section, that may include the section number.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
     <vann:example>
     :my-section-label a doco:SectionLabel ; 
         c4o:hasContent 'Section 1'@en ;
         dcterms:isPartOf :my-section .
     </vann:example>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b137">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb137">
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/Section"/>
     <owl:onProperty rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
 </rdf:RDF>

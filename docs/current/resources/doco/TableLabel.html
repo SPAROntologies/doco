@@ -247,20 +247,20 @@ What is the full bibliographic text of the reference cited by a specific inline 
     """ ;
         rdfs:comment "A block containing a label for the table box, that may include the table number."@en ;
         rdfs:isDefinedBy doco: ;
-        rdfs:subClassOf _:ndf7937cf38824ac98bc5eceaf6903cb5b29 ;
+        rdfs:subClassOf _:n4a5d32b6784e4d0fbc9167d39a514eebb29 ;
         vs:term_status reg:statusStable .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b29 a owl:Class ;
-        owl:intersectionOf _:ndf7937cf38824ac98bc5eceaf6903cb5b31 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb29 a owl:Class ;
+        owl:intersectionOf _:n4a5d32b6784e4d0fbc9167d39a514eebb31 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b30 a owl:Restriction ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb30 a owl:Restriction ;
         owl:onProperty dcterms:isPartOf ;
         owl:someValuesFrom doco:TableBox .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b31 rdf:first doco:Label ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b32 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb31 rdf:first doco:Label ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb32 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b32 rdf:first _:ndf7937cf38824ac98bc5eceaf6903cb5b30 ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb32 rdf:first _:n4a5d32b6784e4d0fbc9167d39a514eebb30 ;
         rdf:rest () .
 }
 
@@ -296,7 +296,7 @@ What is the full bibliographic text of the reference cited by a specific inline 
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b29"
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb29"
           }
         ],
         "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
@@ -306,7 +306,7 @@ What is the full bibliographic text of the reference cited by a specific inline 
         ]
       },
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b29",
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb29",
         "@type": [
           "http://www.w3.org/2002/07/owl#Class"
         ],
@@ -317,14 +317,14 @@ What is the full bibliographic text of the reference cited by a specific inline 
                 "@id": "http://purl.org/spar/doco/Label"
               },
               {
-                "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b30"
+                "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb30"
               }
             ]
           }
         ]
       },
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b30",
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb30",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -342,22 +342,22 @@ What is the full bibliographic text of the reference cited by a specific inline 
     ],
     "@id": "http://purl.org/spar/doco"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_23091c5c4de918e9453fbae6c88609d1_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:ndf7937cf38824ac98bc5eceaf6903cb5b30 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/isPartOf> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b32 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b30 &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/TableLabel> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b32 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/TableLabel> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b29 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b31 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b32 &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/TableLabel> &lt;http://www.w3.org/2000/01/rdf-schema#label> "table label"@en &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b30 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/doco/TableBox> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b31 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Label> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b30 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b29 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b31 &lt;http://purl.org/spar/doco> .
+]</code></pre></div><div class="tab-pane fade" id=id_23091c5c4de918e9453fbae6c88609d1_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n4a5d32b6784e4d0fbc9167d39a514eebb29 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb31 &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/TableLabel> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A block containing a label for the table box, that may include the table number."@en &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb31 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Label> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb32 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a5d32b6784e4d0fbc9167d39a514eebb30 &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/TableLabel> &lt;http://purl.org/vocab/vann/example> "\n    :my-table-label a doco:TableLabel ;\n        c4o:hasContent 'Table 1'@en ;\n        dcterms:isPartOf :my-table-box .\n    " &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b29 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/TableLabel> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/doco/> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb30 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb31 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb32 &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/TableLabel> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb30 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/doco/TableBox> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/TableLabel> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/TableLabel> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb29 &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/TableLabel> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/doco/> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/TableLabel> &lt;http://www.w3.org/2000/01/rdf-schema#label> "table label"@en &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb29 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb30 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/isPartOf> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb32 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../doco.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

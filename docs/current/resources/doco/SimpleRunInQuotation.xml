@@ -6,32 +6,32 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b287">
-    <rdf:first rdf:resource="http://purl.org/spar/doco/TextChunk"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b285">
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Sentence"/>
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b286"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/doco/SimpleRunInQuotation">
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
-    <rdfs:label xml:lang="en">simple run-in quotation</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#Inline"/>
     <vann:example>
     :my-simple-run-in-quotation a doco:SimpleRunInQuotation ;
         c4o:hasContent 'The Minister said, “Prospects for growth are not good.”'@en .
     </vann:example>
-    <rdfs:comment xml:lang="en">A textual quotation that is included inline and is usually enclosed within quotation marks.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#Inline"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A textual quotation that is included inline and is usually enclosed within quotation marks.</rdfs:comment>
+    <rdfs:label xml:lang="en">simple run-in quotation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b284">
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb285">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Sentence"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb286"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb287">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/TextChunk"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb284">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-    <owl:members rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b285"/>
+    <owl:members rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb285"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b286">
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb286">
     <rdf:first rdf:resource="http://purl.org/spar/doco/SimpleRunInQuotation"/>
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b287"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb287"/>
   </rdf:Description>
 </rdf:RDF>

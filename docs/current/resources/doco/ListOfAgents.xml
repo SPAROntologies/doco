@@ -7,15 +7,15 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/doco/ListOfAgents">
-    <rdfs:comment xml:lang="en">A list of items each denoting an agent, such as an author, a contributor or an organization, related to a particular publication.</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/doco/List"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
+    <rdfs:comment xml:lang="en">A list of items each denoting an agent, such as an author, a contributor or an organization, related to a particular publication.</rdfs:comment>
+    <rdfs:label xml:lang="en">list of agents</rdfs:label>
     <vann:example>
     :my-list-of-agents a doco:ListOfAgents .
     </vann:example>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/doco/List"/>
     <owl:disjointWith rdf:resource="http://purl.org/spar/doco/ListOfReferences"/>
-    <rdfs:label xml:lang="en">list of agents</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
   </rdf:Description>
 </rdf:RDF>

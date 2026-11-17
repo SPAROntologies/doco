@@ -6,65 +6,65 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb187">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb185"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb182">
+    <owl:intersectionOf rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb183"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb277">
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb278"/>
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Paragraph"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb185">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/Sentence"/>
+    <owl:onProperty rdf:resource="http://www.essepuntato.it/2008/12/pattern#contains"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/doco/Paragraph">
+    <rdfs:subClassOf rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb181"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vann:example>
     :my-paragraph a doco:Paragraph ;
         pattern:contains :my-sentence .
     </vann:example>
-    <rdfs:comment xml:lang="en">A self-contained unit of discourse that deals with a particular point or idea. Paragraphs contains one or more sentences. The start of a paragraph is indicated by beginning on a new line, which may be indented or separated by a small vertical space by the preceding paragraph. </rdfs:comment>
     <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:subClassOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b181"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
     <rdfs:label xml:lang="en">paragraph</rdfs:label>
+    <rdfs:comment xml:lang="en">A self-contained unit of discourse that deals with a particular point or idea. Paragraphs contains one or more sentences. The start of a paragraph is indicated by beginning on a new line, which may be indented or separated by a small vertical space by the preceding paragraph. </rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b187">
-    <rdf:first rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b185"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb184">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b278">
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Subtitle"/>
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b279"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b185">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.essepuntato.it/2008/12/pattern#contains"/>
-    <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/Sentence"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b186">
-    <rdf:first rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b182"/>
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b187"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b277">
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b278"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Paragraph"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b276">
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b277"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Label"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b275">
-    <owl:members rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b276"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b181">
-    <owl:intersectionOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b186"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b182">
-    <owl:intersectionOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b183"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b184">
     <rdf:first rdf:resource="http://www.essepuntato.it/2008/12/pattern#Block"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b183">
-    <rdf:first rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b184"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb275">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+    <owl:members rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb276"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b279">
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb181">
+    <owl:intersectionOf rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb186"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb278">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Subtitle"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb279"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb279">
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
     <rdf:first rdf:resource="http://purl.org/spar/doco/Title"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb183">
+    <rdf:first rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb184"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb186">
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb187"/>
+    <rdf:first rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb182"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb276">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Label"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb277"/>
   </rdf:Description>
 </rdf:RDF>

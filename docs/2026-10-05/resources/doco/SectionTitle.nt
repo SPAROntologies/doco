@@ -1,11 +1,11 @@
-<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b139 .
-<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/2000/01/rdf-schema#label> "section title"@en .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b139 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader> .
-<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b139 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/Section> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of a section."@en .
-<http://purl.org/spar/doco/SectionTitle> <http://purl.org/vocab/vann/example> "\n    :my-section-title a doco:SectionTitle ; \n        c4o:hasContent 'Another Beginning'@en ;\n        pattern:isContainedByAsHeader :my-section .\n    " .
-<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb139 .
 <http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/spar/doco/Title> .
+<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
+<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of a section."@en .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb139 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader> .
+<http://purl.org/spar/doco/SectionTitle> <http://purl.org/vocab/vann/example> "\n    :my-section-title a doco:SectionTitle ; \n        c4o:hasContent 'Another Beginning'@en ;\n        pattern:isContainedByAsHeader :my-section .\n    " .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb139 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/Section> .
+<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/2000/01/rdf-schema#label> "section title"@en .
+<http://purl.org/spar/doco/SectionTitle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .

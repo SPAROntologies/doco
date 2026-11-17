@@ -1,16 +1,16 @@
-_:ndf7937cf38824ac98bc5eceaf6903cb5b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfReferences> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b2 .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2008/12/pattern#contains> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://purl.org/spar/doco/BibliographicReferenceList> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic reference list"@en .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/deo/BibliographicReference> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb4 .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.essepuntato.it/2008/12/pattern#contains> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a5d32b6784e4d0fbc9167d39a514eebb2 .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/ListOfReferences> .
 <http://purl.org/spar/doco/BibliographicReferenceList> <http://purl.org/vocab/vann/example> "\n    :my-bibliographic-reference-list a doco:BibliographicReferenceList ; \n        pattern:contains :my-bibliographic-reference-01, :my-bibliographic-reference-02 .\n    " .
-<http://purl.org/spar/doco/BibliographicReferenceList> <http://www.w3.org/2000/01/rdf-schema#comment> "A list, usually within a bibliography, of all the references within the citing document that refer to  journal articles, books, book chapters, Web sites or similar publications."@en .
-<http://purl.org/spar/doco/BibliographicReferenceList> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/deo/BibliographicReference> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb1 <http://www.w3.org/2002/07/owl#intersectionOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb3 .
 <http://purl.org/spar/doco/BibliographicReferenceList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b4 .
+<http://purl.org/spar/doco/BibliographicReferenceList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb1 .
+<http://purl.org/spar/doco/BibliographicReferenceList> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
 <http://purl.org/spar/doco/BibliographicReferenceList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/doco/BibliographicReferenceList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b1 .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b1 <http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b3 .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/spar/doco/BibliographicReferenceList> <http://www.w3.org/2000/01/rdf-schema#comment> "A list, usually within a bibliography, of all the references within the citing document that refer to  journal articles, books, book chapters, Web sites or similar publications."@en .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/spar/doco/BibliographicReferenceList> <http://www.w3.org/2000/01/rdf-schema#label> "bibliographic reference list"@en .

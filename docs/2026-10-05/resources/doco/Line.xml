@@ -6,18 +6,18 @@
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
   <rdf:Description rdf:about="http://purl.org/spar/doco/Line">
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
-    <rdfs:comment xml:lang="en">A line in poetry is a unit of language into which a poem is divided which operates on principles which are distinct from and not necessarily coincident with grammatical structures, such as the sentence or clauses in sentences.
-
-A distinct numbered group of lines in verse is normally called a stanza.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
+    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#Block"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <vann:example>
     :my-line a doco:Line ;
         c4o:hasContent 'Tyger Tyger, burning bright,'@en .
     </vann:example>
-    <rdfs:subClassOf rdf:resource="http://purl.org/spar/deo/DiscourseElement"/>
-    <rdfs:subClassOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#Block"/>
-    <rdfs:label xml:lang="en">line</rdfs:label>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
+    <rdfs:comment xml:lang="en">A line in poetry is a unit of language into which a poem is divided which operates on principles which are distinct from and not necessarily coincident with grammatical structures, such as the sentence or clauses in sentences.
+
+A distinct numbered group of lines in verse is normally called a stanza.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">line</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -28,7 +28,7 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b138"
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb138"
       },
       {
         "@id": "http://purl.org/spar/doco/Subtitle"
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b138",
+    "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb138",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],

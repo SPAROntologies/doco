@@ -5,11 +5,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://www.essepuntato.it/2008/12/pattern#isContainedByAsHeader">
-    <rdfs:label xml:lang="en">is contained by as header</rdfs:label>
-    <rdfs:comment xml:lang="en">An element is contained by another structured element as part of its header.</rdfs:comment>
-    <owl:inverseOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#containsAsHeader"/>
-    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
     <rdfs:subProperyOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#isContainedBy"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.essepuntato.it/2008/12/pattern#containsAsHeader"/>
+    <rdfs:comment xml:lang="en">An element is contained by another structured element as part of its header.</rdfs:comment>
+    <rdfs:label xml:lang="en">is contained by as header</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/po/"/>
   </rdf:Description>
 </rdf:RDF>

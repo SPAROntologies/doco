@@ -5,11 +5,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:about="http://purl.org/dc/terms/isPartOf">
-    <owl:inverseOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms/"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
     <rdfs:label xml:lang="en">is part of</rdfs:label>
+    <rdfs:comment xml:lang="en">A related resource in which the described resource is physically or logically included.</rdfs:comment>
+    <owl:inverseOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
   </rdf:Description>
 </rdf:RDF>

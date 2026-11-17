@@ -246,12 +246,12 @@ What is the full bibliographic text of the reference cited by a specific inline 
     """ ;
         rdfs:comment "The subtitle of a chapter."@en ;
         rdfs:isDefinedBy doco: ;
-        rdfs:subClassOf _:ndf7937cf38824ac98bc5eceaf6903cb5b16,
+        rdfs:subClassOf _:n4a5d32b6784e4d0fbc9167d39a514eebb16,
             doco:Subtitle ;
         owl:disjointWith doco:SectionSubtitle ;
         vs:term_status reg:statusStable .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b16 a owl:Restriction ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb16 a owl:Restriction ;
         owl:onProperty dcterms:isPartOf ;
         owl:someValuesFrom doco:Chapter .
 }
@@ -288,10 +288,10 @@ What is the full bibliographic text of the reference cited by a specific inline 
         ],
         "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
           {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b16"
+            "@id": "http://purl.org/spar/doco/Subtitle"
           },
           {
-            "@id": "http://purl.org/spar/doco/Subtitle"
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb16"
           }
         ],
         "http://www.w3.org/2002/07/owl#disjointWith": [
@@ -306,7 +306,7 @@ What is the full bibliographic text of the reference cited by a specific inline 
         ]
       },
       {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b16",
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb16",
         "@type": [
           "http://www.w3.org/2002/07/owl#Restriction"
         ],
@@ -324,18 +324,18 @@ What is the full bibliographic text of the reference cited by a specific inline 
     ],
     "@id": "http://purl.org/spar/doco"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_b4b7764ada5da7d7cf093a2b1d9db0c3_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:ndf7937cf38824ac98bc5eceaf6903cb5b16 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b16 &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://purl.org/vocab/vann/example> "\n    :my-chapter-subtitle a doco:ChapterSubtitle ;\n        c4o:hasContent 'Or: The beginning of this book'@en ;\n        dcterms:isPartOf :my-chapter .\n    " &lt;http://purl.org/spar/doco> .
+]</code></pre></div><div class="tab-pane fade" id=id_b4b7764ada5da7d7cf093a2b1d9db0c3_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://purl.org/vocab/vann/example> "\n    :my-chapter-subtitle a doco:ChapterSubtitle ;\n        c4o:hasContent 'Or: The beginning of this book'@en ;\n        dcterms:isPartOf :my-chapter .\n    " &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/2000/01/rdf-schema#label> "chapter subtitle"@en &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b16 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/isPartOf> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/2002/07/owl#disjointWith> &lt;http://purl.org/spar/doco/SectionSubtitle> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/doco/Subtitle> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b16 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/doco/Chapter> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/doco/> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "The subtitle of a chapter."@en &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/2002/07/owl#disjointWith> &lt;http://purl.org/spar/doco/SectionSubtitle> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb16 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/doco/Chapter> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb16 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/isPartOf> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb16 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> &lt;http://purl.org/spar/doco/Subtitle> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/doco/> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ChapterSubtitle> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb16 &lt;http://purl.org/spar/doco> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../doco.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

@@ -1,17 +1,17 @@
-_:ndf7937cf38824ac98bc5eceaf6903cb5b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Label> .
+<http://purl.org/spar/doco/ChapterLabel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb12 .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb15 .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/Chapter> .
 <http://purl.org/spar/doco/ChapterLabel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/spar/doco/> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b12 <http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b14 .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b15 .
-<http://purl.org/spar/doco/ChapterLabel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b12 .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/spar/doco/Chapter> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b13 .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/spar/doco/Label> .
-<http://purl.org/spar/doco/ChapterLabel> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/doco/SectionLabel> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://purl.org/spar/doco/ChapterLabel> <http://www.w3.org/2000/01/rdf-schema#label> "chapter label"@en .
-<http://purl.org/spar/doco/ChapterLabel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
-<http://purl.org/spar/doco/ChapterLabel> <http://purl.org/vocab/vann/example> "\n    :my-chapter-label a doco:ChapterLabel ; \n        c4o:hasContent 'Chapter 1'@en ;\n        dcterms:isPartOf :my-chapter .\n    " .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a5d32b6784e4d0fbc9167d39a514eebb13 .
 <http://purl.org/spar/doco/ChapterLabel> <http://www.w3.org/2000/01/rdf-schema#comment> "A block containing a label for the chapter, that may include the chapter number."@en .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb12 <http://www.w3.org/2002/07/owl#intersectionOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb14 .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/spar/doco/ChapterLabel> <http://www.w3.org/2000/01/rdf-schema#label> "chapter label"@en .
+<http://purl.org/spar/doco/ChapterLabel> <http://purl.org/vocab/vann/example> "\n    :my-chapter-label a doco:ChapterLabel ; \n        c4o:hasContent 'Chapter 1'@en ;\n        dcterms:isPartOf :my-chapter .\n    " .
+<http://purl.org/spar/doco/ChapterLabel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://purl.org/linked-data/registry#statusStable> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb13 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/isPartOf> .
 <http://purl.org/spar/doco/ChapterLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b13 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/isPartOf> .
+<http://purl.org/spar/doco/ChapterLabel> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/spar/doco/SectionLabel> .

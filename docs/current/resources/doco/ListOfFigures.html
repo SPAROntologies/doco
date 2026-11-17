@@ -248,281 +248,104 @@ What is the full bibliographic text of the reference cited by a specific inline 
     """ ;
         rdfs:comment "A section of the document listing all the figures, identified by their titles and referenced to their locations in the document. May also be referred to as 'List of illustrations'."@en ;
         rdfs:isDefinedBy doco: ;
-        rdfs:subClassOf _:ndf7937cf38824ac98bc5eceaf6903cb5b108,
-            _:ndf7937cf38824ac98bc5eceaf6903cb5b98 ;
+        rdfs:subClassOf _:n4a5d32b6784e4d0fbc9167d39a514eebb108,
+            _:n4a5d32b6784e4d0fbc9167d39a514eebb98 ;
         vs:term_status reg:statusStable .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b249 a owl:AllDisjointClasses ;
-        owl:members _:ndf7937cf38824ac98bc5eceaf6903cb5b250 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb249 a owl:AllDisjointClasses ;
+        owl:members _:n4a5d32b6784e4d0fbc9167d39a514eebb250 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b100 rdf:first doco:Section ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b101 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb100 rdf:first doco:Section ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb101 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b101 rdf:first po:HeadedContainer ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb101 rdf:first po:HeadedContainer ;
         rdf:rest () .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b102 a owl:Restriction ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb102 a owl:Restriction ;
         owl:onProperty dcterms:isPartOf ;
-        owl:someValuesFrom _:ndf7937cf38824ac98bc5eceaf6903cb5b103 .
+        owl:someValuesFrom _:n4a5d32b6784e4d0fbc9167d39a514eebb103 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b103 a owl:Class ;
-        owl:unionOf _:ndf7937cf38824ac98bc5eceaf6903cb5b104 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb103 a owl:Class ;
+        owl:unionOf _:n4a5d32b6784e4d0fbc9167d39a514eebb104 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b104 rdf:first doco:BackMatter ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b105 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb104 rdf:first doco:BackMatter ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb105 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b105 rdf:first doco:FrontMatter ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb105 rdf:first doco:FrontMatter ;
         rdf:rest () .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b106 rdf:first _:ndf7937cf38824ac98bc5eceaf6903cb5b99 ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b107 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb106 rdf:first _:n4a5d32b6784e4d0fbc9167d39a514eebb99 ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb107 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b107 rdf:first _:ndf7937cf38824ac98bc5eceaf6903cb5b102 ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb107 rdf:first _:n4a5d32b6784e4d0fbc9167d39a514eebb102 ;
         rdf:rest () .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b108 a owl:Restriction ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb108 a owl:Restriction ;
         owl:onProperty dcterms:hasPart ;
-        owl:someValuesFrom _:ndf7937cf38824ac98bc5eceaf6903cb5b109 .
+        owl:someValuesFrom _:n4a5d32b6784e4d0fbc9167d39a514eebb109 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b109 a owl:Class ;
-        owl:intersectionOf _:ndf7937cf38824ac98bc5eceaf6903cb5b112 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb109 a owl:Class ;
+        owl:intersectionOf _:n4a5d32b6784e4d0fbc9167d39a514eebb112 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b110 a owl:Restriction ;
-        owl:allValuesFrom _:ndf7937cf38824ac98bc5eceaf6903cb5b111 ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb110 a owl:Restriction ;
+        owl:allValuesFrom _:n4a5d32b6784e4d0fbc9167d39a514eebb111 ;
         owl:onProperty po:contains .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b111 a owl:Restriction ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb111 a owl:Restriction ;
         owl:onProperty dcterms:relation ;
         owl:someValuesFrom doco:FigureBox .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b112 rdf:first doco:ListOfReferences ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b113 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb112 rdf:first doco:ListOfReferences ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb113 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b113 rdf:first _:ndf7937cf38824ac98bc5eceaf6903cb5b110 ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb113 rdf:first _:n4a5d32b6784e4d0fbc9167d39a514eebb110 ;
         rdf:rest () .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b250 rdf:first doco:Abstract ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b251 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb250 rdf:first doco:Abstract ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb251 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b251 rdf:first doco:Afterword ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b252 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb251 rdf:first doco:Afterword ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb252 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b252 rdf:first doco:Appendix ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b253 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb252 rdf:first doco:Appendix ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb253 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b253 rdf:first doco:Colophon ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b254 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb253 rdf:first doco:Colophon ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb254 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b254 rdf:first doco:Foreword ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b255 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb254 rdf:first doco:Foreword ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb255 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b255 rdf:first doco:Glossary ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b256 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb255 rdf:first doco:Glossary ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb256 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b256 rdf:first doco:Index ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b257 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb256 rdf:first doco:Index ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb257 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b257 rdf:first doco:ListOfFigures ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b258 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb257 rdf:first doco:ListOfFigures ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb258 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b258 rdf:first doco:ListOfTables ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b259 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb258 rdf:first doco:ListOfTables ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb259 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b259 rdf:first doco:Preface ;
-        rdf:rest _:ndf7937cf38824ac98bc5eceaf6903cb5b260 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb259 rdf:first doco:Preface ;
+        rdf:rest _:n4a5d32b6784e4d0fbc9167d39a514eebb260 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b260 rdf:first doco:TableOfContents ;
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb260 rdf:first doco:TableOfContents ;
         rdf:rest () .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b98 a owl:Class ;
-        owl:intersectionOf _:ndf7937cf38824ac98bc5eceaf6903cb5b106 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb98 a owl:Class ;
+        owl:intersectionOf _:n4a5d32b6784e4d0fbc9167d39a514eebb106 .
 
-    _:ndf7937cf38824ac98bc5eceaf6903cb5b99 a owl:Class ;
-        owl:intersectionOf _:ndf7937cf38824ac98bc5eceaf6903cb5b100 .
+    _:n4a5d32b6784e4d0fbc9167d39a514eebb99 a owl:Class ;
+        owl:intersectionOf _:n4a5d32b6784e4d0fbc9167d39a514eebb100 .
 }
 
 </code></pre></div><div class="tab-pane fade" id=id_18197aac6f868072b8d2ab254d5167a0_Concept_prov_2 role=tabpanel><pre class="mb-0 small"><code>[
   {
     "@graph": [
       {
-        "@id": "http://purl.org/spar/doco/ListOfFigures",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://purl.org/vocab/vann/example": [
-          {
-            "@value": "\n    :my-list-of-figures a doco:ListOfFigures ; \n        dcterms:isPartOf :my-front-matter ;\n        pattern:contains :my-list-of-references .\n    "
-          }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#comment": [
-          {
-            "@language": "en",
-            "@value": "A section of the document listing all the figures, identified by their titles and referenced to their locations in the document. May also be referred to as 'List of illustrations'."
-          }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
-          {
-            "@id": "http://purl.org/spar/doco/"
-          }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#label": [
-          {
-            "@language": "en",
-            "@value": "list of figures"
-          }
-        ],
-        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-          {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b108"
-          },
-          {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b98"
-          }
-        ],
-        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
-          {
-            "@id": "http://purl.org/linked-data/registry#statusStable"
-          }
-        ]
-      },
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b108",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://purl.org/dc/terms/hasPart"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#someValuesFrom": [
-          {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b109"
-          }
-        ]
-      },
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b109",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2002/07/owl#intersectionOf": [
-          {
-            "@list": [
-              {
-                "@id": "http://purl.org/spar/doco/ListOfReferences"
-              },
-              {
-                "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b110"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b110",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#allValuesFrom": [
-          {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b111"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
-          }
-        ]
-      },
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b111",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://purl.org/dc/terms/relation"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#someValuesFrom": [
-          {
-            "@id": "http://purl.org/spar/doco/FigureBox"
-          }
-        ]
-      },
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b98",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2002/07/owl#intersectionOf": [
-          {
-            "@list": [
-              {
-                "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b99"
-              },
-              {
-                "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b102"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b99",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2002/07/owl#intersectionOf": [
-          {
-            "@list": [
-              {
-                "@id": "http://purl.org/spar/doco/Section"
-              },
-              {
-                "@id": "http://www.essepuntato.it/2008/12/pattern#HeadedContainer"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b102",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Restriction"
-        ],
-        "http://www.w3.org/2002/07/owl#onProperty": [
-          {
-            "@id": "http://purl.org/dc/terms/isPartOf"
-          }
-        ],
-        "http://www.w3.org/2002/07/owl#someValuesFrom": [
-          {
-            "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b103"
-          }
-        ]
-      },
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b103",
-        "@type": [
-          "http://www.w3.org/2002/07/owl#Class"
-        ],
-        "http://www.w3.org/2002/07/owl#unionOf": [
-          {
-            "@list": [
-              {
-                "@id": "http://purl.org/spar/doco/BackMatter"
-              },
-              {
-                "@id": "http://purl.org/spar/doco/FrontMatter"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "@id": "_:ndf7937cf38824ac98bc5eceaf6903cb5b249",
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb249",
         "@type": [
           "http://www.w3.org/2002/07/owl#AllDisjointClasses"
         ],
@@ -565,78 +388,255 @@ What is the full bibliographic text of the reference cited by a specific inline 
             ]
           }
         ]
+      },
+      {
+        "@id": "http://purl.org/spar/doco/ListOfFigures",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://purl.org/vocab/vann/example": [
+          {
+            "@value": "\n    :my-list-of-figures a doco:ListOfFigures ; \n        dcterms:isPartOf :my-front-matter ;\n        pattern:contains :my-list-of-references .\n    "
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#comment": [
+          {
+            "@language": "en",
+            "@value": "A section of the document listing all the figures, identified by their titles and referenced to their locations in the document. May also be referred to as 'List of illustrations'."
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+          {
+            "@id": "http://purl.org/spar/doco/"
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#label": [
+          {
+            "@language": "en",
+            "@value": "list of figures"
+          }
+        ],
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+          {
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb98"
+          },
+          {
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb108"
+          }
+        ],
+        "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status": [
+          {
+            "@id": "http://purl.org/linked-data/registry#statusStable"
+          }
+        ]
+      },
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb98",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#intersectionOf": [
+          {
+            "@list": [
+              {
+                "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb99"
+              },
+              {
+                "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb102"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb99",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#intersectionOf": [
+          {
+            "@list": [
+              {
+                "@id": "http://purl.org/spar/doco/Section"
+              },
+              {
+                "@id": "http://www.essepuntato.it/2008/12/pattern#HeadedContainer"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb102",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://purl.org/dc/terms/isPartOf"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+          {
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb103"
+          }
+        ]
+      },
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb103",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#unionOf": [
+          {
+            "@list": [
+              {
+                "@id": "http://purl.org/spar/doco/BackMatter"
+              },
+              {
+                "@id": "http://purl.org/spar/doco/FrontMatter"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb108",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://purl.org/dc/terms/hasPart"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+          {
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb109"
+          }
+        ]
+      },
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb109",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Class"
+        ],
+        "http://www.w3.org/2002/07/owl#intersectionOf": [
+          {
+            "@list": [
+              {
+                "@id": "http://purl.org/spar/doco/ListOfReferences"
+              },
+              {
+                "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb110"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb110",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#allValuesFrom": [
+          {
+            "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb111"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://www.essepuntato.it/2008/12/pattern#contains"
+          }
+        ]
+      },
+      {
+        "@id": "_:n4a5d32b6784e4d0fbc9167d39a514eebb111",
+        "@type": [
+          "http://www.w3.org/2002/07/owl#Restriction"
+        ],
+        "http://www.w3.org/2002/07/owl#onProperty": [
+          {
+            "@id": "http://purl.org/dc/terms/relation"
+          }
+        ],
+        "http://www.w3.org/2002/07/owl#someValuesFrom": [
+          {
+            "@id": "http://purl.org/spar/doco/FigureBox"
+          }
+        ]
       }
     ],
     "@id": "http://purl.org/spar/doco"
   }
-]</code></pre></div><div class="tab-pane fade" id=id_18197aac6f868072b8d2ab254d5167a0_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:ndf7937cf38824ac98bc5eceaf6903cb5b257 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b255 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b256 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b103 &lt;http://www.w3.org/2002/07/owl#unionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b104 &lt;http://purl.org/spar/doco> .
+]</code></pre></div><div class="tab-pane fade" id=id_18197aac6f868072b8d2ab254d5167a0_Concept_prov_3 role=tabpanel><pre class="mb-0 small"><code>_:n4a5d32b6784e4d0fbc9167d39a514eebb98 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb105 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb260 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/TableOfContents> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb254 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Foreword> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb252 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Appendix> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb103 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb102 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> _:n4a5d32b6784e4d0fbc9167d39a514eebb103 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb260 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb110 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb99 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb100 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb105 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/FrontMatter> &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://purl.org/vocab/vann/example> "\n    :my-list-of-figures a doco:ListOfFigures ; \n        dcterms:isPartOf :my-front-matter ;\n        pattern:contains :my-list-of-references .\n    " &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b107 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b250 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b251 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b258 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b259 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b111 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/relation> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b105 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b102 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> _:ndf7937cf38824ac98bc5eceaf6903cb5b103 &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b257 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b258 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b258 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/ListOfTables> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b104 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/BackMatter> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b99 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b100 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b101 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b110 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b100 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b101 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b102 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/isPartOf> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b102 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b108 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> _:ndf7937cf38824ac98bc5eceaf6903cb5b109 &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b108 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb254 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb255 &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb98 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb255 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Glossary> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb108 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> _:n4a5d32b6784e4d0fbc9167d39a514eebb109 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb111 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/relation> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb102 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/isPartOf> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb99 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb258 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/ListOfTables> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb113 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a5d32b6784e4d0fbc9167d39a514eebb110 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb251 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb252 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb256 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Index> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb111 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/doco/FigureBox> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb249 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#AllDisjointClasses> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb107 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb109 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb257 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb109 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb112 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb102 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> &lt;http://purl.org/linked-data/registry#statusStable> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b98 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b106 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b106 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b107 &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://www.w3.org/2000/01/rdf-schema#label> "list of figures"@en &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b260 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/TableOfContents> &lt;http://purl.org/spar/doco> .
-&lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b98 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b105 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/FrontMatter> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b254 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b255 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b250 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Abstract> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b109 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b106 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b99 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b99 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b253 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Colophon> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b259 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Preface> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b256 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b257 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b110 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.essepuntato.it/2008/12/pattern#contains> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b252 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Appendix> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b101 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.essepuntato.it/2008/12/pattern#HeadedContainer> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b110 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> _:ndf7937cf38824ac98bc5eceaf6903cb5b111 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b251 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b252 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb253 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Colophon> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb251 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Afterword> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb98 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb106 &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://www.w3.org/2000/01/rdf-schema#isDefinedBy> &lt;http://purl.org/spar/doco/> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b104 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b105 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b98 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b259 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b260 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b103 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b260 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b113 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b110 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b255 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Glossary> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b113 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb253 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb254 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb111 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb108 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://www.w3.org/2000/01/rdf-schema#subClassOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb108 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb107 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a5d32b6784e4d0fbc9167d39a514eebb102 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb110 &lt;http://www.w3.org/2002/07/owl#allValuesFrom> _:n4a5d32b6784e4d0fbc9167d39a514eebb111 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb255 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb256 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb259 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Preface> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb249 &lt;http://www.w3.org/2002/07/owl#members> _:n4a5d32b6784e4d0fbc9167d39a514eebb250 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb104 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb105 &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Class> &lt;http://purl.org/spar/doco> .
 &lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://www.w3.org/2000/01/rdf-schema#comment> "A section of the document listing all the figures, identified by their titles and referenced to their locations in the document. May also be referred to as 'List of illustrations'."@en &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b108 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b252 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b253 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b256 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Index> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b100 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Section> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b107 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:ndf7937cf38824ac98bc5eceaf6903cb5b102 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b251 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Afterword> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b108 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/hasPart> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b249 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#AllDisjointClasses> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b111 &lt;http://www.w3.org/2002/07/owl#someValuesFrom> &lt;http://purl.org/spar/doco/FigureBox> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b254 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Foreword> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b111 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type> &lt;http://www.w3.org/2002/07/owl#Restriction> &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b249 &lt;http://www.w3.org/2002/07/owl#members> _:ndf7937cf38824ac98bc5eceaf6903cb5b250 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b253 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b254 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b112 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:ndf7937cf38824ac98bc5eceaf6903cb5b113 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b109 &lt;http://www.w3.org/2002/07/owl#intersectionOf> _:ndf7937cf38824ac98bc5eceaf6903cb5b112 &lt;http://purl.org/spar/doco> .
-_:ndf7937cf38824ac98bc5eceaf6903cb5b112 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb100 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Section> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb101 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb250 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb251 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb113 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb252 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb253 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb112 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb113 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb112 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/ListOfReferences> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb103 &lt;http://www.w3.org/2002/07/owl#unionOf> _:n4a5d32b6784e4d0fbc9167d39a514eebb104 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb104 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/BackMatter> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb250 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://purl.org/spar/doco/Abstract> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb259 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb260 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb257 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb258 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb106 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:n4a5d32b6784e4d0fbc9167d39a514eebb99 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb106 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb107 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb108 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://purl.org/dc/terms/hasPart> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb100 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb101 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb258 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb259 &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb101 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#first> &lt;http://www.essepuntato.it/2008/12/pattern#HeadedContainer> &lt;http://purl.org/spar/doco> .
+&lt;http://purl.org/spar/doco/ListOfFigures> &lt;http://www.w3.org/2000/01/rdf-schema#label> "list of figures"@en &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb110 &lt;http://www.w3.org/2002/07/owl#onProperty> &lt;http://www.essepuntato.it/2008/12/pattern#contains> &lt;http://purl.org/spar/doco> .
+_:n4a5d32b6784e4d0fbc9167d39a514eebb256 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:n4a5d32b6784e4d0fbc9167d39a514eebb257 &lt;http://purl.org/spar/doco> .
 
 </code></pre></div></div></div></div></div></div></div></div></div></div><div><a class="btn btn-outline-secondary" href=../../doco.html>← Back to full documentation</a></div><script src=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js></script><script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script><script src=https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js></script><script>document.addEventListener("DOMContentLoaded", function() {
 

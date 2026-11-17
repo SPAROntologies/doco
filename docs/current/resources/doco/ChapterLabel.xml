@@ -6,35 +6,35 @@
    xmlns:vann="http://purl.org/vocab/vann/"
    xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
 >
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b15">
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-    <rdf:first rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b13"/>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb14">
+    <rdf:first rdf:resource="http://purl.org/spar/doco/Label"/>
+    <rdf:rest rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb15"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/spar/doco/ChapterLabel">
+    <rdfs:subClassOf rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb12"/>
     <rdfs:isDefinedBy rdf:resource="http://purl.org/spar/doco/"/>
-    <rdfs:subClassOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b12"/>
-    <owl:disjointWith rdf:resource="http://purl.org/spar/doco/SectionLabel"/>
+    <rdfs:comment xml:lang="en">A block containing a label for the chapter, that may include the chapter number.</rdfs:comment>
     <rdfs:label xml:lang="en">chapter label</rdfs:label>
-    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <vann:example>
     :my-chapter-label a doco:ChapterLabel ; 
         c4o:hasContent 'Chapter 1'@en ;
         dcterms:isPartOf :my-chapter .
     </vann:example>
-    <rdfs:comment xml:lang="en">A block containing a label for the chapter, that may include the chapter number.</rdfs:comment>
+    <vs:term_status rdf:resource="http://purl.org/linked-data/registry#statusStable"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://purl.org/spar/doco/SectionLabel"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b12">
-    <owl:intersectionOf rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b14"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b14">
-    <rdf:rest rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b15"/>
-    <rdf:first rdf:resource="http://purl.org/spar/doco/Label"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="ndf7937cf38824ac98bc5eceaf6903cb5b13">
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb13">
     <owl:someValuesFrom rdf:resource="http://purl.org/spar/doco/Chapter"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb15">
+    <rdf:first rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb13"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb12">
+    <owl:intersectionOf rdf:nodeID="n4a5d32b6784e4d0fbc9167d39a514eebb14"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>
